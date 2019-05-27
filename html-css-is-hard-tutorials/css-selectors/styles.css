@@ -1,0 +1,136 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* .synopsis */ 
+.page > p:first-of-type {
+    color: #7E8184; /* Light Gray */
+    font-style: italic;
+}
+
+/* .synopsis */ 
+.page > p:first-of-type > em {
+    font-style: normal;
+}
+
+/* Try to avoid this 
+.article h2 .subheading em {
+    ...Special styles...
+} */
+
+.button,
+.button:link,
+.button:visited {
+    display: block;
+    text-decoration: none;
+
+    color: #FFF;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.button:hover,
+.button:visited {
+    color: #FFF;
+    background-color: #76AEED;  /* Light blue */
+}
+
+.button:active,
+.button:visited:active {
+    color: #FFF;
+    background-color: #5995DA; /* Blue */
+}
+
+#button-2 {
+    background-color: #D55C5F; 
+}
+
+.call-to-action:link,
+.call-to-action:visited {
+    font-style: italic;
+    background-color: #EEB75A;  /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+    background-color: #F5CF8E;  /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+    background-color: #EEB75A;  /* Yellow */
+}
+
+/* This would override the previous background color from the earlier declaraction of this class due to CSS specificity rules.
+
+.call-to-action:link,
+.call-to-action:visited {
+    background-color: #D55C5F; 
+} */
+
+#button-2 {
+    color: #5D6063; /* Dark gray */
+}
+
+/* (This is painful to maintain. For this reason ID selectors are generally frowned upon. Use class selectors instead.)
+
+#button-2,
+#button-3,
+#checkout-button,
+#menu-bar-call-to-action {
+    color: #5D6063;
+} */
+
+body {
+    text-align: center;
+}
+
+.page {
+    width: 600px;
+    margin: 0 auto;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+}
+
+a:visited:hover {
+    color: orange;
+}
+
+a:visited:active {
+    color: red;
+}
+
+p:last-of-type {
+    margin-bottom: 50px;
+}
+
+div:last-of-type {
+    text-align: left;
+    width: 200px;
+    margin: 0 0;
+}

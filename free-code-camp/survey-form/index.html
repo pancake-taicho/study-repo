@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <header>
+    <div id="title">
+      <h1>Donut Survey</h1>
+    </div>
+  </header>
+
+  <div id="description">
+    <p>Please share your favorite donut recipe with us!</p>
+  </div>
+
+  <form action="/donut-recipe.php" id="survey">
+    <div class="leftTab">
+      <div class="labels">
+        <label id="name-label" for="name">Name: </label>
+      </div>
+    </div>
+    <div class="rightTab">
+      <input type="text" name="name" id="name" placeholder="John Dough">
+    </div>
+    <div class="leftTab">
+      <div class="labels">
+        <label id=" email-label" for="email">Email: </label>
+      </div>
+    </div>
+    <div class="rightTab">
+      <input type="email" name="email" id="email" placeholder="spr1nklez@donut.com">
+    </div>
+    <div class="leftTab">
+      <div class="labels">
+        <label id="number-label" for="number">How many donuts do you bake at a time? </label>
+      </div>
+    </div>
+    <div class="rightTab">
+      <input type="number" name="number" id="number" placeholder="Input a number greater than 0">
+    </div>
+    <div class="leftTab">
+      <div class="labels">
+        <label for="dreamRate">How often do you dream of donuts?</label>
+      </div>
+    </div>
+    <div class="rightTab">
+      <select id="dropdown" name="dreamRate">
+    </div>
+    <div class="leftTab">
+      <div class="labels">
+        <label for="checkbox">What kind of donuts do you prefer?</label>
+      </div>
+    </div>
+    <div class="rightTab">
+      <input type="checkbox" name="checkbox" id="checkbox">
+    </div>
+    <div class="leftTab">
+      <div class="labels">
+        <label for="comments">Please share your donut recipe: </label>
+      </div>
+    </div>
+    <div class="rightTab">
+      <textarea name="comments" id="textarea" cols="30" rows="10">Please enter your recipe here!</textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

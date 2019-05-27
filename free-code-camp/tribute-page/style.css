@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: linear-gradient(
+    -135deg,
+    #ff9933 0px,
+    #ff9933 60px,
+    blue 60px,
+    blue 80px,
+    #ff9933 80px,
+    #ff9933 120px,
+    blue 120px,
+    #222222 200px);
+}
+
+body {
+  font-family: "Trebuchet MS", comic sans;
+  color: #ccc;
+  line-height: 1.6;
+  text-align: center;
+ 
+}
+
+#main {
+  margin: 1.4rem auto;
+  padding: 1.4rem;
+}
+
+#main h1 {
+  padding-bottom: 0.5rem;
+}
+
+#title {
+  font-size: 2.5em;
+}
+
+#img-div {
+  margin: 1rem;
+  margin-top: 1.4rem;
+}
+
+img {
+  max-height: 70%;
+  max-width: 70%;
+  display: block;
+  height: auto;
+  margin: auto;
+  border: 10px solid #000;
+  border-radius: 5px;
+}
+
+#img-caption {
+  margin: 0.8rem auto;
+  max-width: 65%;
+}
+
+#tribute-info {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+ul {
+  max-width: 550px;
+  margin: auto;
+  text-align: left;
+}
+
+li {
+  margin-top: 1rem;
+}
+
+#tribute-info p {
+  margin-top: 1rem;
+}
+
+#link {
+  margin-top: 1rem;
+}
+
+#tribute-link {
+  color: #4286f4;
+  text-decoration: none;
+}
+
+#tribute-link:hover {
+  color: #ff9933;
+}

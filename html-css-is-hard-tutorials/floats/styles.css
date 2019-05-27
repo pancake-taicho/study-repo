@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #EAEDF0;
+    /* border: 1px solid red; */
+}
+
+.container {
+    overflow: hidden;
+    background-color: #EAEDF0;
+}
+
+.menu {
+    height: 100px;
+    background-color: #B2D6FF;  /* Medium blue */
+}
+
+.sidebar {
+    /* Floated elements don't count towards the height of their container */
+    /* You can revert to default flow with float: none; */
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: #F09A9D;  /* Red */
+}
+
+.content {
+    float: left;
+    width: 650px;
+    height: 500px;
+    padding: 20px;
+    background-color: #F5CF8E;  /* Yellow */
+}
+
+.article-image {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.footer {
+    /* Clearing floats only fixes the height issue when there's an element *inside* the container element that we can add a 'clear' property to */
+    clear: both;    
+    /* Clearing the floats; 'both' refers to both 'left' and 'right' floats */
+    /* height: 200px; */
+    overflow: hidden;
+    background-color: #D6E9FE;  /* Light blue */
+}
+
+.footer-item {
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%;
+    height: 160px;
+    overflow: auto;
+    background-color: #B2D6FF;  /* Medium blue */    
+}
+
+.avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+    border-radius: 80px;
+    background-color: #D6E9FE;
+}
+
+.username {
+    margin-top: 30px;
+}
+
+.comment {
+    margin: 10px;
+    overflow: hidden;   /* This is important */
+}

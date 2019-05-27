@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, p {
+    background-color: #DDE0E3;  /* Light gray */
+}
+
+em, strong { 
+    background-color: #B2D6FF;  /* Light blue */
+    display: inline;              /* This is the default for em and strong */
+}
+
+h1 {
+    /* padding: 50px; */
+
+    /* padding-top: 20px;
+       padding-bottom: 20px;
+       padding-left: 10px;
+       padding-right: 10px; */
+
+    /* padding: 20px 10px; /* Vertical Horizontal */
+
+    padding: 20px 0 20px 10px; /* Clockwise: Top, Right, Bottom, Left */
+    
+    /* border: 1px solid #5D6063; */
+
+    border-bottom: 1px solid #5D6063;
+    
+    /* margin-bottom: 50px; */
+
+    margin: 0 0 50px 0;
+}
+
+strong {
+    /* margin: 50px;
+       padding: 50px; */
+}
+
+p {
+    padding: 20px 0 20px 10px;
+
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+div {
+    color: #FFF;
+    background-color: #5995DA;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #5D6063;
+    border-radius: 5px;
+
+    width: 200px;
+    box-sizing: border-box;
+    margin: 20px auto; /* Vertical Horizontal; setting a block's left and right (horizontal) margins to 'auto' will center the block. This ONLY works on blocks that have an explicit 'width' defined on them */
+}
+
+body {
+    text-align: center;
+}
