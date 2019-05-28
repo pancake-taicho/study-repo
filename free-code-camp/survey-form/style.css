@@ -24,14 +24,31 @@ body {
 }
 
 #description {
-  font-size: 1rem;
-  font-weight: bold;
   padding-bottom: 0.8rem;
+  text-align: center;
 }
 
 #survey-form {
-  background: #fcfcde;
+  width: 80%;
+  background-color: #bebebe;
   border: 1px #ccc solid;
   border-radius: 5px;
   padding: 0.8rem 2rem;
+}
+
+.labels {
+  text-align: left;
+  margin: 0 auto;
+  padding: 5px;
+  vertical-align: top;
+}
+
+.rowTab {
+  display: inline-block;
+}
+
+@media (min-width: 780px) {
+  .labels {
+    display: inline-block;
+  }
 }
