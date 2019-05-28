@@ -32,31 +32,43 @@ header {
   width: 80%;
   background-color: #bebebe;
   border: 1px #ccc solid;
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 0.8rem 2rem;
 }
 
 .labels {
-  text-align: center;
+  text-align: left;
   margin: 0 auto;
-  padding: 5px;
-  vertical-align: top;
+
+  
 }
 
 .rightTab {
-  display: inline-block;
-  width: 48%;
-  vertical-align: middle;
+
+}
+
+.input-field {
+  height: 2rem;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 @media (min-width: 780px) {
   .labels {
     display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    text-align: right;
   }
 
   .input-field {
     display: inline-block;
     width: 48%;
     vertical-align: middle;
+    align-items: left;
   }
 }

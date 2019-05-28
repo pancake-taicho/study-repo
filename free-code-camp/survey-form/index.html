@@ -19,6 +19,7 @@
     <div id="description">
       <p>Please share your favorite donut recipe with us!</p>
     </div>
+
     <div class="leftTab">
       <div class="labels">
         <label id="name-label" for="name">Name: </label>
@@ -27,6 +28,7 @@
     <div class="rightTab">
       <input class="input-field" type="text" name="name" id="name" placeholder="John Dough" required>
     </div>
+
     <div class="leftTab">
       <div class="labels">
         <label id="email-label" for="email">Email: </label>
@@ -35,6 +37,7 @@
     <div class="rightTab">
       <input class="input-field" type="email" name="email" id="email" placeholder="spr1nklez@donut.com" required>
     </div>
+
     <div class="leftTab">
       <div class="labels">
         <label id="number-label" for="number">How many donuts do you bake at a time? </label>
@@ -43,22 +46,25 @@
     <div class="rightTab">
       <input class="input-field" type="number" name="number" id="number" min="0" max="9999" required>
     </div>
+
     <div class="leftTab">
       <div class="labels">
         <label for="dreamRate">How often do you dream of donuts?</label>
       </div>
     </div>
     <div class="rightTab">
-      <select id="dropdown" name="dreamRate" required>
+      <select id="dropdown" name="dreamRate">
     </div>
+
     <div class="leftTab">
       <div class="labels">
-        <label for="checkbox">What kind of donuts do you prefer?</label>
+        <label id="donut-prefer" for="checkbox">What kind of donuts do you prefer?</label>
       </div>
     </div>
     <div class="rightTab">
       <input type="checkbox" name="checkbox" id="checkbox" required>
     </div>
+
     <div class="leftTab">
       <div class="labels">
         <label for="comments">Please share your donut recipe: </label>
@@ -67,6 +73,7 @@
     <div class="rightTab">
       <textarea class="input-field" name="comments" id="textarea" cols="30" rows="10" required>Please enter your recipe here!</textarea>
     </div>
+    
     <button type="submit">Submit</button>
   </form>
 </body>
