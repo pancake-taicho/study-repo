@@ -18,7 +18,7 @@ body {
   align-items: center;
 }
 
-#title {
+header {
   font-family: 'Baloo Bhai', cursive;
   font-size: 1.5rem;
 }
@@ -32,23 +32,31 @@ body {
   width: 80%;
   background-color: #bebebe;
   border: 1px #ccc solid;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 0.8rem 2rem;
 }
 
 .labels {
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
   padding: 5px;
   vertical-align: top;
 }
 
-.rowTab {
+.rightTab {
   display: inline-block;
+  width: 48%;
+  vertical-align: middle;
 }
 
 @media (min-width: 780px) {
   .labels {
     display: inline-block;
+  }
+
+  .input-field {
+    display: inline-block;
+    width: 48%;
+    vertical-align: middle;
   }
 }
