@@ -51,21 +51,25 @@ header {
   border-radius: 2px;
 }
 
+#donut-radio, 
 #preference {
   margin: 1rem 0;
   list-style: none;
 }
 
+.radio, 
 .donutPreference {
   margin-right: 5px;
 }
 
 #textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   height: 30vh;
   resize: none;
 }
 
-@media (min-width: 780px) {
+/* @media (min-width: 780px) { 
   .labels {
     display: inline-block;
     vertical-align: top;
@@ -79,3 +83,5 @@ header {
     align-items: left;
   }
 }
+
+*/
