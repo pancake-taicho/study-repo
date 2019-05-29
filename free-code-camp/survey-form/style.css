@@ -47,7 +47,7 @@ header {
 
 }
 
-.input-field {
+.inputField {
   height: 2rem;
   width: 100%;
   padding: 5px;
@@ -55,6 +55,10 @@ header {
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 2px;
+}
+
+#preference {
+  list-style: none;
 }
 
 @media (min-width: 780px) {
