@@ -69,6 +69,18 @@ header {
   resize: none;
 }
 
+#submit {
+  display: flex;
+  justify-items: center;
+  font-family: 'Baloo Bhai', cursive;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0.8rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #e2da8a;
+}
+
 /* @media (min-width: 780px) { 
   .labels {
     display: inline-block;

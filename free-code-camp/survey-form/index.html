@@ -71,13 +71,13 @@
     </div>
     <div class="rightTab">
       <ul id="donut-radio">
-        <li><input class="radio" type="radio" checked>This one</li>
-        <li><input class="radio" type="radio">This one</li>
-        <li><input class="radio" type="radio">This one</li>
-        <li><input class="radio" type="radio">This one</li>
-        <li><input class="radio" type="radio">This one</li>
-        <li><input class="radio" type="radio">This one</li>
-        <li><input class="radio" type="radio">This one</li>
+        <li><label><input class="radio" type="radio" name="radio-buttons" value="1">This one</label></li>
+        <li><label><input class="radio" type="radio" name="radio-buttons" value="2">This one</label></li>
+        <li><label><input class="radio" type="radio" name="radio-buttons" value="3">This one</label></li>
+        <li><label><input class="radio" type="radio" name="radio-buttons" value="4">This one</label></li>
+        <li><label><input class="radio" type="radio" name="radio-buttons" value="5">This one</label></li>
+        <li><label><input class="radio" type="radio" name="radio-buttons" value="6">This one</label></li>
+        <li><label><input class="radio" type="radio" name="radio-buttons" value="7">None of them</label></li>
       </ul>
     </div>
 
@@ -147,10 +147,10 @@
       </div>
     </div>
     <div class="rightTab">
-      <textarea class="inputField" id="textarea" name="recipe" cols="30" rows="10" required>Please enter your recipe here!</textarea>
+      <textarea class="inputField" id="textarea" name="recipe" cols="30" rows="10" placeholder="Please enter your recipe here!" required></textarea>
     </div>
     
-    <button type="submit">Submit</button>
+    <button id="submit" type="submit">Submit</button>
   </form>
 </body>
 
