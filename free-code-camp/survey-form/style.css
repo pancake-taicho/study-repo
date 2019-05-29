@@ -39,12 +39,6 @@ header {
 .labels {
   text-align: left;
   margin: 0 auto;
-
-  
-}
-
-.rightTab {
-
 }
 
 .inputField {
@@ -52,24 +46,33 @@ header {
   width: 100%;
   padding: 5px;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
   border: 1px solid #ccc;
   border-radius: 2px;
 }
 
 #preference {
+  margin: 1rem 0;
   list-style: none;
+}
+
+.donutPreference {
+  margin-right: 5px;
+}
+
+#textarea {
+  height: 30vh;
+  resize: none;
 }
 
 @media (min-width: 780px) {
   .labels {
     display: inline-block;
     vertical-align: top;
-    width: 40%;
     text-align: right;
   }
 
-  .input-field {
+  .inputField {
     display: inline-block;
     width: 48%;
     vertical-align: middle;
