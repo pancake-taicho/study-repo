@@ -81,19 +81,18 @@ header {
   background-color: #e2da8a;
 }
 
-/* @media (min-width: 780px) { 
+@media screen and (min-width: 520px) { 
   .labels {
     display: inline-block;
-    vertical-align: top;
     text-align: right;
+    width: 40%;
+    vertical-align: top;
   }
 
-  .inputField {
+  .rightTab {
     display: inline-block;
+    text-align: left;
     width: 48%;
     vertical-align: middle;
-    align-items: left;
   }
 }
-
-*/
