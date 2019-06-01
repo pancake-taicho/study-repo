@@ -16,134 +16,139 @@
   <form action="/donut-recipe.php" id="survey-form">
     <p id="description">Please share your favorite donut recipe with us!</p>
 
-    <div class="leftTab">
+    <div class="rowTab">
       <div class="labels">
         <label id="name-label" for="name">Name: </label>
       </div>
-    </div>
-    <div class="rightTab">
-      <input class="inputField" type="text" name="name" id="name" placeholder="John Dough" required>
+    
+      <div class="rightTab">
+        <input class="inputField" type="text" name="name" id="name" placeholder="John Dough" required>
+      </div>
     </div>
 
-    <div class="leftTab">
+    <div class="rowTab">
       <div class="labels">
         <label id="email-label" for="email">Email: </label>
       </div>
-    </div>
-    <div class="rightTab">
-      <input class="inputField" type="email" name="email" id="email" placeholder="spr1nklez@donut.com" required>
+    
+      <div class="rightTab">
+        <input class="inputField" type="email" name="email" id="email" placeholder="spr1nklez@donut.com" required>
+      </div>
     </div>
 
-    <div class="leftTab">
+    <div class="rowTab">
       <div class="labels">
         <label id="number-label" for="number">How many donuts do you bake at a time? </label>
       </div>
+    
+      <div class="rightTab">
+        <input class="inputField" type="number" name="number" id="number" min="0" max="9999" placeholder="1-9999" required>
+      </div>
     </div>
-    <div class="rightTab">
-      <input class="inputField" type="number" name="number" id="number" min="0" max="9999" placeholder="1-9999" required>
-    </div>
-
-    <div class="leftTab">
+    <div class="rowTab">
       <div class="labels">
         <label for="dreamRate">How often do you dream of donuts?</label>
       </div>
-    </div>
-    <div class="rightTab">
-      <select class="inputField" id="dropdown" name="dreamRate">
-        <option disabled value>Select an option</option>
-        <option value="never">Never</option>
-        <option value="rarely">Rarely</option>
-        <option value="sometimes">Sometimes</option>
-        <option value="aboutOnceAWeek">About once a week</option>
-        <option value="everyNight">Every night</option>
-        <option value="always">Always</option>
-      </select>
+    
+      <div class="rightTab">
+        <select class="inputField" id="dropdown" name="dreamRate">
+          <option disabled value>Select an option</option>
+          <option value="never">Never</option>
+          <option value="rarely">Rarely</option>
+          <option value="sometimes">Sometimes</option>
+          <option value="aboutOnceAWeek">About once a week</option>
+          <option value="everyNight">Every night</option>
+          <option value="always">Always</option>
+        </select>
+      </div>
     </div>
 
-    <div class="leftTab">
+    <div class="rowTab">
       <div class="labels">
         <label for="donutRemind">Which of these buttons reminds you of a donut?<br>(Click all that apply):</label>
       </div>
-    </div>
-    <div class="rightTab">
-      <ul id="donut-radio">
-        <li><label><input class="radio" type="radio" name="radio-buttons" value="1">This one</label></li>
-        <li><label><input class="radio" type="radio" name="radio-buttons" value="2">This one</label></li>
-        <li><label><input class="radio" type="radio" name="radio-buttons" value="3">This one</label></li>
-        <li><label><input class="radio" type="radio" name="radio-buttons" value="4">This one</label></li>
-        <li><label><input class="radio" type="radio" name="radio-buttons" value="5">This one</label></li>
-        <li><label><input class="radio" type="radio" name="radio-buttons" value="6">This one</label></li>
-        <li><label><input class="radio" type="radio" name="radio-buttons" value="7">None of them</label></li>
-      </ul>
+    
+      <div class="rightTab">
+        <ul id="donut-radio">
+          <li><label><input class="radio" type="radio" name="radio-buttons" value="1">This one</label></li>
+          <li><label><input class="radio" type="radio" name="radio-buttons" value="2">This one</label></li>
+          <li><label><input class="radio" type="radio" name="radio-buttons" value="3">This one</label></li>
+          <li><label><input class="radio" type="radio" name="radio-buttons" value="4">This one</label></li>
+          <li><label><input class="radio" type="radio" name="radio-buttons" value="5">This one</label></li>
+          <li><label><input class="radio" type="radio" name="radio-buttons" value="6">This one</label></li>
+          <li><label><input class="radio" type="radio" name="radio-buttons" value="7">None of them</label></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="leftTab">
+    <div class="rowTab">
       <div class="labels">
         <label for="preference">What kind of donuts do you prefer?<br>(Check all that apply): </label>
       </div>
-    </div>
-    <div class="rightTab">
-      <ul id="preference">
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="1" class="donutPreference">Old-fashioned cake donuts
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="2" class="donutPreference">Chocolate donuts
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="3" class="donutPreference">Creme-filled donuts
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="4" class="donutPreference">Custard-filled donuts
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="5" class="donutPreference">Long Johns
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="6" class="donutPreference">Donut holes
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="7" class="donutPreference">Donuts with sprinkles
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="8" class="donutPreference">Glazed donuts
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="9" class="donutPreference">Donuts with icing
-          </label>
-        </li>
-        <li class="checkbox">
-          <label>
-            <input type="checkbox" name="preference" value="10" class="donutPreference">Other
-          </label>
-        </li>
-      </ul>
+    
+      <div class="rightTab">
+        <ul id="preference">
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="1" class="donutPreference">Old-fashioned cake donuts
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="2" class="donutPreference">Chocolate donuts
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="3" class="donutPreference">Creme-filled donuts
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="4" class="donutPreference">Custard-filled donuts
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="5" class="donutPreference">Long Johns
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="6" class="donutPreference">Donut holes
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="7" class="donutPreference">Donuts with sprinkles
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="8" class="donutPreference">Glazed donuts
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="9" class="donutPreference">Donuts with icing
+            </label>
+          </li>
+          <li class="checkbox">
+            <label>
+              <input type="checkbox" name="preference" value="10" class="donutPreference">Other
+            </label>
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <div class="leftTab">
+    <div class="rowTab">
       <div class="labels">
         <label for="recipe">Please share your donut recipe: </label>
       </div>
-    </div>
-    <div class="rightTab">
+      <div class="rightTab">
       <textarea class="inputField" id="textarea" name="recipe" cols="30" rows="10" placeholder="Enter your recipe here!" required></textarea>
+      </div>
     </div>
     
     <button id="submit" type="submit">Submit</button>
