@@ -4,12 +4,30 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ccc;
+  width: 80%;
+  padding-top: 80px;
+}
+
 #header {
   background-color: #333;
-  color: #ffc156;
-  border-bottom: 1px solid #ffc156;
-  padding: 1rem 1rem;
-  width: 100%;
-  height: 4rem;
   position: fixed;
+  top: 0;
+  border-bottom: 1px solid #ffc156;
+  padding: 40px;
+  width: 100%;
+  height: 30px;
+}
+
+a #nav-link {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  padding: 20px;
+}
+
+#showcase {
+  width: 80%;
+  margin: 0 auto;
 }
