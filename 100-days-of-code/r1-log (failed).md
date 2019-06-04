@@ -229,6 +229,8 @@
 
 **Thoughts:** It's hard losing a streak, but the idea of clinging to a streak seems silly. Like, the important thing is to get back on track. If anything, trying to maintain a streak seems like it can be detrimental to consistency; if you lose a streak you might not get back on the horse again.
 
+
+
 <!-- **Link to work:** [Calculator App](http://www.example.com) -->
 
 <!-- ### Day 1: June 27, Monday
