@@ -46,6 +46,11 @@ body {
   justify-content: flex-end;
 }
 
+#top {
+  position: absolute;
+  top: -70px;
+}
+
 #showcase {
   background: url("images/smile-pancake.jpg") no-repeat center/cover;
   text-align: center;
