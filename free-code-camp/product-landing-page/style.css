@@ -48,8 +48,22 @@ body {
 
 #showcase {
   background: url("images/smile-pancake.jpg") no-repeat center/cover;
+  text-align: center;
   height: 100vw;
   width: 100%;
+  margin-top: 25vh;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+
+#showcase > h1 {
+  font-size: 3.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#showcase > h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 #form {
