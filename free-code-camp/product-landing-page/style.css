@@ -103,21 +103,34 @@ hr {
   padding-bottom: 0.5rem;
 }
 
-#video {
+#iframe-container {
+  margin: 1rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+#iframe-container > iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/* Alternative way to make embedded videos responsive:
+  
+#iframe-container {
   position: relative;
   margin: 1rem 1rem;
-  padding-bottom: 56.25%; /* 16:9 */
+  padding-bottom: 56.25%;  /* 16:9  
   height: 0;
   overflow: hidden;
 }
 
-#video > iframe {
+#iframe-container > iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 #form {
   margin: 0 auto;

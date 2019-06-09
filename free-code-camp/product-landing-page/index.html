@@ -26,8 +26,8 @@
       <!-- Showcase -->
       <div id="showcase">
          
-        <h1>Welcome to the Future of Pancakes</h1>
-        <p>I have seen the future, and it belongs to warm, round, fluffy frisbees of love.</p>
+        <h1 id="title">Welcome to the Future of Pancakes</h1>
+        <p id="description">A new kind of pancake that will change your life.</p>
       </div>
 
       <!-- Product Features -->
@@ -46,14 +46,15 @@
       <!-- Recipe Video -->  
       <h2 id=video-title>Learn how to make your own Jiggly Cakes!</h2>
 
-      <div id="video">     
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9MJhVk4Z1Zc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div id="iframe-container">     
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9MJhVk4Z1Zc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>    
 
-      <div id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" type="email" placholder="joesample@keys.com">
-        <button type="submit">Submit</button>
-      </div>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <h3>Subscribe to our weekly recipe mailing list!</h3>
+        <input id="email" type="email" placeholder="joesample@keys.com" required>
+        <input id="submit" type="submit" value="Subscribe!">
+      </form>
 
       <div id="footer">
         <div id="bottom">
