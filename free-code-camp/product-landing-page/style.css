@@ -96,11 +96,11 @@ h3 {
   }
 
 #features > p {
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 #features > p:last-child {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0;
 }
 
 .product-card {
@@ -177,7 +177,6 @@ h3 {
   color: #000;
   background-color: #ffc156;
   padding: 0.5rem 0.5rem; 
-  margin-bottom: 1rem;
   margin: 1rem auto;
   border-radius: 3px;
   border: 1px solid #000;
