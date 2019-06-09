@@ -13,11 +13,11 @@
 
       <!-- Header -->
       <div id="header">
-        <img id="header-img" src="images/logo.svg">
+        <img id="header-img" class="hide-on-small" src="images/logo.svg">
         <nav id="nav-bar">
-          <a class="nav-link" href="#top">Top of Page</a>
+          <a class="nav-link" href="#top">Top</a>
           <a class="nav-link" href="#video-top">Video</a>
-          <a class="nav-link" href="#bottom">Bottom of Page</a>
+          <a class="nav-link" href="#bottom">Bottom</a>
         </nav>
       </div>
 
@@ -39,23 +39,56 @@
         <h3>Optimum Peanut Butter and Syrup Absorbtion!!!</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, enim.</p>
       </div>
-      
-      <hr>
-      <br>
+
+      <!-- Products -->
+      <div id="products">
+        <div class="product-card">
+          <h2 class="product-name">The Round Pound</h2>
+            <h3>$10 ea</h3>
+              <ul>
+                <li>Is it a pound cake or a pancake? SEMANTICS!</li>
+                <li>Lasts a week! One and DONE!</li>
+                <li>Perfect pleasure/regret ratio!</li>
+              </ul>
+        </div>
+
+        <div class="product-card">
+          <h2 class="product-name">The Wobble Bobble</h2>
+            <h3>$15 ea</h3>
+              <ul>
+                <li>WINNER of the "Award" Award 2019!</li>
+                <li>The jiggliest cake you've ever seen!</li>
+                <li>Good luck trying to cut this thing!</li>
+              </ul>
+        </div>
+
+        <div class="product-card">
+          <h2 class="product-name">The Snooze Button</h2>
+            <h3>$20 ea</h3>
+              <ul>
+                <li>It'll put you back to sleep!</li>
+                <li>Kiss your morning plans goodbye!</li>
+                <li>*slaps pancake* This baby can fit so many ZZZZZs!</li>
+              </ul>
+          </div>
+      </div>
 
       <!-- Recipe Video -->  
-      <h2 id=video-top>Learn how to make your own Jiggly Cakes!</h2>
+      <section id="video-top"></section>
+      <h2>Learn how to make your own Jiggly Cakes!</h2>
 
       <div id="iframe-container">     
         <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/9MJhVk4Z1Zc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>    
-
+      </div> 
+      
+      <!-- Email Submission Form -->
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <h3>Subscribe to our weekly recipe mailing list!</h3>
         <input id="email" type="email" placeholder="joesample@keys.com" required>
         <input id="submit" type="submit" value="Subscribe!">
       </form>
 
+      <!-- Footer -->
       <div id="footer">
         <div id="bottom">
           <p>Copyright &copy; 2019, Pancake Products</p>
