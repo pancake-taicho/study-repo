@@ -6,37 +6,31 @@
 
 **Thoughts:** After losing my streak a couple of weeks ago I got back on track for about four days then lost another day. Starting from Day 1 again today.
 
-### Day 2: June 5, 2019, Thursday
+### Day 2: June 5, 2019, Wednesday
 
 **Today's Progress**: Still struggling with the header on freeCodeCamp's Product Landing Page project. I put the rest of the HTML page structure in place. 
 
 **Thoughts:** My goal is to try and create each part of the page from memory as much as possible without referring to outside materials. This is good practice and I quickly realize where the gaps in my knowledge are (I have more gap than actual knowledge). I'm getting practice ideas and thinking of ways to solidify my understanding, like building a new header from scratch every day until I feel confident about building them. Then if I can do a header, doing a footer might be easier to master, etc. Also, going back through the Traversy Media tutorials and doing those from memory might be good. But to be honest, I'm feeling discouraged this morning, like I'm deluding myself. I can fill out these logs and do all these tutorials, but deep down I fear that I'm just doing 'busy work' to feel like I'm 'accomplishing' something when in reality I'm not actually getting better or applying myself, just spinning my wheels and patting myself on the back for it.
 
-### Day 3: June 4, 2019, Wednesday
+### Day 3: June 6, 2019, Thursday
 
 **Today's Progress**: Figured out the header after some research and digging.
 
 **Thoughts:** I felt discouraged while struggling but ultimately I figured out the problem and it got worked out.
 
-### Day 4: June 5, 2019, Thursday
+### Day 4: June 7, 2019, Friday
 
 **Today's Progress**: Hacking away at the showcase part of the product landing page project. I got some images from Pexel.com to work with.
 
 **Thoughts:** Started building up the showcase and found some images to work with. My workflow is unorganized and my progress is pretty slow. I'm not putting in enough time day-to-day Or rather, I'm not making as much progress as I feel like I should be in a single day. Maybe for practice when I finish the certificate I should go back and work towards redoing the projects and finishing them in a single sitting.
 
-### Day 5: June 6, 2019, Friday
-
-**Today's Progress**: Made more progress on the showcase while referring to the Traversy Media landing page tutorial.
-
-**Thoughts:** Not much, just more grind.
-
-### Day 6: June 7, 2019, Saturday
+### Day 6: June 8, 2019, Saturday
 
 **Today's Progress**: Got the showcase and features sections worked out, imported a font to use, and learned how to make videos embedded with iframes responsive.
 
 **Thoughts:** The pattern of failing to express what's in your head, struggling to correct mistakes, and then fixing things through learning is swell. 
 
-### Day 6: June 8, 2019, Sunday
+### Day 6: June 9, 2019, Sunday
 
 **Today's Progress**: Got 15 out 16 tests passing on the product landing page, just need to add media queries to finish. I still want to make the layout less sloppy and tighten up responsiveness. Also started The Web Developer Bootcamp course on Udemy.
 
