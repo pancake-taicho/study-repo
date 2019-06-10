@@ -9,15 +9,15 @@
   </head>
 
   <body>
-    <div id="page-wrapper"></div>
+    <div id="page-wrapper">
 
       <!-- Header -->
       <div id="header">
         <img id="header-img" class="hide-on-small" src="images/logo.svg">
         <nav id="nav-bar">
           <a class="nav-link" href="#top">Top</a>
+          <a class="nav-link" href="#products">Products</a>
           <a class="nav-link" href="#video-top">Video</a>
-          <a class="nav-link" href="#bottom">Bottom</a>
         </nav>
       </div>
 
@@ -25,9 +25,10 @@
 
       <!-- Showcase -->
       <div id="showcase">
-         
-        <h1 id="title">Welcome to the Future of Pancakes</h1>
-        <p id="description">A new kind of pancake that will change your life.</p>
+        <div class="container">
+          <h1 id="title">Welcome to the Future of Pancakes</h1>
+          <p id="description">A new kind of pancake that will change your life.</p>
+        </div>
       </div>
 
       <!-- Product Features -->
@@ -46,20 +47,22 @@
           <h2 class="product-name">The Round Pound</h2>
             <h3>$10 ea</h3>
               <ul>
-                <li>Is it a pound cake or a pancake? SEMANTICS!</li>
+                <li>Pound cake or pancake? SEMANTICS!</li>
                 <li>Lasts a week! One and DONE!</li>
                 <li>Perfect pleasure/regret ratio!</li>
               </ul>
+              <button class="button" href="#">Select</button>
         </div>
 
         <div class="product-card">
           <h2 class="product-name">The Wobble Bobble</h2>
             <h3>$15 ea</h3>
               <ul>
-                <li>WINNER of the "Award" Award 2019!</li>
+                <li>"Award" Award 2019 WINNER!</li>
                 <li>The jiggliest cake you've ever seen!</li>
                 <li>Good luck trying to cut this thing!</li>
               </ul>
+              <button class="button" href="#">Select</button>
         </div>
 
         <div class="product-card">
@@ -70,6 +73,7 @@
                 <li>Kiss your morning plans goodbye!</li>
                 <li>*slaps pancake* This baby can fit so many ZZZZZs!</li>
               </ul>
+              <button class="button" href="#">Select</button>
           </div>
       </div>
 
@@ -84,15 +88,13 @@
       <!-- Email Submission Form -->
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <h3>Subscribe to our weekly recipe mailing list!</h3>
-        <input id="email" type="email" placeholder="joesample@keys.com" required>
+        <input id="email" type="email" placeholder="joesample@keys.com">
         <input id="submit" type="submit" value="Subscribe!">
       </form>
 
       <!-- Footer -->
       <div id="footer">
-        <div id="bottom">
-          <p>Copyright &copy; 2019, Pancake Products</p>
-        </div>
+        <p>Copyright &copy; 2019, Future Cakes</p>
       </div>
     </div>
   </body>

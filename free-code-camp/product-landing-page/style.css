@@ -27,6 +27,7 @@ h3 {
 
 #page-wrapper {
   position: relative;
+  min-height: 100vh;
 }
 
 #nav-bar > a {
@@ -71,17 +72,17 @@ h3 {
   height: 100vw;
   width: 100%;
   margin-top: 25vh;
-  padding: 0 3rem;
+  padding: 1rem 3rem;
   margin: 0 auto;
   text-align: center;
 }
 
-#showcase > h1 {
+.container > h1 {
   font-size: 3.0rem;
   padding: 0.5rem;
 }
 
-#showcase > p {
+.container > p {
   font-size: 1.2rem;
   font-weight: bold;
 }
@@ -103,16 +104,31 @@ h3 {
   padding-bottom: 0;
 }
 
+#products:before {
+  display: block;
+  content: "";
+  height: 80px;
+  margin: -80px 0 0;
+}
+
 .product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 80%; 
   margin: 1rem auto;
   border: 3px solid #000;
   border-radius: 5px;
+  background: #fff;
 }
 
 .product-card > ul {
   list-style: none;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0.5rem;
+}
+
+.product-card > ul > li {
+  padding: 5px 0;
 }
 
 .product-name {
@@ -121,6 +137,23 @@ h3 {
   width: 100%;
   color: #eccc95;
   background: #882b2b;
+}
+
+.product-card > button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffc156;
+  padding: 0.8rem 2rem; 
+  margin: 1rem auto;
+  border-radius: 3px;
+  border: 0;
+}
+
+.product-card > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
 }
 
 #iframe-container {
@@ -188,4 +221,32 @@ h3 {
   padding: 10px;
   background-color: #2076ff;
   border-top: 5px solid #ffc156;
+}
+
+@media screen and (min-width: 580px) {
+  .hide-on-small {
+    display: flex;
+  }
+
+  #showcase .container {
+    margin-top: 25vh;
+  }
+}
+
+@media screen and (min-width: 801px) {
+  #showcase .container {
+    margin-top: 25vh;
+  }
+  #products {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .product-card {
+    margin: 1rem;
+    width: calc(100%/3);
+  }
 }
