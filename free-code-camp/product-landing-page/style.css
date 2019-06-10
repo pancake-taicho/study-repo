@@ -249,4 +249,8 @@ h3 {
     margin: 1rem;
     width: calc(100%/3);
   }
+
+  #email {
+    width: 40%;
+  }
 }
