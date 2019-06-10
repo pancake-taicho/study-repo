@@ -36,4 +36,8 @@
 
 **Thoughts:** I'm so lazy and unfocused. In the back of my mind I know I what I need to do (put in the time and get confident with everything I'm learning), and it haunts me until I sit down and put in the work. Then I feel great.
 
+### Day 7: June 10, 2019, Monday
 
+**Today's Progress**: Added product cards/pricing to the fCC product landing page and watched a few more videos in the Udemy Web Developer Bootcamp course.
+
+**Thoughts:** One of the first times where I wasn't staring at the clock waiting until I had 'put my time in for the day.' I was engaged in the creating/coding process and was enjoying putting things together and tweaking everything until it looked how I wanted. Good stuff!
