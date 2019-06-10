@@ -30,13 +30,13 @@
 
 **Thoughts:** The pattern of failing to express what's in your head, struggling to correct mistakes, and then fixing things through learning is swell. 
 
-### Day 6: June 9, 2019, Sunday
+### Day 7: June 9, 2019, Sunday
 
 **Today's Progress**: Got 15 out 16 tests passing on the product landing page, just need to add media queries to finish. I still want to make the layout less sloppy and tighten up responsiveness. Also started The Web Developer Bootcamp course on Udemy.
 
 **Thoughts:** I'm so lazy and unfocused. In the back of my mind I know I what I need to do (put in the time and get confident with everything I'm learning), and it haunts me until I sit down and put in the work. Then I feel great.
 
-### Day 7: June 10, 2019, Monday
+### Day 8: June 10, 2019, Monday
 
 **Today's Progress**: Added product cards/pricing to the fCC product landing page and watched a few more videos in the Udemy Web Developer Bootcamp course.
 
