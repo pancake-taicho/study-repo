@@ -41,3 +41,9 @@
 **Today's Progress**: Added product cards/pricing to the fCC product landing page and watched a few more videos in the Udemy Web Developer Bootcamp course.
 
 **Thoughts:** One of the first times where I wasn't staring at the clock waiting until I had 'put my time in for the day.' I was engaged in the creating/coding process and was enjoying putting things together and tweaking everything until it looked how I wanted. Good stuff!
+
+### Day 9: June 11, 2019, Tuesday
+
+**Today's Progress**: Finished the freeCodeCamp Product Landing Page. In the end I couldn't get the product buttons responsive. Tried fixing with relative parent - absolute child positioning but then it broke scrolling behind the header. All tests passed, though.
+
+**Thoughts:** Feels good to 'finish' the project. I'm just going to keep moving on to the next one and not get hung up on the responsive button thing.
