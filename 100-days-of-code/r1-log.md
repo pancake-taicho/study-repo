@@ -47,3 +47,9 @@
 **Today's Progress**: Finished the freeCodeCamp Product Landing Page. In the end I couldn't get the product buttons responsive. Tried fixing with relative parent - absolute child positioning but then it broke scrolling behind the header. All tests passed, though.
 
 **Thoughts:** Feels good to 'finish' the project. I'm just going to keep moving on to the next one and not get hung up on the responsive button thing.
+
+### Day 10: June 12, 2019, Wednesday
+
+**Today's Progress**: Did most of the Introductory HTML lessons in the Web Development Bootcamp. Learned about quirks mode and standards mode in browsers.
+
+**Thoughts:** Got to working on this late today. I worry that my progress is going too slowly.
