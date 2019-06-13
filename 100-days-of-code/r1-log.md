@@ -53,3 +53,9 @@
 **Today's Progress**: Did most of the Introductory HTML lessons in the Web Development Bootcamp. Learned about quirks mode and standards mode in browsers.
 
 **Thoughts:** Got to working on this late today. I worry that my progress is going too slowly.
+
+### Day 11: June 12, 2019, Thursday
+
+**Today's Progress**: Finished the introductory HTML section and worked through a few of the intermediate HTML lessons in the Web Developer Bootcamp course.
+
+**Thoughts:** I like the pace of the course. Balancing these tutorials with the more creative fCC projects is keeping things fresh for me.
