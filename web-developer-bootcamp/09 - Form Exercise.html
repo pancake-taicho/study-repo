@@ -15,58 +15,68 @@
 
       <div>
         <label for="first_name">First Name:</label>
-          <input id="first_name" type="text" placeholder="John" required>
+        <input name=" first_name" id="first_name" type="text" placeholder="John" required>
         <label for="last_name">Last Name:</label>
-          <input id="last_name" type="text" placeholder="Smith" required>
+        <input name="first_name" id="last_name" type="text" placeholder="Smith" required>
       </div>
 
       <div>
         <label for="male">Male</label>
-          <input name="gender" type="radio" value="male">
+        <input id="male"name="gender" type="radio" value="male">
         <label for="female">Female</label>
-          <input name="gender" type="radio" value="female">
+        <input id="female" name="gender" type="radio" value="female">
         <label for="other">Other</label>
-          <input name="gender" type="radio" value="other">
+        <input id="other" name="gender" type="radio" value="other">
       </div>
       
+      <!-- note: password length validation, {} indicates a RANGE of lengths -->
+      <!-- alternative label/input method -->
       <div>
-        <label for="email">Email:</label>
-          <input id="email" type="email" placeholder="your email" required>
-        <label for="password" >Password:</label>
-          <input type="password" minlength="5" maxlength="10" placeholder="your password" required>
+        <label>
+          Email:
+            <input name="email" type="email" placeholder="your email" required>
+        </label>        
+        <label>
+          Password:
+            <input name="password" type="password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters" placeholder="your password" >
+        </label>
+        
+      </div>
+
+      <!-- alternative label/input method -->
+      <div>
+        <label>
+          Birthday:
+          <select name="month">
+            <option disabled selected>Month</option>
+            <option>Jan</option>
+            <option>Feb</option>
+            <option>Mar</option>
+          </select>
+
+          <select name="day">
+            <option disabled selected>Day</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+
+          <select name="year">
+            <option disabled selected>Year</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+          </select>
+        </label>
       </div>
 
       <div>
-        <label for="birthday">Birthday:</label>
-          <select name="month" id="month">
-            <option value="" disabled selected>Month</option>
-            <option value="January">January</option>
-            <option value="Februaray">Februaray</option>
-            <option value="March">March</option>
-          </select>
-
-          <select name="day" id="day">
-            <option value="" disabled selected>Day</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-
-          <select name="year" id="year">
-            <option value="" disabled selected>Year</option>
-            <option value="2019">2019</option>
-            <option value="2018">2018</option>
-            <option value="2017">2017</option>
-          </select>
+        <label for="agreed">I agree to the terms and conditions</label>
+        <input id="agreed" name="agreed" type="checkbox" required>
       </div>
 
       <div>
-        <label for="terms">I agree to the terms and conditions</label>
-          <input type="checkbox" required>
-      </div>
-
-      <div>
-        <input type="button" value="Submit">
+        <input type="submit" value="Submit">
       </div>
     </form>
   </body>
