@@ -54,8 +54,21 @@
 
 **Thoughts:** Got to working on this late today. I worry that my progress is going too slowly.
 
-### Day 11: June 12, 2019, Thursday
+### Day 11: June 13, 2019, Thursday
 
 **Today's Progress**: Finished the introductory HTML section and worked through a few of the intermediate HTML lessons in the Web Developer Bootcamp course.
 
 **Thoughts:** I like the pace of the course. Balancing these tutorials with the more creative fCC projects is keeping things fresh for me.
+
+### Day 12: June 14, 2019, Friday
+
+**Today's Progress**: Worked through most of the rest of the Intermediate HTML lesson in the Web Developer Bootcamp.
+
+**Thoughts:** Revisited tables for the first time in a long time. I have little experience actually creating them.
+
+### Day 13: June 15, 2019, Saturday
+
+**Today's Progress**: Set up the HTML structure and some css for the Technical Documentation project page on freeCodeCamp.
+
+**Thoughts:** I don't know why but it's hard for me to enjoy these projects. It's good 'just do it regardless of how you feel about it' practice.
+
