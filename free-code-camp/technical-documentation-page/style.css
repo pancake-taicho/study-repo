@@ -28,8 +28,12 @@ p {
 }
 
 code {
+  display: block;
   padding: 10px;
+  margin: 10px;
   margin-left: 40px;
+  background: #fff;
+  border-radius: 5px;
 }
 
 #navbar {
@@ -57,13 +61,23 @@ code {
   border-bottom: 1px solid;
   border-color: #333;
 }
+
 #navbar a:hover {
   color: #19323c;
 }
 
-.main-section ul {
-  margin-left: 35px;
+.main-section h1 {
+  font-size: 2rem;
 }
+
+.main-section ul {
+  margin-bottom: 20px;
+}
+
+.main-section li {
+  margin-left: 50px;
+}
+
 
 @media screen and (min-width: 581px) {
 
@@ -75,7 +89,8 @@ code {
     width: 300px;
     overflow-x: hidden;
     overflow-y: auto;
-    border-right: solid;
+    border-right: 5px solid;
+    border-bottom: none;
     border-color: #333;
   }
   
