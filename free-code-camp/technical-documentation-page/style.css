@@ -10,7 +10,7 @@ html,
 body {
   font-family: 'Open Sans', sans-serif;
   background: #e1f4cb;
-  color: #3f4739
+  color: #3f4739;
   line-height: 1.6;
 }
 
@@ -38,7 +38,7 @@ code {
   color: #242423;
   overflow-x: hidden;
   overflow-y: auto;
-  border-bottom: 3px solid #333;
+  border-bottom: 5px solid #333;
 }
 
 #navbar header {
