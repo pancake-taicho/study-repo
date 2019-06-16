@@ -9,29 +9,80 @@
 html,
 body {
   font-family: 'Open Sans', sans-serif;
+  background: #e1f4cb;
+  color: #3f4739
   line-height: 1.6;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: 'Roboto Condensed', sans-serif;
+  padding: 10px;
+}
+
+h3,
+p {
+  padding: 10px;
+  margin-left: 15px;
+}
+
+code {
+  padding: 10px;
+  margin-left: 40px;
 }
 
 #navbar {
-  position: fixed;
-  height: 100%;
-  top: 0;
-  left: 0;
-  width: 300px;
+  height: 30vh;
+  background: #f5cb5c;
+  color: #242423;
   overflow-x: hidden;
   overflow-y: auto;
-  border-right: solid;
+  border-bottom: 3px solid #333;
+}
+
+#navbar header {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid;
   border-color: #333;
 }
 
-#main-doc {
-  position: absolute;
-  margin-left: 310px;
+#navbar a {
+  display: block;
+  color: #242423;
   padding: 10px;
-  margin-bottom: 110px;
+  text-align: left;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  border-color: #333;
+}
+#navbar a:hover {
+  color: #19323c;
+}
+
+.main-section ul {
+  margin-left: 35px;
+}
+
+@media screen and (min-width: 581px) {
+
+  #navbar {
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-right: solid;
+    border-color: #333;
+  }
+  
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 10px;
+    margin-bottom: 110px;
+  }
 }
