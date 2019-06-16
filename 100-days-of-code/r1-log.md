@@ -72,3 +72,8 @@
 
 **Thoughts:** I don't know why but it's hard for me to enjoy these projects. It's good 'just do it regardless of how you feel about it' practice.
 
+### Day 14: June 16, 2019, Sunday
+
+**Today's Progress**: Finished the Intermediate HTML section of the Web Developer Bootcamp and the form exercise. Learned about password/input length validations.
+
+**Thoughts:** I didn't quite get the form 1-to-1 with the conditions given. I got most of the way there and learned.
