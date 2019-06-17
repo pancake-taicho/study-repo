@@ -70,10 +70,16 @@
 
 **Today's Progress**: Set up the HTML structure and some css for the Technical Documentation project page on freeCodeCamp.
 
-**Thoughts:** I don't know why but it's hard for me to enjoy these projects. It's good 'just do it regardless of how you feel about it' practice.
+**Thoughts:** I don't know why but it's hard for me to enjoy these projects. It's good just-do-it-regardless-of-how-you-feel-about-it practice.
 
 ### Day 14: June 16, 2019, Sunday
 
 **Today's Progress**: Finished the Intermediate HTML section of the Web Developer Bootcamp and the form exercise. Learned about password/input length validations.
 
 **Thoughts:** I didn't quite get the form 1-to-1 with the conditions given. I got most of the way there and learned.
+
+### Day 15: June 17, 2019, Monday
+
+**Today's Progress**: Finished the freeCodeCamp Technical Documentation page project.
+
+**Thoughts:** I wasn't inspired or excited by this project, but every time I get to work on something that feels boring and tedious at first I end up enjoying some aspect of trying to put it all together. Also, coolors.co is a great resource for choosing color schemes. All you have to do is hit spacebar to get a set of new complementary colors and their hex values.
