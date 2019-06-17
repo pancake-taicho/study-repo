@@ -1,11 +1,29 @@
+body {
+  background: #333;
+  /* background: url("https://cdn.shopify.com/s/files/1/1003/7610/products/Olive_tree_wood_slice_Wall_Mural_Wallpaper_a_1400x.jpg?v=1526993510");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
 h1 {
-  color: red;
+  /* color: #f4206e;
+  border-color: purple;
+  border-width: 5px;
+  border-style: solid; */
+
+  border: 2px solid rgb(255,100,80);
+}
+
+/* A border in css has 3 different parts:
+    width
+    color
+    style */
+
+h4 {
+  background: rgb(255,100,80);
+  color: rgb(255,68,0);
 }
 
 li {
-  color: green;
-}
-
-h4 {
-  color: purple;
+  color:rgba(0,200,100, 0.6);
 }
