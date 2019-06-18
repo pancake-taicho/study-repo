@@ -83,3 +83,9 @@
 **Today's Progress**: Finished the freeCodeCamp Technical Documentation page project.
 
 **Thoughts:** I wasn't inspired or excited by this project, but every time I get to work on something that feels boring and tedious at first I end up enjoying some aspect of trying to put it all together. Also, coolors.co is a great resource for choosing color schemes. All you have to do is hit spacebar to get a set of new complementary colors and their hex values.
+
+### Day 16: June 18, 2019, Tuesday
+
+**Today's Progress**: Started and worked through the Introctory CSS lesson in the Web Developer Bootcamp
+
+**Thoughts:** Pretty basic stuff, just grinding through.
