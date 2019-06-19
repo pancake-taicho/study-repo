@@ -1,0 +1,43 @@
+h1 {
+  text-align: center;
+}
+
+.board {
+  margin: 0 auto;
+}
+
+/* You can't change the size of multiple cells like this:
+
+.top-row,
+.middle-row,
+.bottom-row {
+  width: 100px;
+  height: 100px;
+} */
+
+.top-left,
+.top-middle,
+.top-right, 
+.mid-left,
+.mid-middle,
+.mid-right,
+.bottom-left,
+.bottom-middle,
+.bottom-right {
+  width: 100px;
+  height: 100px;
+}
+
+.top-middle,
+.mid-middle,
+.bottom-middle {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.mid-left,
+.mid-middle,
+.mid-right {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
