@@ -2,7 +2,7 @@ h1 {
   text-align: center;
 }
 
-.board {
+table {
   margin: 0 auto;
 }
 
@@ -15,9 +15,7 @@ h1 {
   height: 100px;
 } */
 
-table {
-  margin: 0 auto;
-}
+/* You CAN, however, change the size of multiple cells by targetting td: */
 
 td {
   width: 100px;
