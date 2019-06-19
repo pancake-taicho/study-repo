@@ -89,3 +89,9 @@
 **Today's Progress**: Started and worked through the Introctory CSS lesson in the Web Developer Bootcamp
 
 **Thoughts:** Pretty basic stuff, just grinding through.
+
+### Day 17: June 18, 2019, Wednesday
+
+**Today's Progress**: Finished the Introctory CSS lesson in the Udemy Web Developer Bootcamp
+
+**Thoughts:** Just pushing forward.
