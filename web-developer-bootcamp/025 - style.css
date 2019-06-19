@@ -15,29 +15,21 @@ h1 {
   height: 100px;
 } */
 
-.top-left,
-.top-middle,
-.top-right, 
-.mid-left,
-.mid-middle,
-.mid-right,
-.bottom-left,
-.bottom-middle,
-.bottom-right {
+table {
+  margin: 0 auto;
+}
+
+td {
   width: 100px;
   height: 100px;
 }
 
-.top-middle,
-.mid-middle,
-.bottom-middle {
+.vertical {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
 
-.mid-left,
-.mid-middle,
-.mid-right {
+.horizontal {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
