@@ -10,10 +10,14 @@
   </head>
   <body>
 
-    <div id="articles">
-      
+    <!-- <div id="articles"> This was unnecessary. Just style the body element for the padding. -->
+    <!-- HOWEVER, trying to wrap the posts in some kind of container was a good idea, but instead of trying to wrap all of the posts into one id, wrap each post individually in a div with class of 'post'. The final product would look the same with the 'post' wrapper, but it's good for keeping things organized, clean, and being able to easily tell when one post ends and another begins. -->
+    <div class="post">
+
+      <!-- Instead of a p element, the date could just as well have been a div. -->
       <p class="date">March 03 2019</p>
 
+      <!-- Generally you want to have only one h1 on your page. It should be the biggest thing on your page. For the article titles, then, we're using and h2. -->
       <h2>My First Article</h2>
 
       <p class="quote">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime rem molestias ea distinctio debitis ex magnam quo voluptas obcaecati ipsa, repudiandae reiciendis, eius unde laborum quia sunt quaerat facilis alias?</p>
@@ -23,7 +27,10 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores veritatis expedita officiis saepe doloribus velit pariatur modi natus, dolor blanditiis fugit minus soluta laboriosam voluptatem illo hic, amet sequi cupiditate?</p>
 
       <hr>
-
+      
+    </div>
+    
+    <div class="post">
       <p class="date">June 21 2019</p>
 
       <h2>This is Another Article</h2>
@@ -36,6 +43,6 @@
 
       </p>
     </div>
-    
+
   </body>
 </html>
