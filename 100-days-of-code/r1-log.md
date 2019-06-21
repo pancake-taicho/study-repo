@@ -98,6 +98,6 @@
 
 ### Day 18: June 20, 2019, Thursday
 
-**Today's Progress**: Started working through the Intermediate CSS section in the Udemy Web Developer Bootcamp.
+**Today's Progress**: Started working through the Intermediate CSS section in the Udemy Web Developer Bootcamp and did the Tic Tac Toe exercise.
 
 **Thoughts:** Still pushing forward.
