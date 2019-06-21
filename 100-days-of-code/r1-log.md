@@ -90,8 +90,14 @@
 
 **Thoughts:** Pretty basic stuff, just grinding through.
 
-### Day 17: June 18, 2019, Wednesday
+### Day 17: June 19, 2019, Wednesday
 
-**Today's Progress**: Finished the Introctory CSS lesson in the Udemy Web Developer Bootcamp
+**Today's Progress**: Finished the Introductory CSS lesson in the Udemy Web Developer Bootcamp
 
 **Thoughts:** Just pushing forward.
+
+### Day 18: June 20, 2019, Thursday
+
+**Today's Progress**: Started working through the Intermediate CSS section in the Udemy Web Developer Bootcamp.
+
+**Thoughts:** Still pushing forward.
