@@ -101,3 +101,9 @@
 **Today's Progress**: Started working through the Intermediate CSS section in the Udemy Web Developer Bootcamp and did the Tic Tac Toe exercise.
 
 **Thoughts:** Still pushing forward.
+
+### Day 19: June 21, 2019, Friday
+
+**Today's Progress**: Completed the photo gallery and blog post exercises in Udemy's Web Developer Bootcamp course, finishing the Intermediate CSS section.
+
+**Thoughts:** I've started completing exercises on my own and then heavily commenting my code while correcting my solution as I follow along with the video solution. Helps solidify things.
