@@ -107,3 +107,9 @@
 **Today's Progress**: Completed the photo gallery and blog post exercises in Udemy's Web Developer Bootcamp course, finishing the Intermediate CSS section.
 
 **Thoughts:** I've started completing exercises on my own and then heavily commenting my code while correcting my solution as I follow along with the video solution. Helps solidify things.
+
+### Day 20: June 22, 2019, Saturday
+
+**Today's Progress**: Started working through the Bootstrap portion of the Web Developer Bootcamp on Udemy. Learned some basics like forms, buttons, and how to make a navbar.
+
+**Thoughts:** Really interesting. It's nice to feel like I'm moving on to the next step beyond just vanilla HTML and CSS.
