@@ -113,3 +113,9 @@
 **Today's Progress**: Started working through the Bootstrap portion of the Web Developer Bootcamp on Udemy. Learned some basics like forms, buttons, and how to make a navbar.
 
 **Thoughts:** Really interesting. It's nice to feel like I'm moving on to the next step beyond just vanilla HTML and CSS.
+
+### Day 21: June 23, 2019, Sunday
+
+**Today's Progress**: Continued working through the Bootstrap portion of the Web Developer Bootcamp on Udemy. Working on grids.
+
+**Thoughts:** I had all day off today, but I put the coding stuff off the very end of the day.
