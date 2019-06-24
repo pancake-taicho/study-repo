@@ -1,0 +1,69 @@
+/* Type Selectors */
+  /* the least specific */
+
+  li {
+
+  }
+
+  li a {
+
+  }
+
+  li + a {
+
+  }
+
+/* Class, Attribute, and Pseudo-Class Selectors */
+  /* an order of magnitude 10 times larger than type selectors */
+
+  .hello {
+
+  }
+
+  input[type="text"] {
+
+  }
+
+  a:hover {
+
+  }
+
+  input:checked {
+
+  }
+
+/* ID Selectors */
+  /* the most specific */
+
+  #main {
+
+  }
+/* END NOTES */
+
+body {
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+ul {
+  color: blue;
+}
+
+li {
+  color: orange;
+}
+
+.highlight {
+  color: yellow;
+}
+
+#special {
+  color: pink;
+}
+
+/* ul {
+  color: purple;
+} */

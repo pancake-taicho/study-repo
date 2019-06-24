@@ -119,3 +119,9 @@
 **Today's Progress**: Continued working through the Bootstrap portion of the Web Developer Bootcamp on Udemy. Working on grids.
 
 **Thoughts:** I had all day off today, but I put the coding stuff off the very end of the day.
+
+### Day 22: June 24, 2019, Monday
+
+**Today's Progress**: A lot of issues today, mainly with icons not showing up and then suddenly deciding to show up (???), but I finished a bootstrap image gallery tutorial and grew a little. Also, learned that spaces in filenames are a no-no.
+
+**Thoughts:** Time flies when you're struggling.

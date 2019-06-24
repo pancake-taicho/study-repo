@@ -1,0 +1,18 @@
+img {
+  width: 30%; /* The percentage makes the image dynamic and is relative to the parent element (in this case, the 'body') */
+
+  /* By default, the browser puts a little bit of white space between images. To get rid of it, use 'float'. Eliminating this allows us to control how much margin/space is between the images. */
+  float: left;
+  margin: 1.66%;
+}
+
+p {
+  font-family: Raleway;
+  font-size: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-left: 1.66%;
+  border-bottom: 2px solid #f1f1f1;
+  width: 30%;
+  padding-bottom: 20px; /* The space between an ELEMENT and its BORDER is the PADDING */
+}

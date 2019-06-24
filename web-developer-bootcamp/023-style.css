@@ -1,0 +1,24 @@
+p {
+
+/* Content - Width & Height */
+
+width: 50%; /* 50% of the parent element, in this case the body. makes sizing dynamic. */
+
+/* Borders */
+
+border: 2px solid blue;
+
+/* Padding */
+
+/* padding: 10px; */
+padding-left: 40px;
+
+/* Margin */
+
+/* margin: 100px; */
+/* margin-top: 500px; */
+/* margin: 20px 40px 500px 100px;  values go clockwise from 'top' */
+margin: 0 auto 0 auto;
+margin: 0 auto; /* if the value is larger than 0, you need to add px to the end of it */
+
+}

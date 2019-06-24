@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Demo</title>
+  </head>
+
+  <body>
+
+    <h1>Login</h1>
+
+    <!-- action - where the form sends data to -->
+    <!-- method - what HTTP method (GET/POST) -->
+    <!-- form is a block-level element -->
+
+    <!-- An alternative form syntax:      
+
+      <form action="http://wikipedia.org">
+
+       <label for="username">Username: 
+        <input id="username" name="username" type="text" placeholder="username">
+      </label>
+      
+      
+      
+      <label for="password">Password: 
+        <input id="password" name="password" type="password" placeholder="password">
+      </label>
+      
+      
+      <input type="submit" value="Submit"> -->
+
+    <form action="http://wikipedia.org" method="GET"></form>
+
+      <!-- 'required' is a presence validation: it makes sure something is there -->
+
+      <label for="email">Email: </label>
+      <input id="email" name="email" type="text" placeholder="email" required>
+      
+      
+      <label for="password">Password: </label>
+      <input id="password" name="password" type="password" placeholder="password" required>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+
+</html>
