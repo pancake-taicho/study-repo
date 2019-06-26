@@ -108,8 +108,10 @@ h3 {
 #products:before {
   display: block;
   content: "";
+  margin-top: -80px;
   height: 80px;
-  margin: -80px 0 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .product-card {
@@ -245,6 +247,13 @@ h3 {
 @media screen and (min-width: 801px) {
   #showcase .container {
     margin-top: 25vh;
+  }
+
+  #products::before {
+    display: block;
+    content: "";
+    height: 80px;
+    margin-top: -80px;
   }
 
   #products {
