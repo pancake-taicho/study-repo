@@ -125,3 +125,9 @@
 **Today's Progress**: A lot of issues today, mainly with icons not showing up and then suddenly deciding to show up (???), but I finished a bootstrap image gallery tutorial and grew a little. Also, learned that spaces in filenames are a no-no.
 
 **Thoughts:** Time flies when you're struggling.
+
+### Day 23: June 25, 2019, Tuesday
+
+**Today's Progress**: Finished the Bootstrap 3 section of the Udemy Web Developer Bootcamp.
+
+**Thoughts:** Easy peasy. But I'll need to review this stuff, of course.
