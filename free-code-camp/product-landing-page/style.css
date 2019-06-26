@@ -68,7 +68,7 @@ h3 {
 }
 
 #showcase {
-  background: url("images/smile-pancake.jpg") no-repeat center/cover;
+  background: url("https://images.pexels.com/photos/4626/food-plate-morning-breakfast.jpg?cs=srgb&dl=emoji-food-maple-syrup-4626.jpg&fm=jpg") no-repeat center/cover;
   height: 100vw;
   width: 100%;
   margin-top: 25vh;
@@ -92,11 +92,12 @@ h3 {
 }
 
 #features > h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 1rem;
   }
 
 #features > p {
+  font-size: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -156,8 +157,16 @@ h3 {
   transition: background-color 1s;
 }
 
+#video-top {
+  margin: 2rem;
+}
+
+#video-top h2 {
+  font-size: 3rem;
+}
+
 #iframe-container {
-  margin: 1rem 1rem;
+  margin: 2rem 1rem;
   display: flex;
   justify-content: center;
 }
@@ -237,6 +246,7 @@ h3 {
   #showcase .container {
     margin-top: 25vh;
   }
+
   #products {
     display: flex;
     flex-direction: row;
