@@ -6,16 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
   </head>
   <body>
-    <section id="welcome-section">
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#profile-link">Profile Links</a>
+        </li>
+    </nav>
+
+    <section id="welcome-section" class="welcome-section">
       <h1>Michael Metcalf</h1>
       <p>Portfolio</p>
     </section>
 
-    <section id="projects">
-      <div class="project-tile"></div>
-      <div class="project-tile"></div>
-      <div class="project-tile"></div>
-      <div class="project-tile"></div>
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are a few of my projects</h2>
+        <div class="project-tile">
+          <a href="https://codepen.io/pancaketaicho/full/vQdePo">Tribute Page</a>
+        </div>
+        <div class="project-tile"></div>
+        <div class="project-tile"></div>
+        <div class="project-tile"></div>
+    </section>
+    
+    <section id="profile">
+      <p>See my GitHub profile <a id="profile-link" href="https://github.com/pancaketaicho" target="_blank">HERE</a>.</p>
     </section>
   </body>
 </html>
