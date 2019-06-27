@@ -137,3 +137,9 @@
 **Today's Progress**: Started the freeCodeCamp Personal Portfolio project, but ended up cleaning up the Product Landing Page project. Hit a snag with the navbar covering up hashtag link content.
 
 **Thoughts:** I searched for solutions to the navbar/hashtag cover problem, but none of them work. There's something fundamental I'm not understanding.
+
+### Day 25: June 27, 2019, Thursday
+
+**Today's Progress**: Not a very motivated day. Just going through the motions. Do I even enjoy this? Started the Bootstrap 4 section of the Udemy Web Developer Bootcamp.
+
+**Thoughts:** I'm wanting to start learning JS but I keep putting off the fCC Portfolio Project. 
