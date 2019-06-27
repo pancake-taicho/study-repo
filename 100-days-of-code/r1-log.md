@@ -131,3 +131,9 @@
 **Today's Progress**: Finished the Bootstrap 3 section of the Udemy Web Developer Bootcamp.
 
 **Thoughts:** Easy peasy. But I'll need to review this stuff, of course.
+
+### Day 24: June 26, 2019, Wednesday
+
+**Today's Progress**: Started the freeCodeCamp Personal Portfolio project, but ended up cleaning up the Product Landing Page project. Hit a snag with the navbar covering up hashtag link content.
+
+**Thoughts:** I searched for solutions to the navbar/hashtag cover problem, but none of them work. There's something fundamental I'm not understanding.
