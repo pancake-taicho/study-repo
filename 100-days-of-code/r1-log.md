@@ -143,3 +143,15 @@
 **Today's Progress**: Not a very motivated day. Just going through the motions. Do I even enjoy this? Started the Bootstrap 4 section of the Udemy Web Developer Bootcamp.
 
 **Thoughts:** I'm wanting to start learning JS but I keep putting off the fCC Portfolio Project. 
+
+### Day 26: June 28, 2019, Friday
+
+**Today's Progress**: Built up the HTML structure for my personal portfolio page on freeCodeCamp. With the portfolio page I really need to go back to the other projects and make sure they're presentable.
+
+**Thoughts:** Zero drive. No motivation. What am I doing? I have no focus, or a drive to have one focus. I'm just average. I want to be happy and content with average. The idea that *I* have to be *above* average feels like a disease that won't go away and is slowly robbing me of joy and driving me with fear and anxiety bread from a sense of fundamental inadequacy. I'm lazy.
+
+### Day 27: June 29, 2019, Saturday
+
+**Today's Progress**: Today was just a mindless-tutorial-follow-along day. Bootstrap 4 typography, spacing, and breakpoints on the Udemy Web Developer Bootcamp.
+
+**Thoughts:** Not proud of my progress.
