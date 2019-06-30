@@ -155,3 +155,9 @@
 **Today's Progress**: Today was just a mindless-tutorial-follow-along day. Bootstrap 4 typography, spacing, and breakpoints on the Udemy Web Developer Bootcamp.
 
 **Thoughts:** Not proud of my progress.
+
+### Day 28: June 30, 2019, Sunday
+
+**Today's Progress**: Worked through the Bootstrap 4 navbars, display utility, and flexbox lessons on the Udemy Web Developer Bootcamp. Also looked in Japanese YouTube web dev videos. 
+
+**Thoughts:** Today I felt better mentally.
