@@ -158,6 +158,6 @@
 
 ### Day 28: June 30, 2019, Sunday
 
-**Today's Progress**: Worked through the Bootstrap 4 navbars, display utility, and flexbox lessons on the Udemy Web Developer Bootcamp. Also looked in Japanese YouTube web dev videos. 
+**Today's Progress**: Worked through the Bootstrap 4 navbars, display utility, and flexbox lessons on the Udemy Web Developer Bootcamp. Also looked into Japanese YouTube web dev videos. 
 
 **Thoughts:** Today I felt better mentally.
