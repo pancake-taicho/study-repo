@@ -4,18 +4,29 @@
   box-sizing: border-box;
 }
 
-body {
-}
-
 .nav {
   display: flex;
   justify-content: flex-end;
   position: fixed;
-  background: blue;
-  height: 6vh;
+  background: orange;
+  height: 7vh;
   width: 100%;
+}
+
+.nav-list {
   display: flex;
-  flex-direction: row;
+  flex-direction: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-list li {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+
+.nav-list a {
+  text-decoration: none;
 }
 
 .welcome-section {
@@ -26,4 +37,5 @@ body {
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(to right bottom, #c2cbf7 0%, #0b18cf 15%, #000000 90%);
+  color: #f4f4f4;
 }
