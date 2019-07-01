@@ -40,10 +40,41 @@
             .align-items-center (align-items: center;)
             .align-items-end (align-items: space-end;)
       -->
-      <div class="border border-dark d-flex justify-content-center align-items-center" style="height: 200px">
+      <div class="border border-dark d-flex justify-content-start align-items-end" style="height: 200px">
         <button class="btn btn-info btn-lg">LARGE</button>
         <button class="btn btn-primary">LARGE</button>
         <button class="btn btn-warning">SMALL</button>
+      </div>
+
+      <!-- Reverse flex direction with .*-reverse (reverses the start of an axis). .flex-row-reverse only affects the (horizontal) MAIN AXIS; the (vertical) CROSS AXIS remains unchanged -->
+      <div class="border border-dark d-flex flex-row-reverse justify-content-start align-items-end" style="height: 200px">
+        <button class="btn btn-info btn-lg">LARGE</button>
+        <button class="btn btn-primary">LARGE</button>
+        <button class="btn btn-warning">SMALL</button>
+      </div> 
+
+      <!-- .flex-column swaps the MAIN and CROSS AXIS; the MAIN AXIS becomes the vertical axis and the CROSS AXIS becomes the horizontal axis. .justify-content now works top to bottom and .align-items works left to right -->
+      <div class="border border-dark d-flex flex-column justify-content-start align-items-end" style="height: 200px">
+        <button class="btn btn-info btn-lg">LARGE</button>
+        <button class="btn btn-primary">LARGE</button>
+        <button class="btn btn-warning">SMALL</button>
+      </div>
+
+      <div class="border border-dark d-flex flex-column-reverse justify-content-start align-items-end" style="height: 200px">
+        <button class="btn btn-info btn-lg">LARGE</button>
+        <button class="btn btn-primary">LARGE</button>
+        <button class="btn btn-warning">SMALL</button>
+      </div>
+      <div class="container">
+        <h1 class="text-center display-4">EXAMPLE TIME</h1>
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+          <button class="btn btn-dark btn-lg">Link 1</button>
+          <button class="btn btn-dark btn-lg">Link 2</button>
+          <button class="btn btn-dark btn-lg">Link 3</button>
+          <button class="btn btn-dark btn-lg">Link 4</button>
+          <button class="btn btn-dark btn-lg">Link 5</button>
+          <button class="btn btn-dark btn-lg">Link 6</button>
+        </div>
       </div>
     </div>
 
