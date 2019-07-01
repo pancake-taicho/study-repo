@@ -15,7 +15,9 @@
       <h1 class="text-center display-4">Navs + Flexbox</h1>
     </div>
     
-    <ul class="nav">
+    <!-- You can use the flexbox utility properties on properties that are flex enabled, such as grid and nav -->
+    <!-- .d-flex is enabled by default on the <nav> element in Bootstrap 4 -->
+    <ul class="nav border border-primary justify-content-around">
       <li class="nav-item">
         <a class="nav-link active" href="#">Active</a>
       </li>
@@ -30,7 +32,23 @@
       </li>
     </ul>
 
-    <nav class="nav">
+    <ul class="nav nav-tabs mt-5">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+    <!-- There is no xs so you have to style from your xs sizing as default (in this case, default the style to flex-column since that's what you want in an xs window) -->
+    <nav class="nav flex-column flex-sm-row justify-content-center align-items-center">
         <a class="nav-link active" href="#">Active</a>
         <a class="nav-link" href="#">Link</a>
         <a class="nav-link" href="#">Link</a>
