@@ -161,3 +161,9 @@
 **Today's Progress**: Worked through the Bootstrap 4 navbars, display utility, and flexbox lessons on the Udemy Web Developer Bootcamp. Also looked into Japanese YouTube web dev videos. 
 
 **Thoughts:** Today I felt better mentally.
+
+###Day 29: July 1, 2019, Monday
+
+**Today's Progress**: Worked through the Bootstrap 4 flexbox utility lessons on the Udemy Web Developer Bootcamp. I also made headway in my free Code Camp portfolio project; I realized I hadn't linked my HTML and CSS files.
+
+**Thoughts:** Mentally feeling on the up.
