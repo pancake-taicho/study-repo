@@ -167,3 +167,9 @@
 **Today's Progress**: Worked through the Bootstrap 4 flexbox utility lessons on the Udemy Web Developer Bootcamp. I also made headway in my free Code Camp portfolio project; I realized I hadn't linked my HTML and CSS files.
 
 **Thoughts:** Mentally feeling on the up.
+
+###Day 30: July 2, 2019, Tuesday
+
+**Today's Progress**: Worked on my fCC portfolio page, mainly on the main .welcome-section. I imported the Final Fantasy VII font and added the google Raleway font as a fallback. I usd tweaked FFVII default menu colors for the background.
+
+**Thoughts:** I have more fun creating original things.
