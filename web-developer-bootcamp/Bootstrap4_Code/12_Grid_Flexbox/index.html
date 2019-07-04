@@ -1,66 +1,68 @@
+<!-- .justify-content, .align-items, .align-self -->
+
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Grid + Flexbox</title>
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1 class="text-center display-4">Grid + Flexbox</h1>
-        <div class="row border justify-content-around align-items-center">
-            <div class="col-sm-3 bg-warning">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem culpa et tempora corporis? Tempora commodi perspiciatis omnis quos ex similique!
-            </div>
-            <div class="col-sm-3 bg-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempore minus ad ab, explicabo voluptatem officia. Voluptas sed odio nemo, nostrum cumque dolorem quam, repellat nam porro ex aperiam, ipsa eveniet numquam cupiditate sapiente esse fugiat? Et tempora eveniet inventore voluptates magnam obcaecati quasi, at, consectetur adipisci natus sunt blanditiis.            </div>
-            <div class="col-sm-3 bg-warning">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem culpa et tempora corporis? Tempora commodi perspiciatis omnis quos ex similique!
-            </div>
-        </div>
-        <div class="row border justify-content-center align-items-end">
-            <div class="col-2 bg-primary align-self-start">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, non.
-            </div>
-            <div class="col-2 bg-primary">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, non.
-            </div>
-            <div class="col-2 bg-success">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis perspiciatis earum eius saepe sint, laudantium deleniti, accusantium fugiat aut illo ab consequatur quos fuga aliquid facilis magni sed voluptates impedit!
-            </div>
-            <div class="col-2 bg-primary align-self-start">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, non.
-            </div>
-            <div class="col-2 bg-primary">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus, non.
-            </div>
-        </div>
+      <h1 class="text-center display-4">Grid + Flexbox</h1>
 
-        <div class="row text-center justify-content-between">
-            <div class="col-md-6 col-lg-5 bg-danger">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit quisquam libero distinctio blanditiis, error quos architecto velit aut atque.
-            </div>
-            <div class="col-md-6 col-lg-5 bg-danger">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic fugit quisquam libero distinctio blanditiis, error quos architecto velit aut atque.
-            </div>
+      <!-- When you want to deal with spacing or space distribution that can't be divided neatly across the grid (i.e. space values that involve decimals), use flexbox to handle those situations. -->
+
+      <!-- The default align-items value is "stretch." (Remember, align-items lines items up along the CROSS AXIS (y-axis/vertical axis). If you don't want your shorter items to stretch to match the length of the longest item, you have to dictate the align-items behavior that you want. -->
+      <div class="row border justify-content-center align-items-center">
+        <div class="col-sm-3 bg-warning">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi animi autem officia vitae suscipit enim ullam commodi molestiae nam blanditiis.
         </div>
+        <div class="col-sm-3 bg-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore blanditiis quae consequuntur laudantium nulla, sit cumque est facilis eaque quo! Impedit, maxime ducimus? Totam doloribus, ea nulla dolorum inventore distinctio laborum facilis hic iusto quo, impedit enim! Maxime ex eos, minima quisquam harum eum corrupti consequuntur molestiae cum porro temporibus.
+        </div>
+        <div class="col-sm-3 bg-warning">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi animi autem officia vitae suscipit enim ullam commodi molestiae nam blanditiis.
+        </div>
+      </div>
+      <!-- .align-self can be used in individual elements to override an earlier .align-items declaration. You can move individual grid items around vertically. You use the grid system to also control how wide the items are and if you have excess space you can spread them out using .justify-content (flexbox). -->
+      <div class="row border justify-content-center align-items-end">
+        <div class="col-sm-2 bg-primary align-self-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, itaque?
+        </div>
+        <div class="col-sm-2 bg-primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, itaque?
+        </div>
+        <div class="col-sm-2 bg-success">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, optio quae deleniti est laboriosam accusamus soluta sunt. Ullam aliquam illum sed molestias vero doloremque maxime explicabo natus excepturi, consequuntur ipsam!
+        </div>
+        <div class="col-sm-2 bg-primary align-self-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, itaque?
+        </div>
+        <div class="col-sm-2 bg-primary">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, itaque?
+        </div>
+      </div>
+
+      <div class="row justify-content-between">
+        <div class="col-md-6 col-lg-5 text-center bg-danger">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam hic voluptates, maxime labore rerum animi molestiae inventore expedita suscipit!
+        </div>
+        <div class="col-md-6 col-lg-5 text-center bg-danger">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur laboriosam hic voluptates, maxime labore rerum animi molestiae inventore expedita suscipit!
+        </div>
+      </div>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
