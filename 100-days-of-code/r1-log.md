@@ -180,7 +180,7 @@
 
 **Thoughts:** I feel like I'm at a low, just going through the motions.
 
-###Day 32: July 4, 2019, Thurdays
+###Day 32: July 4, 2019, Thursday
 
 **Today's Progress**: Worked through the Patterns Project and the grid + flexbox lessons on the Udemy Web Developer Bootcamp.
 
