@@ -185,3 +185,9 @@
 **Today's Progress**: Worked through the Patterns Project and the grid + flexbox lessons on the Udemy Web Developer Bootcamp.
 
 **Thoughts:** My days have been very busy and the coding has taken a backseat, both schedule-wise and mentally.
+
+###Day 33: July 5, 2019, Friday
+
+**Today's Progress**: Finally made myself sit down and start pushing through the freeCodeCamp portfolio project. The notes and comments in the solution's code on codepen are really thorough and nice. I looked into whether or not to use rem, em, or px units for breakpoints.
+
+**Thoughts:** Once I start doing work I never regret it; in fact it usually feels great, but getting started is the hardest part.
