@@ -236,7 +236,7 @@ img {
 .projects-section {
   background: #6f58c9;
   text-align: center;
-  border-top: 2px solid var(--main-orange);
+  border-top: 3px solid var(--main-orange);
 }
 
 .projects-section-header {
