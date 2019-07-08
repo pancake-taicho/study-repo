@@ -6,6 +6,7 @@
   --main-white: #f4f4f4;
   --main-dark-gray: #333;
   --main-orange: #cfa10b;
+  --main-blue: #6f58c9;
   --main-red: #f50606;
 }
 
@@ -234,14 +235,18 @@ img {
   font-size: 4rem;
 }
 
+/* Projects section */
+
 .projects-section {
-  background: #6f58c9;
+  background: var(--main-blue);
+  padding: 8rem 2rem;
   text-align: center;
   border-top: 3px solid var(--main-orange);
 }
 
 .projects-section-header {
-  margin: 4rem;
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
 }
 
 @media (min-width: 576px) {
@@ -324,3 +329,47 @@ img {
   transition: transform 0.3s ease-out;
 }
 
+/* Contact section */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--main-dark-gray);
+}
+
+.contact-section-header > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 576px) {
+  .contact-section-header > h2 {
+    font-size: 4rem;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  transform: translateY(8px);
+}
+
+/* Footer */
