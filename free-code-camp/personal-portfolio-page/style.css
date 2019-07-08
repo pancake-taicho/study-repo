@@ -228,11 +228,13 @@ img {
   font-size: 7rem;
   font-weight: normal;
   line-height: 0.8;
+  padding: 1rem;
 }
 
 .welcome-section > p {
   font-family:'Final Fantasy Script Collection - Final Fantasy VII', 'Raleway', sans-serif;
   font-size: 4rem;
+  padding: 1rem;
 }
 
 /* Projects section */
