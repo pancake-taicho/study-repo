@@ -191,3 +191,21 @@
 **Today's Progress**: Finally made myself sit down and start pushing through the freeCodeCamp portfolio project. The notes and comments in the solution's code on codepen are really thorough and nice. I looked into whether or not to use rem, em, or px units for breakpoints.
 
 **Thoughts:** Once I start doing work I never regret it; in fact it usually feels great, but getting started is the hardest part.
+
+###Day 34: July 5, 2019, Saturday
+
+**Today's Progress**: Worked more on the fCC portfolio page, coding along with the solution and looking up answers to questions I had.
+
+**Thoughts:** Just grinding.
+
+###Day 35: July 6, 2019, Sunday
+
+**Today's Progress**: Kept working on the fCC portfolio page. Coding along with the solution has really helped.
+
+**Thoughts:** Just grinding some more.
+
+###Day 36: July 5, 2019, Monday
+
+**Today's Progress**: FINALLY finished the fCC portfolio page project. I can finally move on to Javascript.
+
+**Thoughts:** Finally. Why did that take me so long? Lack of focus and determination.
