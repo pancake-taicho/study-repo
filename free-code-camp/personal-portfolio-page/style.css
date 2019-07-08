@@ -373,3 +373,16 @@ img {
 }
 
 /* Footer */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-dark-gray);
+  border-top: 3px solid var(--main-orange);
+}
+
+footer > p {
+  margin: 2rem;
+}
