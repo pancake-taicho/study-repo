@@ -192,20 +192,44 @@
 
 **Thoughts:** Once I start doing work I never regret it; in fact it usually feels great, but getting started is the hardest part.
 
-###Day 34: July 5, 2019, Saturday
+###Day 34: July 6, 2019, Saturday
 
 **Today's Progress**: Worked more on the fCC portfolio page, coding along with the solution and looking up answers to questions I had.
 
 **Thoughts:** Just grinding.
 
-###Day 35: July 6, 2019, Sunday
+###Day 35: July 7, 2019, Sunday
 
 **Today's Progress**: Kept working on the fCC portfolio page. Coding along with the solution has really helped.
 
 **Thoughts:** Just grinding some more.
 
-###Day 36: July 5, 2019, Monday
+###Day 36: July 8, 2019, Monday
 
 **Today's Progress**: FINALLY finished the fCC portfolio page project. I can finally move on to Javascript.
 
 **Thoughts:** Finally. Why did that take me so long? Lack of focus and determination.
+
+###Day 37: July 9, 2019, Tuesday
+
+**Today's Progress**: Started Javascript on freeCodeCamp.
+
+**Thoughts:** Feels good to be moving on to something fresh.
+
+###Day 38: July 10, 2019, Wednesday
+
+**Today's Progress**: Continued lessons in the Basic Javascript portion of freeCodeCamp. Got stuck on a function problem. Very frustrating because I know I understand the ideas, but I feel like what's being asked for isn't very clear.
+
+**Thoughts:** A little brick wall today.
+
+###Day 39: July 11, 2019, Thursday
+
+**Today's Progress**: Solved the problem I was stuck on after checking myself and then watching the first part of a solution video. Continued on with Basic Javascript.
+
+**Thoughts:** Demoralized. Furious at how my solution kept getting denied because it wasn't done in the specific way fCC wanted it, even though mine output the same result. 
+
+###Day 40: July 12, 2019, Friday
+
+**Today's Progress**: A light day. I had some small congnition bumps with a couple of the problems.
+
+**Thoughts:** Today was a short session. Only 20 mins at the very end of the day before bed.
