@@ -233,3 +233,27 @@
 **Today's Progress**: A light day. I had some small congnition bumps with a couple of the problems.
 
 **Thoughts:** Today was a short session. Only 20 mins at the very end of the day before bed.
+
+###Day 41: July 13, 2019, Saturday
+
+**Today's Progress**: Another light day working through Basic Javascript in fCC.
+
+**Thoughts:** I did an hour, pretty smooth.
+
+###Day 42: July 14, 2019, Sunday
+
+**Today's Progress**: More Basic Javascript of fCC.
+
+**Thoughts:** I've clearly taken a turn in motivation, drive, and focus. My heart's fallen out of it, and when I force myself to just show up I'm not sure how much I retain.
+
+###Day 43: July 15, 2019, Monday
+
+**Today's Progress**: More Basic Javascript of fCC, but I got stuck on the Record Collection problem.
+
+**Thoughts:** Went to bed frustrated with this one. I haven't been waking up early and doing the code first thing in the morning for a couple of weeks. Lately I've just been putting it off until the very end of the day, dreading it. Once I get going it's okay. Starting is the tough part.
+
+###Day 44: July 16, 2019, Tuesday
+
+**Today's Progress**: I went back and refreshed my memory on commands needed to complete the Record Collection problem.
+
+**Thoughts:** Short session. Twenty minutes, again at the end of the day. Why am I doing this?
