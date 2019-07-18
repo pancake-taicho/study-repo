@@ -257,3 +257,15 @@
 **Today's Progress**: I went back and refreshed my memory on commands needed to complete the Record Collection problem.
 
 **Thoughts:** Short session. Twenty minutes, again at the end of the day. Why am I doing this?
+
+###Day 45: July 17, 2019, Wednesday
+
+**Today's Progress**: Did a little work on the Museum of Candy project in the Udemy Web Developer Bootcamp course.
+
+**Thoughts:** Feeling good.
+
+###Day 46: July 18, 2019, Thursday
+
+**Today's Progress**: Did more work on the Museum of Candy project in the Udemy Web Developer Bootcamp course. Worked on media queries and fluid containers.
+
+**Thoughts:** I enjoy coding along.
