@@ -275,3 +275,9 @@
 **Today's Progress**: Finished the Musuem of Candy project in the Udemy Web Developer Bootcamp course and went on to the Javascript unit.
 
 **Thoughts:** A good solid hour.
+
+###Day 48: July 20, 2019, Saturday
+
+**Today's Progress**: Learned about five Javascript primitives (number, string, boolean, null, and undefined) in the Udemy Web Developer Bootcamp course.
+
+**Thoughts:** Not much actual coding, more like knowledge building.
