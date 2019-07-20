@@ -269,3 +269,9 @@
 **Today's Progress**: Did more work on the Museum of Candy project in the Udemy Web Developer Bootcamp course. Worked on media queries and fluid containers.
 
 **Thoughts:** I enjoy coding along.
+
+###Day 47: July 19, 2019, Friday
+
+**Today's Progress**: Finished the Musuem of Candy project in the Udemy Web Developer Bootcamp course and went on to the Javascript unit.
+
+**Thoughts:** A good solid hour.
