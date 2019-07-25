@@ -281,3 +281,33 @@
 **Today's Progress**: Learned about five Javascript primitives (number, string, boolean, null, and undefined) in the Udemy Web Developer Bootcamp course.
 
 **Thoughts:** Not much actual coding, more like knowledge building.
+
+###Day 49: July 21, 2019, Sunday
+
+**Today's Progress**: My computer went on the fritz today. The desktop won't load and I can't use it, basically. Read from HTML & CSS by John Duckett.
+
+**Thoughts:** Janky computer is frustrating.
+
+###Day 50: July 22, 2019, Monday
+
+**Today's Progress**: Computer still not working. Started reading jQuery & Javascript by John Duckett.
+
+**Thoughts:** Reading is a nice break from coding, but I'm not making any progress. I'm being lazy and not applying myself.
+
+###Day 51: July 23, 2019, Tuesday
+
+**Today's Progress**: My computer went on the fritz today. The desktop won't load and I can't use it, basically. Read from HTML & CSS by John Duckett.
+
+**Thoughts:** Janky computer is frustrating.
+
+###Day 52: July 24, 2019, Wednesday
+
+**Today's Progress**: No reading, no coding, just googling and using the Windows Command Prompt to run some scan and repair programs.
+
+**Thoughts:** I feel ashamed of my lack of progress and lack of discipline.
+
+###Day 53: July 25, 2019, Thursday
+
+**Today's Progress**: Computer started working fine, same as usual... It's so janky and unreliable and I never understand why it crashes, freezes, or otherwise decides to randomly crap out (i.e. not displaying the desktop and running ridiculously slow). Also, it can't ever finish an update. It always fails and has to undo its changes. Repair attempts using a boot drive never work either. Again, I don't know why. I don't know what causes problems, and then the tools that are supposed to fix the problems don't/won't/can't fix the problems, and I don't know why. I feel like I'm at the mercy of random janky forces or jankiness and instability.
+
+**Thoughts:** 
