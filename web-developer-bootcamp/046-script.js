@@ -20,13 +20,13 @@ if (age < 18) {
 else if (age < 21) {
   console.log("You can enter, but cannot drink.");
 }
+else {
+  console.log("Come on in. You can order drinks at the bar.");
+}
 
 // You want to always try to use === instead of == in JavaScript. That way you are very explicit about what you want and you aren't leaving it up to the program to decide data types for you.
 if (age === 21) {
   console.log("Happy 21st birthday!");
-}
-else {
-  console.log("Come on in. You can order drinks at the bar.");
 }
 
 if (age % 2 !== 0) {
@@ -78,3 +78,5 @@ if (!String(Math.sqrt(age)).includes('.')) {
 if(!(age % Math.sqrt(age))) {
   console.log("Your age is a perfect square!");
 }
+
+// In other words, 0 is a falsy value, so we check for falsity but using a ! around the function instead of checking if the function equals 0.
