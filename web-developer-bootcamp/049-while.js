@@ -12,6 +12,16 @@ while(num <= 40) {
   num += 2;
 }
 
+// Alternative solution:
+//
+// var num = 10;
+// while(num <= 40) {
+//   if(num % 2 === 0) {
+//     console.log(num);
+//   }
+//   num++;
+// }
+
 console.log("PRINT ALL ODD NUMBERS BETWEEN 300 AND 333");
 var num = 300;
 while (num <= 333) {
