@@ -15,3 +15,8 @@ setInterval(function() {
   console.log("I am an anonymous function!");
   console.log("THIS IS AWESOME!"); 
 }, 2000);
+
+// You can stop the code with the clearInterval() function. setInterval returns a number,
+// and that's the number you pass in to clearInterval() to stop setInterval().
+
+// For example: clearInterval(2);
