@@ -17,3 +17,9 @@
 **Today's Progress**: Read some of Jon Duckett's JavaScript. Learned about the document model, that JavaScript is an interpreted language and that most major browser's have these interpreters built in, and the concept of separation of concerns.
 
 **Thoughts:** A lazy day, to be honest. I'm not really "gunning for it." But I did recommit and I need to make an effort to stick to that, if anything just so I can believe in myself as someone who can finish what they say they're going to finish.
+
+### Day 4: August 18, 2019, Sunday
+
+**Today's Progress**: Worked through the Introduction to Arrays in Colt Steele's Web Developer Bootcamp.
+
+**Thoughts:** Didn't take advantage of all the time I had today. Just chipping away little by little, but it's too little. I'm not yet fully committed and I don't have anything to show for all this 'study'. I'm just lazy and uninterested. But if I don't do anything then I'll be up shit creek down the road. I'm just motivated by fear and a scrarcity mindset.
