@@ -23,3 +23,33 @@
 **Today's Progress**: Worked through the Introduction to Arrays in Colt Steele's Web Developer Bootcamp.
 
 **Thoughts:** Didn't take advantage of all the time I had today. Just chipping away little by little, but it's too little. I'm not yet fully committed and I don't have anything to show for all this 'study'. I'm just lazy and uninterested. But if I don't do anything then I'll be up shit creek down the road. I'm just motivated by fear and a scrarcity mindset.
+
+### Day 5: August 19, 2019, Monday
+
+**Today's Progress**: Worked through the Todo List codealong in Udemy Web Developer Bootcamp.
+
+**Thoughts:** Pretty stimulating, and time goes by faster when I'm trying to code my own solution to a problem/exercise. Watching videos and coding along can get boring fast. Much better mood today.
+
+### Day 6: August 20, 2019, Tuesday
+
+**Today's Progress**: Read more of Jon Duckett's Javascript. 
+
+**Thoughts:** Very easy, light day. Just did some bedtime reading.
+
+### Day 7: August 21, 2019, Wednesday
+
+**Today's Progress**: Learned about array iteration, .forEach, and anonymous/callback functions on the Udemy Web Developer Bootcamp. 
+
+**Thoughts:** The anonymous/callback function concepts were a little challenging.
+
+### Day 8: August 22, 2019, Thursday
+
+**Today's Progress**: Read more of Jon Duckett's Javascript. Still early in the book. Getting around to discussing statements, objects, methods, etc. Apparently there's a different syntax for multi-line comments vs single-line comments. 
+
+**Thoughts:** Again, light bedtime reading. Probably spent too much of the day relaxing.
+
+### Day 9: August 23, 2019, Friday
+
+**Today's Progress**: Did the Todo List 2 codealong in the Udemy Web Developer Bootcamp. Learned about .splice() and a little about refactoring as a way to better organize code. Also, that it's okay to declare functions at the bottom of the code. I guess it's okay since it's in the global scope? 
+
+**Thoughts:** Looking forward to doing the array problem sets.
