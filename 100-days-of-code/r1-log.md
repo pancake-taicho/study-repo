@@ -53,3 +53,15 @@
 **Today's Progress**: Did the Todo List 2 codealong in the Udemy Web Developer Bootcamp. Learned about .splice() and a little about refactoring as a way to better organize code. Also, that it's okay to declare functions at the bottom of the code. I guess it's okay since it's in the global scope? 
 
 **Thoughts:** Looking forward to doing the array problem sets.
+
+### Day 10: August 24, 2019, Saturday
+
+**Today's Progress**: Read more of Jon Duckett's JavaScript. 
+
+**Thoughts:** Easy reading day.
+
+### Day 11: August 25, 2019, Sunday
+
+**Today's Progress**: Did the arrays problem set on Udemy Web Dev Bootcamp. 
+
+**Thoughts:** Solved the problems on my own and it felt nice. Trying to keep the code lean and efficient to the best of my abilities is fun. It's also fun seeing a faster, more efficient way to solve the same problem.
