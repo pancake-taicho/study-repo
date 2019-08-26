@@ -65,3 +65,9 @@
 **Today's Progress**: Did the arrays problem set on Udemy Web Dev Bootcamp. 
 
 **Thoughts:** Solved the problems on my own and it felt nice. Trying to keep the code lean and efficient to the best of my abilities is fun. It's also fun seeing a faster, more efficient way to solve the same problem.
+
+### Day 12: August 26, 2019, Monday
+
+**Today's Progress**: Went through the Udemy Web Developer Bootcamp arrays problem set solutions and compared them to my own.
+
+**Thoughts:** Learned more about being more efficient with code, particularly in regards to where I start my i counter in for loops.
