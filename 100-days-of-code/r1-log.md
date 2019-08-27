@@ -71,3 +71,9 @@
 **Today's Progress**: Went through the Udemy Web Developer Bootcamp arrays problem set solutions and compared them to my own.
 
 **Thoughts:** Learned more about being more efficient with code, particularly in regards to where I start my i counter in for loops.
+
+### Day 13: August 27, 2019, Tuesday
+
+**Today's Progress**: Coded along with the Udemy Web Developer Bootcamp lesson on writing out .forEach from scratch.
+
+**Thoughts:** Learned more about the idea of passing a function around and got more familiar with anonymous functions, passing arguments, and also learned about "this" for the first time.
