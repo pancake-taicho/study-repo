@@ -1,79 +1,37 @@
 # 100 Days Of Code - Log
 
-### Day 1: August 15, 2019, Thursday
+### Day 1: September 10, 2019, Tuesday
 
-**Today's Progress**: Worked through functions on Colt Steele's Web Developer Bootcamp.
+**Today's Progress**: Been reading and working through JavaScript on freeCodeCamp for the last two weeks. I had a day off, so back to 0 on 100DoC (which feels a little silly, but helpful?)...still scraping it. I DID finally crack the Record Collection problem on fCC, though.
 
-**Thoughts:** Fell off the horse for a couple of weeks. The catalyst was Windows update borking my computer. I nibbled on and off for a little bit, but I'm recommitting today.
+**Thoughts:** It felt good to finally break through the Record Collection barrier in fCC. After solving the problem by myself through a lot of trial and error and brain-racking I looked at the fCC solution and learned even more about how the code could have been more streamlined. And I looked up a video solution on YouTube and found yet another solution. It was cool seeing multiple solutions to the same problem.
 
-### Day 2: August 16, 2019, Friday
+### Day 2: September 11, 2019, Wednesday
 
-**Today's Progress**: I learned about scope and higher order functions on Colt Steele's Web Developer Bootcamp. Also, Dylan Israel released his podcast, Self-Taught or Not, with Erick Hanchett. I look forward to listening to it.
+**Today's Progress**: Progressed further into Jon Duckett's JavaScript and moved on to loops in freeCodeCamp. 
 
-**Thoughts:** Getting recommitted feels good, but I also need to not be so hard on myself for not adhering to some arbitrary metric like "coding for one hour for 100 days." Be chill, be CONSISTENT, and ENJOY the learning. Don't fret over arbitrary things like *how long* you *learned/studied* coding each day. The question is: Did you *learn* something new today? Did you make even a little *forward* progress, even just 1%? You're okay. You're good to go. Just make sure you're *going*.
+**Thoughts:** I'm in this slow-going knowledge-absorption phase and I'm not really building anything, which makes me nervous. I feel like I still need to accumulate more knowledge of the basics before I can start to really get my hands dirty.
 
-### Day 3: August 17, 2019, Saturday
+### Day 3: September 12, 2019, Thursday
 
-**Today's Progress**: Read some of Jon Duckett's JavaScript. Learned about the document model, that JavaScript is an interpreted language and that most major browser's have these interpreters built in, and the concept of separation of concerns.
+**Today's Progress**: Today was a light day. Just some reading of Jon Duckett's HTML & CSS. I haven't worked with them in a while so it was nice and refreshing to visit that mindset.
 
-**Thoughts:** A lazy day, to be honest. I'm not really "gunning for it." But I did recommit and I need to make an effort to stick to that, if anything just so I can believe in myself as someone who can finish what they say they're going to finish.
+**Thoughts:** Very light day. I was hanging out with friends for most of the evening.
 
-### Day 4: August 18, 2019, Sunday
+### Day 4: September 13, 2019, Friday
 
-**Today's Progress**: Worked through the Introduction to Arrays in Colt Steele's Web Developer Bootcamp.
+**Today's Progress**: Worked through more of the Basic JavaScript section on freeCodeCamp. I was having a lot of trouble with the Profile Lookup problem, but after a lot of struggle I finally solved it on my own.
 
-**Thoughts:** Didn't take advantage of all the time I had today. Just chipping away little by little, but it's too little. I'm not yet fully committed and I don't have anything to show for all this 'study'. I'm just lazy and uninterested. But if I don't do anything then I'll be up shit creek down the road. I'm just motivated by fear and a scrarcity mindset.
+**Thoughts:** I was having a lot of trouble with the Profile Lookup problem, but after a lot of struggle I finally solved it on my own. Again, I looked up the fCC solution to see what I could learn from it. 
 
-### Day 5: August 19, 2019, Monday
+### Day 4: September 14, 2019, Saturday
 
-**Today's Progress**: Worked through the Todo List codealong in Udemy Web Developer Bootcamp.
+**Today's Progress**: I finally finished the Basic JavaScript section on freeCodeCamp and moved on to ES6. 
 
-**Thoughts:** Pretty stimulating, and time goes by faster when I'm trying to code my own solution to a problem/exercise. Watching videos and coding along can get boring fast. Much better mood today.
+**Thoughts:** When I solved the Math.random() problem I found out it was a fluke when I looked at the fCC solution. I wasn't supposed to leave a chance of the function returning 0 (the fCC solution used a while loop to keep running Math.random() if the result was 0). My passing the solution was just down to Math.random() conveniently returning a number that wasn't 0.
 
-### Day 6: August 20, 2019, Tuesday
+### Day 4: September 15, 2019, Sunday
 
-**Today's Progress**: Read more of Jon Duckett's Javascript. 
+**Today's Progress**: I worked through most of the Objects section on Udemy's Web Developer Bootcamp.
 
-**Thoughts:** Very easy, light day. Just did some bedtime reading.
-
-### Day 7: August 21, 2019, Wednesday
-
-**Today's Progress**: Learned about array iteration, .forEach, and anonymous/callback functions on the Udemy Web Developer Bootcamp. 
-
-**Thoughts:** The anonymous/callback function concepts were a little challenging.
-
-### Day 8: August 22, 2019, Thursday
-
-**Today's Progress**: Read more of Jon Duckett's Javascript. Still early in the book. Getting around to discussing statements, objects, methods, etc. Apparently there's a different syntax for multi-line comments vs single-line comments. 
-
-**Thoughts:** Again, light bedtime reading. Probably spent too much of the day relaxing.
-
-### Day 9: August 23, 2019, Friday
-
-**Today's Progress**: Did the Todo List 2 codealong in the Udemy Web Developer Bootcamp. Learned about .splice() and a little about refactoring as a way to better organize code. Also, that it's okay to declare functions at the bottom of the code. I guess it's okay since it's in the global scope? 
-
-**Thoughts:** Looking forward to doing the array problem sets.
-
-### Day 10: August 24, 2019, Saturday
-
-**Today's Progress**: Read more of Jon Duckett's JavaScript. 
-
-**Thoughts:** Easy reading day.
-
-### Day 11: August 25, 2019, Sunday
-
-**Today's Progress**: Did the arrays problem set on Udemy Web Dev Bootcamp. 
-
-**Thoughts:** Solved the problems on my own and it felt nice. Trying to keep the code lean and efficient to the best of my abilities is fun. It's also fun seeing a faster, more efficient way to solve the same problem.
-
-### Day 12: August 26, 2019, Monday
-
-**Today's Progress**: Went through the Udemy Web Developer Bootcamp arrays problem set solutions and compared them to my own.
-
-**Thoughts:** Learned more about being more efficient with code, particularly in regards to where I start my i counter in for loops.
-
-### Day 13: August 27, 2019, Tuesday
-
-**Today's Progress**: Coded along with the Udemy Web Developer Bootcamp lesson on writing out .forEach from scratch.
-
-**Thoughts:** Learned more about the idea of passing a function around and got more familiar with anonymous functions, passing arguments, and also learned about "this" for the first time.
+**Thoughts:** I feel like I'm better grasping the concept and syntax of navigation objects, as well as refactoring logic into separate functions.
