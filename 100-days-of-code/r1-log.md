@@ -35,3 +35,9 @@
 **Today's Progress**: I worked through most of the Objects section on Udemy's Web Developer Bootcamp.
 
 **Thoughts:** I feel like I'm better grasping the concept and syntax of navigation objects, as well as refactoring logic into separate functions.
+
+### Day 5: September 16, 2019, Monday
+
+**Today's Progress**: I learned about adding methods to objects, finishing the Objects section on Udemy's Web Developer Bootcamp, and I started the section on DOM Manipulation. I started working through ES6 on freeCodeCamp and watched a lot of YouTube vids.
+
+**Thoughts:** Today felt more productive than most. I wasn't at my ideal discipline level and I could have done more, but I should give myself at least some credit for doing what work I did today.
