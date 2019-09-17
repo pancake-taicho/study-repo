@@ -41,3 +41,9 @@
 **Today's Progress**: I learned about adding methods to objects, finishing the Objects section on Udemy's Web Developer Bootcamp, and I started the section on DOM Manipulation. I started working through ES6 on freeCodeCamp and watched a lot of YouTube vids.
 
 **Thoughts:** Today felt more productive than most. I wasn't at my ideal discipline level and I could have done more, but I should give myself at least some credit for doing what work I did today.
+
+### Day 6: September 17, 2019, Tuesday
+
+**Today's Progress**: I struggled through a few ES6 problems on freeCodeCamp.
+
+**Thoughts:** Today was the first time all of the brackets and parentheses in all of the functions started to confuse me. I had to really slow down and think to try and understand how everything was working. I got frustrated trying to understand the wording of the problems on fCC. I also started having to do a lot of Googling to understand things that weren't explained/explained clearly in the problems (arrow functions, .filter(), .map(), .reduce(), chaining functions, the rest operator). I struggled for a long time, throwing darts in the dark sometimes, but I eventually solved the problems. That felt good and satisfying, and I did feel some accomplishment from doing the little bit of detective work required on my own to figure things out. BUT I also felt powerless at the same time. I felt like I didn't actually figure anything out consciously, but that after spending some arbitrary amount of time struggling and being frustrated something in my brain decided, out of my control, to reveal a certain aspect of the problem that I hadn't noticed or considered, which lead to me solving it. It feels like a half-victory. I don't feel wiser or smarter. I feel like I'm still dumb but that some random thing inside my brain swooped in to save me after a long time of struggle. 
