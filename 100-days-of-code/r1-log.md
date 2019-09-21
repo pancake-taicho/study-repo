@@ -46,4 +46,28 @@
 
 **Today's Progress**: I struggled through a few ES6 problems on freeCodeCamp.
 
-**Thoughts:** Today was the first time all of the brackets and parentheses in all of the functions started to confuse me. I had to really slow down and think to try and understand how everything was working. I got frustrated trying to understand the wording of the problems on fCC. I also started having to do a lot of Googling to understand things that weren't explained/explained clearly in the problems (arrow functions, .filter(), .map(), .reduce(), chaining functions, the rest operator). I struggled for a long time, throwing darts in the dark sometimes, but I eventually solved the problems. That felt good and satisfying, and I did feel some accomplishment from doing the little bit of detective work required on my own to figure things out. BUT I also felt powerless at the same time. I felt like I didn't actually figure anything out consciously, but that after spending some arbitrary amount of time struggling and being frustrated something in my brain decided, out of my control, to reveal a certain aspect of the problem that I hadn't noticed or considered, which lead to me solving it. It feels like a half-victory. I don't feel wiser or smarter. I feel like I'm still dumb but that some random thing inside my brain swooped in to save me after a long time of struggle. 
+**Thoughts:** Today was the first time all of the brackets and parentheses in all of the functions started to confuse me. I had to really slow down and think to try and understand how everything was working. I got frustrated trying to understand the wording of the problems on fCC. I also started having to do a lot of Googling to understand things that weren't explained/explained clearly in the problems (arrow functions, .filter(), .map(), .reduce(), chaining functions, the rest operator). I struggled for a long time, throwing darts in the dark sometimes, but I eventually solved the problems. That felt good and satisfying, and I did feel some accomplishment from doing the little bit of detective work required on my own to figure things out. BUT I also felt powerless at the same time. I felt like I didn't actually figure anything out consciously, but that after spending some arbitrary amount of time struggling and being frustrated something in my brain decided, out of my control, to reveal a certain aspect of the problem that I hadn't noticed or considered, which lead to me solving it. It feels like a half-victory. I don't feel wiser or smarter. I feel like I'm still dumb but that some random thing inside my brain swooped in to save me after a long time of struggle.
+
+### Day 7: September 18, 2019, Wednesday
+
+**Today's Progress**: I struggled through more ES6 problems on freeCodeCamp.
+
+**Thoughts:** I hit a brick wall with an ES6 problem. I think I'm being hindered by the way I approach word problem and the example solutions given in the explanations for the concepts. I try and mimic the example concept solution logic in the solution for the actual problem, and it almost always backfires. Instead of thinking about the specific problem at hand, I try and force the same pattern/logic from the example concept solution onto the real problem. I'm stumped and frustrated tonight.
+
+### Day 8: September 19, 2019, Thursday
+
+**Today's Progress**: Read and referred to sections in Jon Duckett's JavaScript to try and better understand functions and methods and how they worked. I also backtracked in the freeCodeCamp Javascript curriculum to reinforce my knowledge and understanding.
+
+**Thoughts:** There was no information about ES6 and arrow functions, which is what I need to understand to break through the problem.
+
+### Day 9: September 20, 2019, Friday
+
+**Today's Progress**: Read forward through more of Jon Duckett's JavaScript and watched some YouTube videos explaining arrow functions in ES6. I feel more comfortable with the concept.
+
+**Thoughts:** Still no breakthrough with the problem I was stuck on. A light day.
+
+### Day 10: September 21, 2019, Saturday
+
+**Today's Progress**: After struggling with the ES6 problem I was stuck on for so long, I tried putting the code into the console on Google Chrome. I got the answer with my solution, but  freeCodeCamp's tests weren't passing. Not understanding why, I caved and started to look at the hints and got the solution. I pushed on through a few more problems in the ES6 section.
+
+**Thoughts:** I feel a little ashamed for looking up hints, but I had no idea why fCC's tests weren't passing my solution. I couldn't understand the feedback under the code window ("half is not a function"???). I think this just highlights a fault in my problem solving abilities. I.e. They're very lacking. I need to slow down and consider the wording slowly and carefully one word at a time. I still feel lost sometimes, though. Constantly hitting walls with no idea or understanding of why my solution to a problem doesn't work and what the errors my solution throws mean hurts my confidence in my abilities. I shouldn't take my low opinion of myself too seriously, though. A part of me believes I can learn and change and develop the necessary skills to be a good programmer and developer. Keep pushing forward.
