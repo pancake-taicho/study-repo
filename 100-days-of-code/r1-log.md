@@ -71,3 +71,9 @@
 **Today's Progress**: After struggling with the ES6 problem I was stuck on for so long, I tried putting the code into the console on Google Chrome. I got the answer with my solution, but  freeCodeCamp's tests weren't passing. Not understanding why, I caved and started to look at the hints and got the solution. I pushed on through a few more problems in the ES6 section.
 
 **Thoughts:** I feel a little ashamed for looking up hints, but I had no idea why fCC's tests weren't passing my solution. I couldn't understand the feedback under the code window ("half is not a function"???). I think this just highlights a fault in my problem solving abilities. I.e. They're very lacking. I need to slow down and consider the wording slowly and carefully one word at a time. I still feel lost sometimes, though. Constantly hitting walls with no idea or understanding of why my solution to a problem doesn't work and what the errors my solution throws mean hurts my confidence in my abilities. I shouldn't take my low opinion of myself too seriously, though. A part of me believes I can learn and change and develop the necessary skills to be a good programmer and developer. Keep pushing forward.
+
+### Day 11: September 22, 2019, Sunday
+
+**Today's Progress**: Decent progress and productivity. Progressed through the Udemy WebDev Bootcamp, working through DOM selector methods and selecting and manipulating the style of elements. HTML, CSS, and JS are starting to intersect now.
+
+**Thoughts:** I feel positive about today's work. It's a move in a good direction. I used the pomodoro technique for my study. I did four pomodoro's and styed realtively focused. I also tried watching the course videos at faster speeds. I like it.
