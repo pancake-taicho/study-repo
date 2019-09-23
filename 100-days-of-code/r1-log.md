@@ -77,3 +77,9 @@
 **Today's Progress**: Decent progress and productivity. Progressed through the Udemy WebDev Bootcamp, working through DOM selector methods and selecting and manipulating the style of elements. HTML, CSS, and JS are starting to intersect now.
 
 **Thoughts:** I feel positive about today's work. It's a move in a good direction. I used the pomodoro technique for my study. I did four pomodoro's and styed realtively focused. I also tried watching the course videos at faster speeds. I like it.
+
+### Day 12: September 23, 2019, Monday
+
+**Today's Progress**: Finished the DOM Manipulation section of the Udemy Web Dev Bootcamp. I watch a lot of YouTube everyday, mostly self-taught webdev-centric videos. I never measured how much time I actually spend (waste?) watching them, but today I did: 3 hours. Compared to 1.5 hrs of working along with the Udemy course...
+
+**Thoughts:** I should readjust my video-watching to coding ratio. I would feel much happier if I had spent 4.5 hours coding today... I do sometimes glean some good insights from the videos, but I'm not sure it's worth all of that time.
