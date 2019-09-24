@@ -83,3 +83,9 @@
 **Today's Progress**: Finished the DOM Manipulation section of the Udemy Web Dev Bootcamp. I watch a lot of YouTube everyday, mostly self-taught webdev-centric videos. I never measured how much time I actually spend (waste?) watching them, but today I did: 3 hours. Compared to 1.5 hrs of working along with the Udemy course...
 
 **Thoughts:** I should readjust my video-watching to coding ratio. I would feel much happier if I had spent 4.5 hours coding today... I do sometimes glean some good insights from the videos, but I'm not sure it's worth all of that time.
+
+### Day 13: September 24, 2019, Tuesday
+
+**Today's Progress**: Worked through Intro to Events and did a color toggle exercise. Also did another ES6 problem on freeCodeCamp and google more about 'this' and constructor functions. Watched considerably less YouTube.
+
+**Thoughts:** Feels good learning new things. I didn't do a whole lot today, but I stopped at a point where I'm eager to learn more in the next session.
