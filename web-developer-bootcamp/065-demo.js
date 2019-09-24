@@ -56,3 +56,31 @@ document.querySelector("p");
 p.classList.add("big");
 
 p.classList.toggle("big");
+
+//DOM Events
+
+//.addEventListener(type, functionToCall())
+
+/* This method listens for an event to happen, like a click on a button, and then causes some event to happen, like triggering a popup. It takes two arguments: the type of event to listen for (like "click") and a callback function (you can also use a named function) that will run some code when the event happens. */
+
+h1.addEventListener("click", function() {
+  alert("h1 was clicked");
+  h1.style.background = "orange";
+});
+
+//You can have more than one listener on a given element.
+
+document.querySelector("ul").addEventListener("click", function() {
+  console.log("YOU CLICKED THE UL!");
+});
+
+var lis = 
+document.querySelectorAll("li");
+
+for(var i = 0; i < lis.length; i++) {
+  lis[i].addEventListener("click", function() {
+    this.classList.toggle("li-color");
+  });
+}
+
+//In this situation, the 'this' keyword refers to lis[i] (THIS element being referenced before the .addEventListenter).
