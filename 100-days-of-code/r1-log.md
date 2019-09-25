@@ -89,3 +89,9 @@
 **Today's Progress**: Worked through Intro to Events and did a color toggle exercise. Also did another ES6 problem on freeCodeCamp and google more about 'this' and constructor functions. Watched considerably less YouTube.
 
 **Thoughts:** Feels good learning new things. I didn't do a whole lot today, but I stopped at a point where I'm eager to learn more in the next session.
+
+### Day 14: September 25, 2019, Wednesday
+
+**Today's Progress**: A real short session. Worked through most of the Score Card Project part 1. A lot of YouTube, but also a lot of insights. 
+
+**Thoughts:** I still haven't committed 100% to a goal, and I think that's why I try and get so many 'angles' on development from various sources. I'm trying to put together a picture in my head and understand what I'm wanting to pursue.
