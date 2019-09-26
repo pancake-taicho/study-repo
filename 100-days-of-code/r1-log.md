@@ -95,3 +95,9 @@
 **Today's Progress**: A real short session. Worked through most of the Score Card Project part 1. A lot of YouTube, but also a lot of insights. 
 
 **Thoughts:** I still haven't committed 100% to a goal, and I think that's why I try and get so many 'angles' on development from various sources. I'm trying to put together a picture in my head and understand what I'm wanting to pursue.
+
+### Day 15: September 26, 2019, Thursday
+
+**Today's Progress**: Finished the Score Card project.
+
+**Thoughts:** Trying to stay rational and not psych myself out and catastrophize about my future.
