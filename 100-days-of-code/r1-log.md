@@ -101,3 +101,9 @@
 **Today's Progress**: Finished the Score Card project.
 
 **Thoughts:** Trying to stay rational and not psych myself out and catastrophize about my future.
+
+### Day 16: September 27, 2019, Friday
+
+**Today's Progress**: Finished the Advanced DOM Manipulation portion of the Web Developer Bootcamp on Udemy.
+
+**Thoughts:** A good productive day. I also started doing research in C# .NET and looking into learning paths for that.
