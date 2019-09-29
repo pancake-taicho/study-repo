@@ -107,3 +107,9 @@
 **Today's Progress**: Finished the Advanced DOM Manipulation portion of the Web Developer Bootcamp on Udemy.
 
 **Thoughts:** A good productive day. I also started doing research in C# .NET and looking into learning paths for that.
+
+### Day 17: September 28, 2019, Saturday
+
+**Today's Progress**: I spent most of the day setting up VS Code on a new laptop I got recently. I watch Brad Traversy's tutorial on his favorite extension and got a tiny bit of exposure with to ESLint, Node.js, and making HTTP requests. I also started reading "The Clean Coder". Compelling so far.
+
+**Thoughts:** A good day. It felt good to finally get work/study-ready on the new lapton. Now I can go mobile with studying.
