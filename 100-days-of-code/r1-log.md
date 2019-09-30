@@ -113,3 +113,15 @@
 **Today's Progress**: I spent most of the day setting up VS Code on a new laptop I got recently. I watch Brad Traversy's tutorial on his favorite extension and got a tiny bit of exposure with to ESLint, Node.js, and making HTTP requests. I also started reading "The Clean Coder". Compelling so far.
 
 **Thoughts:** A good day. It felt good to finally get work/study-ready on the new lapton. Now I can go mobile with studying.
+
+### Day 18: September 29, 2019, Sunday
+
+**Today's Progress**: Started work on the Random Color Game on the Web Dev Bootcamp on Udemy. Read more of "The Clean Coder". Started researching a C# .NET bootcamp in St. Louis.
+
+**Thoughts:** A really light day. I'm not really hitting it hard enough. I'm constantly looking for 'easy ways out' or ways to regulate my anxiety about the future. I'm still trying to figure out my path/plan.
+
+### Day 19: September 30, 2019, Monday
+
+**Today's Progress**: Did more work on the Random Color Game on the Web Dev Bootcamp on Udemy. Read another chapther of "The Clean Coder". Continued researching the C# .NET bootcamp in St. Louis called Claim Academy. It seems like a clear-ish path.
+
+**Thoughts:** Another light day. I'm not putting in the serious time required, nor am I getting any real work done. Just casually learning. What am I even thinking?
