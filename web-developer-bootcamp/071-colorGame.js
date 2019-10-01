@@ -6,6 +6,8 @@ var colorDisplay = document.getElementById('colorDisplay');
 var messageDisplay = document.querySelector('#message');
 var h1 = document.querySelector('h1');
 var resetButton = document.querySelector('#reset');
+var easyBtn = document.querySelector('#easyBtn');
+var hardBtn = document.querySelector('#hardBtn');
 
 resetButton.addEventListener('click', function() {
   // generate all new colors
@@ -19,7 +21,8 @@ resetButton.addEventListener('click', function() {
     squares[i].style.backgroundColor = colors[i];
   }
   // reset h1 background to black
-  h1.style.color = 'black';
+  h1.style.backgroundColor = '#232323';
+  resetButton.textContent = 'New Colors';
 });
 
 colorDisplay.textContent = pickedColor;
@@ -38,7 +41,7 @@ for (let i = 0; i < squares.length; i++) {
       messageDisplay.textContent = 'CORRECT!';
       changeColors(clickedColor);
       h1.style.background = clickedColor;
-      resetButton.textContent = 'Play Again';
+      resetButton.textContent = 'Play Again?';
     } else {
       this.style.backgroundColor = '#232323';
       messageDisplay.textContent = 'Try Again';
