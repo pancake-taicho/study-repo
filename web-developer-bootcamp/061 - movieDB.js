@@ -1,53 +1,54 @@
-var movieDB = [
+const movieDB = [
   {
-    title: "Die Hard",
+    title: 'Die Hard',
     haveWatched: true,
-    rating: 5
+    rating: 5,
   },
   {
-    title: "Blade Runner",
+    title: 'Blade Runner',
     haveWatched: true,
-    rating: 5
+    rating: 5,
   },
   {
-    title: "Donnie Darko",
+    title: 'Donnie Darko',
     haveWatched: false,
-    rating: 3
+    rating: 3,
   },
   {
-    title: "Jurassic World",
+    title: 'Jurassic World',
     haveWatched: true,
-    rating: 2.5
-  }
+    rating: 2.5,
+  },
 ];
 
-//MY SOLUTION:
+// MY SOLUTION:
 
-for(var i = 0; i < movieDB.length; i++) {
+for (let i = 0; i < movieDB.length; i++) {
   var watched;
-  if(movieDB[i].haveWatched) {
-    watched = "have watched";
+  if (movieDB[i].haveWatched) {
+    watched = 'have watched';
   } else {
-      watched = "have not watched";
-    }
-  console.log('You ' + watched + ' "' + movieDB[i].title + '" - ' + movieDB[i].rating + ' stars');
+    watched = 'have not watched';
+  }
+  console.log(
+    `You ${watched} "${movieDB[i].title}" - ${movieDB[i].rating} stars`
+  );
 }
 
-//VIDEO'S SOLUTION:
+// VIDEO'S SOLUTION:
 
 movieDB.forEach(function(movie) {
   console.log(buildString(movie));
 });
 
 function buildString(movie) {
-  var result = "You have ";
-  if(movie.haveWatched) {
-    result += "watched ";
+  let result = 'You have ';
+  if (movie.haveWatched) {
+    result += 'watched ';
   } else {
-    result += "not seen "
+    result += 'not seen ';
   }
-  result += "\"" + movie.title + "\" - ";
-  result += movie.rating + " stars";
+  result += `"${movie.title}" - `;
+  result += `${movie.rating} stars`;
   return result;
 }
-  

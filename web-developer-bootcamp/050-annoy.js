@@ -10,12 +10,12 @@
 
 // VERSION 2
 
-var arriveCheck = prompt("Are we there yet?");
+var arriveCheck = prompt('Are we there yet?');
 
 // You can use indexOf() to make your input checking a little more flexible
 // -1 is another way of saying "false"
-while(arriveCheck.indexOf("yes") === -1) {
-  var arriveCheck = prompt("Are we there yet?");
+while (arriveCheck.indexOf('yes') === -1) {
+  var arriveCheck = prompt('Are we there yet?');
 }
 
-alert("Yay! We finally made it!");
+alert('Yay! We finally made it!');

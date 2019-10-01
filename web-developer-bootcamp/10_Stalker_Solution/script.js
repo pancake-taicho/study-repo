@@ -1,8 +1,8 @@
-var firstName = prompt("What is your first name?");
-var lastName = prompt("What is your last name?");
-var age = prompt("What is your age?");
+const firstName = prompt('What is your first name?');
+const lastName = prompt('What is your last name?');
+const age = prompt('What is your age?');
 
-var fullName = firstName + " " + lastName
+const fullName = `${firstName} ${lastName}`;
 
-console.log("Your full name is " + fullName);
-console.log("You are " + age + " years old");
+console.log(`Your full name is ${fullName}`);
+console.log(`You are ${age} years old`);

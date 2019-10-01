@@ -10,9 +10,8 @@
 // isEven() REFACTORED:
 
 function isEven(x) {
-  return (x % 2 === 0);
+  return x % 2 === 0;
 }
-
 
 // factorial() ORIGINAL SOLUTION:
 
@@ -29,13 +28,13 @@ function isEven(x) {
 // factorial() REFACTORED:
 
 function factorial(num) {
-  var result = 1;
+  let result = 1;
   // Because we're using multiplication, the order in which the numbers are multiplied
   // doesn't matter, so you don't have to go through the process of subtracting 1 from the
   // number in each instance of the looping and then multiplying by that. Just use a counter
   // and multiply as you count up to the number.
-  for(var i = 2; i <= num; i++) {
-    // Since result = 1 and 1 * 1 = 1, which is unnecessary, we don't have to start the 
+  for (let i = 2; i <= num; i++) {
+    // Since result = 1 and 1 * 1 = 1, which is unnecessary, we don't have to start the
     // i counter at 1. We can just skip to i = 2.
     result *= i;
   }
@@ -68,6 +67,6 @@ function factorial(num) {
 // kababToSnake() REFACTORED:
 
 function kebabToSnake(str) {
-  var newStr = str.replace(/-/g, "_");
+  const newStr = str.replace(/-/g, '_');
   return newStr;
 }

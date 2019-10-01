@@ -1,20 +1,23 @@
-//Responsive Nav
+// Responsive Nav
 $(function() {
-	menu = $('nav ul');
+  menu = $('nav ul');
 
   $('#openup').on('click', function(e) {
-    e.preventDefault(); menu.slideToggle();
+    e.preventDefault();
+    menu.slideToggle();
   });
-  
-  $(window).resize(function(){
-    var w = $(this).width(); if(w > 480 && menu.is(':hidden')) {
+
+  $(window).resize(function() {
+    const w = $(this).width();
+    if (w > 480 && menu.is(':hidden')) {
       menu.removeAttr('style');
     }
   });
-  
-  $('nav li').on('click', function(e) {                
-    var w = $(window).width(); if(w < 480 ) {
-      menu.slideToggle(); 
+
+  $('nav li').on('click', function(e) {
+    const w = $(window).width();
+    if (w < 480) {
+      menu.slideToggle();
     }
   });
   $('.open-menu').height($(window).height());
@@ -25,11 +28,11 @@ $('.cf a').on('click', function(event) {
   if (this.hash !== '') {
     event.preventDefault();
 
-    const hash = this.hash;
+    const { hash } = this;
 
     $('html, body').animate(
       {
-        scrollTop: $(hash).offset().top
+        scrollTop: $(hash).offset().top,
       },
       800,
       function() {

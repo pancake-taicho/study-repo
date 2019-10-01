@@ -1,11 +1,11 @@
 // Arrays let us group data together in lists:
 // var friends = ["Kris", "Kyle", "Devin", "Blake", "Santino"];
 
-// Arrays are indexed. There's a specific number that corresponds to each piece of data 
+// Arrays are indexed. There's a specific number that corresponds to each piece of data
 // in the array:
 // friends[4] = "Santino";
 
-// Arrays can be updated: 
+// Arrays can be updated:
 // friends[5] = "Lacy";
 
 // If you add a piece of data at an index later in the array that has no data in the indeces
@@ -24,4 +24,4 @@
 // var nums = [57, 25, 49, 96];
 // nums.length; //4
 
-var rainbow = ["red", "yellow", "pink", "green", "purple", "orange", "blue"];
+const rainbow = ['red', 'yellow', 'pink', 'green', 'purple', 'orange', 'blue'];

@@ -3,12 +3,11 @@
 /* The document contains an object called style that has all CSS selectors to alter the style of an HTML element. We can SELECT these and MANIPULATE them with JavaScript: */
 
 // SELECT:
-var h1 =
-document.querySelector("h1");
+const h1 = document.querySelector('h1');
 
 // MANIPULATE:
-h1.style.color = "yellow";
-h1.style.border = "5px solid pink";
+h1.style.color = 'yellow';
+h1.style.border = '5px solid pink';
 /* It is important to note that we need to put the value into a string with quotes, unlike a CSS style sheet where we wouldn't need to. */
 
 /* If we wanted the h1 to be yellow with a pink border when the page loaded we would just put these style rules into a CSS style sheet, no need to bother with JavaScript. We would use JavaScript to change the h1, however, to make the page more interactive. Maybe we would want the changes to happene when the user clicked on a specific part of the page, or if the user had been on the page for a certain amount of time. The style property is also good for quick testing. */
@@ -45,42 +44,40 @@ tag.classList.add("some-class"); */
 // ADD A CLASS TO THE SELECTED ELEMENT
 
 // classList.remove()
-// REMOVE A CLASS 
+// REMOVE A CLASS
 
 // classList.toggle()
-//TOGGLE A CLASS
+// TOGGLE A CLASS
 
-var p =
-document.querySelector("p");
+const p = document.querySelector('p');
 
-p.classList.add("big");
+p.classList.add('big');
 
-p.classList.toggle("big");
+p.classList.toggle('big');
 
-//DOM Events
+// DOM Events
 
-//.addEventListener(type, functionToCall())
+// .addEventListener(type, functionToCall())
 
 /* This method listens for an event to happen, like a click on a button, and then causes some event to happen, like triggering a popup. It takes two arguments: the type of event to listen for (like "click") and a callback function (you can also use a named function) that will run some code when the event happens. */
 
-h1.addEventListener("click", function() {
-  alert("h1 was clicked");
-  h1.style.background = "orange";
+h1.addEventListener('click', function() {
+  alert('h1 was clicked');
+  h1.style.background = 'orange';
 });
 
-//You can have more than one listener on a given element.
+// You can have more than one listener on a given element.
 
-document.querySelector("ul").addEventListener("click", function() {
-  console.log("YOU CLICKED THE UL!");
+document.querySelector('ul').addEventListener('click', function() {
+  console.log('YOU CLICKED THE UL!');
 });
 
-var lis = 
-document.querySelectorAll("li");
+const lis = document.querySelectorAll('li');
 
-for(var i = 0; i < lis.length; i++) {
-  lis[i].addEventListener("click", function() {
-    this.classList.toggle("li-color");
+for (let i = 0; i < lis.length; i++) {
+  lis[i].addEventListener('click', function() {
+    this.classList.toggle('li-color');
   });
 }
 
-//In this situation, the 'this' keyword refers to lis[i] (THIS element being referenced before the .addEventListenter).
+// In this situation, the 'this' keyword refers to lis[i] (THIS element being referenced before the .addEventListenter).

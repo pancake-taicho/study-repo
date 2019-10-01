@@ -1,4 +1,4 @@
-//MY SOLUTION:
+// MY SOLUTION:
 
 /*
 
@@ -16,12 +16,11 @@ button.addEventListener("click", function() {
 
 */
 
-//VIDEO SOLUTION:
+// VIDEO SOLUTION:
 
 // var isPurple = false;
 
-var button =
-document.querySelector("button");
+const button = document.querySelector('button');
 
 // button.addEventListener("click", function() {
 //   //if white
@@ -35,9 +34,9 @@ document.querySelector("button");
 //     document.body.style.background = "purple";
 //     // isPurple = true;
 //   }
-//   isPurple = !isPurple; //This refactor just negates whatever the value  of isPurple is; we don't have to explicitly switch it in each action of the if-else statement.  
+//   isPurple = !isPurple; //This refactor just negates whatever the value  of isPurple is; we don't have to explicitly switch it in each action of the if-else statement.
 // });
 
-button.addEventListener("click", function(){
-  document.body.classList.toggle("purple");
-})
+button.addEventListener('click', function() {
+  document.body.classList.toggle('purple');
+});
