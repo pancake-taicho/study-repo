@@ -9,6 +9,27 @@ var resetButton = document.querySelector('#reset');
 var easyBtn = document.querySelector('#easyBtn');
 var hardBtn = document.querySelector('#hardBtn');
 
+easyBtn.addEventListener("click", function(){
+  easyBtn.classList.add("selected");
+  hardBtn.classList.remove("selected");
+  colors = generateRandomColors(3);
+  pickedColor = pickColor();
+  colorDisplay.textContent = pickedColor;
+  for(var i = 0; i < squares.length; i++){
+    if(squares[i]){
+      squares[i].style.background = colors[i];
+    }
+  }
+});
+
+hardBtn.addEventListener("click", function(){
+  hardBtn.classList.add("selected");
+  easyBtn.classList.remove("selected");
+  colors = generateRandomColors(6);
+  pickedColor = pickedColor();
+  colorDisplay.textContent = pickedColor;
+});
+
 resetButton.addEventListener('click', function() {
   // generate all new colors
   colors = generateRandomColors(6);

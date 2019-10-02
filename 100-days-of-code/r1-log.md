@@ -125,3 +125,15 @@
 **Today's Progress**: Did more work on the Random Color Game on the Web Dev Bootcamp on Udemy. Read another chapther of "The Clean Coder". Continued researching the C# .NET bootcamp in St. Louis called Claim Academy. It seems like a clear-ish path.
 
 **Thoughts:** Another light day. I'm not putting in the serious time required, nor am I getting any real work done. Just casually learning. What am I even thinking?
+
+### Day 20: October 1, 2019, Tuesday
+
+**Today's Progress**: Made a lot more progress on the Random Color Game on the Web Dev Bootcamp on Udemy and read quite a bit more of "The Clean Coder". Almost halfway through.
+
+**Thoughts:** Reading a good book is like having a one-on-one with a mentor.
+
+### Day 21: October 2, 2019, Wednesday
+
+**Today's Progress**: Almost to the end of the Random Color Game on the Web Dev Bootcamp on Udemy. I read further in "The Clean Coder". 
+
+**Thoughts:** I'm being exposed to a fair bit of software development terminology that I might've been hard-pressed to find on my own elsewhere at this point in time.
