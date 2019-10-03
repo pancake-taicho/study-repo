@@ -137,3 +137,9 @@
 **Today's Progress**: Almost to the end of the Random Color Game on the Web Dev Bootcamp on Udemy. I read further in "The Clean Coder". 
 
 **Thoughts:** I'm being exposed to a fair bit of software development terminology that I might've been hard-pressed to find on my own elsewhere at this point in time.
+
+### Day 22: October 3, 2019, Thursday
+
+**Today's Progress**: Worked more on the Random Color Game; I have three more tutorials left. Did some light reading in "Clean Code". 
+
+**Thoughts:** A light day.
