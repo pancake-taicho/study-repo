@@ -143,3 +143,9 @@
 **Today's Progress**: Worked more on the Random Color Game; I have three more tutorials left. Did some light reading in "Clean Code". 
 
 **Thoughts:** A light day.
+
+### Day 23: October 4, 2019, Friday
+
+**Today's Progress**: Read a lot more of "The Clean Coder". Finished the Random Color Game on the Web Dev Bootcamp on Udemy. Did a couple more ES6 problems on freeCodeCamp (I often have trouble with how the problems are worded, and I don't undertand how or why the tests). Started Codewar at 8kyu. Tough.
+
+**Thoughts:** Today was super productive. I completed six pomodoros (I do "donuts").
