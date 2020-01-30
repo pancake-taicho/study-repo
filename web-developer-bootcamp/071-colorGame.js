@@ -1,3 +1,4 @@
+/* eslint-disable vars-on-top */
 var colors = generateRandomColors(6);
 
 var squares = document.querySelectorAll('.square');
