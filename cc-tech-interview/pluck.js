@@ -7,11 +7,11 @@ const dogs = [
 pluck(dogs, "age");
 
 function pluck(arr, key) {
-  var keyVals = [];
+  var keyValues = [];
 
   for(var i = 0; i < arr.length; i++) {
-    keyVals[i] = arr[i][key];
+    keyValues[i] = arr[i][key];
   }
-  //why does "return keyVals" not work?
-  console.log(keyVals);
+  //why does "return keyValues" not work?
+  console.log(keyValues);
 }
