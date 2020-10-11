@@ -19,6 +19,9 @@ console.log(output);
 
 /*
 
+I learned about using a for loop within a for loop to track two dimensions of output, 
+output along an x-axis and output along a y-axis. 
+
 Solution in  EJS:
 
 var size = 8;

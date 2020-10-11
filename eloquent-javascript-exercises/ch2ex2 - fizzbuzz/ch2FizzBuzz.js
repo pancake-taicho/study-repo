@@ -21,6 +21,11 @@ for(var i = 1; i <= number; i++) {
 
 /*
 
+I learned how to more efficiently build an output through the use of if statements that concatenate
+onto an output string, which can then be printed in console.log(). 
+Also, you can use logic operators (&& and ||) within console.log() - as well as any other function -
+to choose between different outputs (output || n) or output values from multiple variables.
+
 Solution in EJS:
 
 for(var n = 1; n <= 100; n++) {
