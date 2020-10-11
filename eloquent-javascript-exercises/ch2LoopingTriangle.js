@@ -5,4 +5,3 @@ for(var i = 0; i < triangleSize; i++) {
   console.log(triangleBrick);
   triangleBrick += "#";
 }
-
