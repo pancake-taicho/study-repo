@@ -13,7 +13,7 @@ for(var i = 0; i < triangleSize; i++) {
 
 Solution in EJS:
 
-for(var line = "#"; line.length < 8; line++)
+for(var line = "#"; line.length < 8; line += "#")
   console.log(line);
 
 */
