@@ -22,7 +22,7 @@ console.log(output);
 I learned about using a for loop within a for loop to track two dimensions of output, 
 output along an x-axis and output along a y-axis. By using % to determine whether the sum of the
 x and y counters are even or odd, you can determine whether a line of the board is an even or odd 
-one and thus whether an output should be a space or a #. 
+one and thus whether an output should be a space or a # to create a staggered board spaces. 
 
 Solution in  EJS:
 
