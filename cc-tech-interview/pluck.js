@@ -10,25 +10,37 @@ Declare a function 'pluck'.
 [] --> square braces/brackets
 */
 
-/* const dogs = [
+/*
+
+const dogs = [
   { name: "moe", age: 4 },
   { name: "larry", age: 5 },
   { name: "curly", age: 6 }
-]; */ 
+]; 
 
-// pluck(dogs, "age");
+pluck(dogs, "name");
+
+*/
+
+var keyValues = [];
+
+console.log(keyValues);
 
 function pluck(arr, key) {
-  var keyValues = [];
-
   for(var i = 0; i < arr.length; i++) {
     keyValues[i] = arr[i][key];
   }
-  //why does "return keyValues" not work?
-  console.log(keyValues);
+  /* 
+  
+  why does "return keyValues" not work? 
+  => Because you have to console.log the value being returned.
+
+  */
+
+  return keyValues;
 }
 
-// Tests
+//Tests
 
 const dogs = [
   { name: "moe", age: 4 },
