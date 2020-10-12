@@ -22,11 +22,8 @@ pluck(dogs, "name");
 
 */
 
-var keyValues = [];
-
-console.log(keyValues);
-
 function pluck(arr, key) {
+  var keyValues = [];
   for(var i = 0; i < arr.length; i++) {
     keyValues[i] = arr[i][key];
   }
@@ -36,7 +33,6 @@ function pluck(arr, key) {
   => Because you have to console.log the value being returned.
 
   */
-
   return keyValues;
 }
 
