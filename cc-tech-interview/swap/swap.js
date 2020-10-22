@@ -16,7 +16,7 @@ Keys become values and values become keys.
 
 function swap(Object) {
   var newObject = {};
-  for (let prop in Object) { // how can you iterate through an object?
+  for (let prop in Object) {
     newObject[Object[prop]] = prop;
   }
   return newObject;
