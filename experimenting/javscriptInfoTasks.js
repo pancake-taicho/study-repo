@@ -49,11 +49,49 @@
 
 // ----
 
-let login = prompt("Enter login");
+// let login = prompt("Enter login");
 
-let message = (login == 'Employee') ? 'Hello':
-  (login == 'Director') ? 'Greetings':
-  (login == '') ? 'No login':
-  '';
+// let message = (login == 'Employee') ? 'Hello':
+//   (login == 'Director') ? 'Greetings':
+//   (login == '') ? 'No login':
+//   '';
 
-alert(message);
+// alert(message);
+
+// ----
+
+/*
+if (age >= 14 && age <= 90); //checks if age is between 14 and 90 inclusively
+if (!(age >= 14 && age <= 90)); // checks if age is NOT between 14 and 90 inclusively
+if (age < 14 || age > 90); //checks if age is NOT between 14 and 90 inclusively
+
+if (-1 || 0) alert('first'); //runs, || finds the first truthy value (-1)
+if (-1 && 0) alert('second'); // doesn't run because 0 is falsy
+if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
+*/
+
+let login = prompt('Enter login');
+
+if (login == 'Admin') {
+
+  let password = prompt('Enter your password');
+
+  if (password == 'TheMaster'){
+    alert('Welcome');
+    } else if (password == (''||null)) {
+      alert('Canceled');
+    } else {
+      alert('Wrong password');
+    }
+    
+} else if (login == ''||null){
+  alert('Canceled');
+} else {
+  alert('I don\'t know you');
+}
+
+// function keyPress(e) {
+//   if(e.key === 'Escape') {
+//     return true;
+//   }
+// }
