@@ -70,28 +70,44 @@ if (-1 && 0) alert('second'); // doesn't run because 0 is falsy
 if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 */
 
-let login = prompt('Enter login');
+// let login = prompt('Enter login');
 
-if (login == 'Admin') {
+// if (login == 'Admin') {
 
-  let password = prompt('Enter your password');
+//   let password = prompt('Enter your password');
 
-  if (password == 'TheMaster'){
-    alert('Welcome');
-    } else if (password == (''||null)) {
-      alert('Canceled');
-    } else {
-      alert('Wrong password');
-    }
+//   if (password == 'TheMaster'){
+//     alert('Welcome');
+//     } else if (password == (''||null)) {
+//       alert('Canceled');
+//     } else {
+//       alert('Wrong password');
+//     }
     
-} else if (login == ''||null){
-  alert('Canceled');
-} else {
-  alert('I don\'t know you');
-}
+// } else if (login == ''||null){
+//   alert('Canceled');
+// } else {
+//   alert('I don\'t know you');
+// }
 
+/* 
+  unnecessary keyPress function:
 // function keyPress(e) {
 //   if(e.key === 'Escape') {
 //     return true;
 //   }
+// }
+*/
+
+// ----
+
+// PRIME NUMBERS:
+// let n = 15;
+
+// nextPrime:
+// for (let i = 2; i <= n; i++) { //for each i...
+//   for (let j = 2; j < i; j++) { // find a divisor...
+//     if (i % j == 0) continue nextPrime; // not a prime, continue to next i
+//   }
+//   alert (i); // a prime
 // }
