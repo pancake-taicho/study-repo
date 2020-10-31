@@ -111,3 +111,63 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 //   }
 //   alert (i); // a prime
 // }
+
+// ----
+
+// let browser = prompt("What browser are you using?", "");
+
+// switch(browser) {
+//   case "Edge":
+//     alert("You've got the Edge!");
+//     break;
+//   case "Chrome":
+//   case "Firefox":
+//   case "Safari":
+//   case "Opera":
+//     alert("Okay, we support those browsers, too.");
+//     break;
+//   default:
+//     alert("We hope this page looks okay!");
+// }
+
+// The above switch rewritten with "if" statements:
+
+// if (browser == "Edge") {
+//   alert ("You've got the Edge!");
+// } else if (browser == "Firefox" 
+//   || browser == "Safari" 
+//   || browser == "Chrome" 
+//   || browser == "Opera") {
+//   alert ("Okay, we support those browsers, too.");
+// } else {
+//   alert ("We hope this page looks good!");
+// }
+
+let a = +prompt("a?", "");
+
+// if (a == 0) {
+//   alert(0);
+// }
+// if (a == 1) {
+//   alert(1);
+// }
+// if (a == 2 || a == 3) {
+//   alert("2, 3");
+// }
+
+// rewrite the above if checks into a switch statement:
+
+switch (a) {
+  case 0:
+    alert(0);
+    break;
+  case 1:
+    alert(1);
+    break;
+  case 2:
+  case 3:
+    alert("2, 3");
+    break;
+  default:
+    alert("Huh?");
+}
