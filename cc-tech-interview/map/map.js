@@ -22,7 +22,7 @@ function map(collection, banana) {
     for (var i = 0; i < collection.length; i++) {
       newArray.push(banana(collection[i]));
     }
-    return newArray;
+  return newArray;
   }
   for (let prop in collection) {
     newArray.push(banana(collection[prop]));
