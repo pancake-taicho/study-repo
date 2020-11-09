@@ -437,7 +437,7 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // For true deep cloning, using a recursive loop (how?) or 
 // _.cloneDeep(obj) function from lodash (there are other libraries that can deep clone)
 
-// ROw SUM OF ODD NUMBERS:
+// ROW SUM OF ODD NUMBERS:
 
 // function rowSumOddNumbers(n) {
 //   var value = (n*n) - (n-1);
@@ -455,3 +455,111 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // console.log(rowSumOddNumbers(1));
 // console.log(rowSumOddNumbers(42));
+
+// KEYWORD 'THIS':
+
+// let user = { name: "John" };
+// let admin = { name: "Admn" };
+
+// // let sayHi = () => alert(this.name); <-- doesn't work
+
+// function sayHi() {
+//   alert(this.name);
+// }
+
+// // use the same function in two objects
+// user.f = sayHi;
+// admin.f = sayHi;
+
+// // these calls have different 'this'
+// // 'this' inside the function is the object 'before the dot'
+// user.f();
+// admin.f();
+
+// admin['f']();
+
+// an arrow function's 'this' is taken from the outer 'normal' function:
+
+// let user = {
+//   firstName: "Ilya",
+//   sayHi() {
+//     let arrow = () => alert(this.firstName);
+//     arrow();
+//   }
+// };
+
+// user.sayHi(); // Ilya
+
+// TASK: USING 'THIS' IN OBJECT LITERAL:
+
+// function makeUser() {
+//   return {
+//     name: "John",
+//     ref: this
+//   };
+// }
+
+// let user = makeUser();
+
+// alert( user.ref.name ); // What's the result?
+// // Error: Cannot read property 'name' of undefined
+// // doesn't work because 'this' is called as a function and not a method with dot syntax
+
+// function makeUser() {
+//   return {
+//     name: "John",
+//     ref() {
+//       return this;
+//     }
+//   };
+// }
+
+// let user = makeUser();
+
+// alert( user.ref().name );
+// // works because user.ref() is a method and 
+// // the value of 'this' is set to the object before the dot
+
+// TASK: CREATE A CALCULATOR
+
+// my solution:
+// let calculator = {
+//   read() {
+//     let a = prompt("Enter input 'a'");
+//     let b = prompt("Enter input 'b'");
+//     return this.input1 = +a, this.input2 = +b;
+//   },
+
+//   sum() {
+//     return this.input1 + this.input2;
+//   },
+
+//   mul() {
+//     return this.input1 * this.input2;
+//   }
+// };
+
+// calculator.read();
+// alert( calculator.sum() );
+// alert( calculator.mul() );
+
+// tutorial solution:
+
+let calculator = {
+  sum() {
+    return this.a + this.b;
+  },
+
+  mul() {
+    return this.a * this.b;
+  },
+
+  read() {
+    this.a = +prompt('a?', 0);
+    this.b = +prompt('b?', 0);
+  }
+};
+
+calculator.read();
+alert( calculator.sum() );
+alert( calculator.mul() );
