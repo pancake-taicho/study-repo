@@ -143,7 +143,7 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 //   alert ("We hope this page looks good!");
 // }
 
-let a = +prompt("a?", "");
+// let a = +prompt("a?", "");
 
 // if (a == 0) {
 //   alert(0);
@@ -172,3 +172,40 @@ let a = +prompt("a?", "");
 //     alert("Huh?");
 // }
 
+// let age = prompt('What\'s your age?');
+
+// function checkAge(age) {
+//   return (age >= 18) ? true : confirm('Did your parents allow you?');
+// }
+
+// function checkAge(age) {
+//   return (age >= 18) || confirm('Did your parents allow you?');
+// }
+
+// checkAge(age);
+
+// let a = prompt('Input number \'a\'');
+// let b = prompt('Input number \'b\'');
+
+// function min(a, b) {
+//   return (a < b) ? alert(a + ' is less than ' + b) : alert(b + 'is less than' + a);
+// }
+
+// min(a, b);
+
+function pow(x, n) {
+  let result = x;
+  for (let i = 0; i < n; i++) {
+    result *= x;
+  }
+  return result;
+}
+
+let x = prompt('Enter x');
+let n = prompt('Enter n');
+
+if (n < 1) {
+  n = prompt(`Power ${n} is not supported. Please input a positive integer for \'n\':`)
+} else {
+  alert( pow(x, n) );
+}
