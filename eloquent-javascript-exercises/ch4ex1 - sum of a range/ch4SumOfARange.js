@@ -1,10 +1,19 @@
 function range(start, end, step) {
   var range = [];
-  for (var i = 0; i <= Math.abs(end - start); i++) {
-    if (step) {
-      range[i] = start;
-    } else {
-    range[i] = start + i;
+  var rangeValue = (end - start);
+  if (arguments.length == 2 || step == 0) {
+    step = 1;
+  }
+  if (step > 0) {
+    for (var i = 0; i <= rangeValue; i++) {
+      range.push(start);
+      start += step;
+    }
+  }
+  if (step < 0) {
+    for (var i = 0; i >= rangeValue; i--) {
+      range.push(start);
+      start += step;
     }
   }
   return range;

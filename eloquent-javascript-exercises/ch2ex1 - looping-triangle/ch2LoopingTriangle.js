@@ -15,7 +15,7 @@ I was reminded of how strings can be added upon like numbers via concatenation w
 Also, in a for loop, the initializing statement can be both a string and called via console.log(); 
 it doesn't have to always be a "var i = 0" counter.
 
-Solution in EJS:
+SOLUTION IN EJS:
 
 for(var line = "#"; line.length < 8; line += "#")
   console.log(line);

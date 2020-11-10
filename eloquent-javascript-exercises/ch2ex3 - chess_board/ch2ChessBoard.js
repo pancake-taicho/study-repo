@@ -24,7 +24,7 @@ output along an x-axis and output along a y-axis. By using % to determine whethe
 x and y counters are even or odd, you can determine whether a line of the board is an even or odd 
 one and thus whether an output should be a space or a # to create a staggered board spaces. 
 
-Solution in  EJS:
+SOLUTION IN  EJS:
 
 var size = 8;
 
