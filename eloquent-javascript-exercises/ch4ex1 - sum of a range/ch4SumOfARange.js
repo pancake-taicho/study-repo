@@ -6,4 +6,4 @@ function range(start, end) {
   return sum;
 }
 
-console.log(range(1, 10));
+console.log(range(1, 10));1
