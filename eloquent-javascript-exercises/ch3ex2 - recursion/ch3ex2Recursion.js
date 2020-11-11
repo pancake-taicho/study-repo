@@ -34,7 +34,7 @@ console.log(isEven(-4));
 
 /* 
 
-Solution in EJS:
+SOLUTION IN EJS:
 
 function isEven(n) {
   if (n == 0) return true;

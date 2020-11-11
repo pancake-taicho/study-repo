@@ -34,7 +34,7 @@ console.log(countBs("BaBBadook"));
 console.log(countBs("BABAYAGA"));
 // -> 2
 
-Solution in EJS:
+SOLUTION IN EJS:
 
 function countChar(string, ch) {
   let counted = 0;

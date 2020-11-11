@@ -545,21 +545,105 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // tutorial solution:
 
-let calculator = {
-  sum() {
-    return this.a + this.b;
-  },
+// let calculator = {
+//   sum() {
+//     return this.a + this.b;
+//   },
 
-  mul() {
-    return this.a * this.b;
-  },
+//   mul() {
+//     return this.a * this.b;
+//   },
 
-  read() {
-    this.a = +prompt('a?', 0);
-    this.b = +prompt('b?', 0);
+//   read() {
+//     this.a = +prompt('a?', 0);
+//     this.b = +prompt('b?', 0);
+//   }
+// };
+
+// calculator.read();
+// alert( calculator.sum() );
+// alert( calculator.mul() );
+
+// TASK: CHAINING
+
+// let ladder = {
+//   step: 0,
+//   up() {
+//     this.step++;
+//   },
+//   down() {
+//     this.step--;
+//   },
+//   showStep: function() {
+//     alert( this.step ); // shows the current step
+//   }
+// };
+
+// // to make several calls in sequence, you can do it like this:
+
+// ladder.up();
+// ladder.up();
+// ladder.down();
+// ladder.showStep(); // 1
+
+// // but we can also make the calls chainable, like this:
+
+// ladder.up().up().down().showStep(); // 1
+// // this approach is widely used across JS libraries
+
+// TAKS: TWO FUNCTIONS - ONE OBJECT:
+
+// Is it possible to create functions A and B such that
+// new A() == new B()?
+
+// Yes, it is. If a function returns an object then 
+// 'new' returns that object instead of 'this'.
+// So they can, for instance, return the same externally
+// defined object.
+
+// let obj = {};
+
+// function A() { return obj; }
+// function B() { return obj; }
+
+// alert( new A() == new B() ); // true
+
+// TASK: CREATE NEW CALCULATOR
+
+// function Calculator() {
+//   this.read = function() {
+//     this.a = +prompt('a?', '0');
+//     this.b = +prompt('b?', '0');
+//   }
+//   this.sum = function() {
+//     return this.a + this.b;
+//   }
+
+//   this.mul = function() {
+//     return this.a * this.b;
+//   }
+// }
+
+// let calculator = new Calculator();
+// calculator.read();
+
+// alert( "Sum = " + calculator.sum() );
+// alert( "Mul = " + calculator.mul() );
+
+// TASK: CREATE NEW ACCUMULATOR
+
+function Accumulator(startingValue) {
+  this.value = startingValue;
+  this.read = function() {
+    this.newValue = +prompt('new value?', '0');
+    return this.value += this.newValue;
   }
-};
+}
 
-calculator.read();
-alert( calculator.sum() );
-alert( calculator.mul() );
+let accumulator = new Accumulator(+prompt('starting value?', '0')); // prompts for initial value
+alert(accumulator.value);
+
+accumulator.read(); // adds the user-entered value
+accumulator.read(); // adds the user-entered value
+
+alert(accumulator.value); // shows the sum of these values

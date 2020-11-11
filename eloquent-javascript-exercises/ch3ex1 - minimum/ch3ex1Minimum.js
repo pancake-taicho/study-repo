@@ -15,7 +15,7 @@ console.log(minimum(10, 16));
 
 /*
 
-Solution in EJS:
+SOLUTION IN EJS:
 
 function min(a, b) {
   if (a < b) return a;

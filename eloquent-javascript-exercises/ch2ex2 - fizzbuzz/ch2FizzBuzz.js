@@ -26,7 +26,7 @@ onto an output string, which can then be printed in console.log().
 Also, you can use logic operators (&& and ||) within console.log() - as well as any other function -
 to choose between different outputs (output || n) or output values from multiple variables.
 
-Solution in EJS:
+SOLUTION IN EJS:
 
 for(var n = 1; n <= 100; n++) {
   var output = "";
