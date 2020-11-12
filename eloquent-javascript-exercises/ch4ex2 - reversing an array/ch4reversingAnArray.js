@@ -1,3 +1,5 @@
+// My solution:
+
 function reverseArray(array) {
   let newArray = [];
   for (let i = array.length - 1; i >= 0; i--) {
@@ -6,11 +8,20 @@ function reverseArray(array) {
   return newArray;
 }
 
+// I don't know if this is the 'desired' solution, since I used
+// a placeholder array to store the values and then push them
+// back onto the original as I shift the original values.
+// Does this count as 'reversing an array in place'?
+// --> It does NOT count, according to the hints.
+
 function reverseArrayInPlace(array) {
-  let j = array.length - 1;
+  let storedArray = [];
   for (let i = 0; i < array.length; i++) {
-    array[i] = array[j - i];
-    console.log(j);
+    storedArray[i] = array[i];
+  }
+  for (let j = storedArray.length - 1; j >= 0; j--) {
+    array.push(storedArray[j]);
+    array.shift();
   }
   return array;
 }
