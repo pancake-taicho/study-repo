@@ -1,3 +1,5 @@
+// MY SOLUTION:
+
 function countChar(string, char) {
   var charCounter = 0;
   for(var i = 0; i < string.length; i++) {

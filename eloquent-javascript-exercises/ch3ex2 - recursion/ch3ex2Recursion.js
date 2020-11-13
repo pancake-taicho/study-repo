@@ -1,9 +1,7 @@
-/* 
+// MY SOLUTION 
 
-my original solution; again, trying to assume what kind of code the book wants.
-the evenCheck function wrapped in the isEven function is redundant
-
-*/
+// Again, trying to assume what kind of code the book wants.
+// The evenCheck function wrapped in the isEven function is redundant.
 
 function isEven(number) {
   function evenCheck(number) {

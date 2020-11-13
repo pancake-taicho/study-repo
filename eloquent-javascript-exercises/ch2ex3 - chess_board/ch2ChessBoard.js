@@ -1,3 +1,5 @@
+// MY SOLUTION:
+
 var size = Number(prompt("Enter a number for the size of your board."));
 while (isNaN(size)) {
   size = Number(prompt("Please enter a number."));

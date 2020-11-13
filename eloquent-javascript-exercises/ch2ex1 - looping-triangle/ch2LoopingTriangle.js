@@ -1,3 +1,5 @@
+// MY SOLUTION:
+
 var triangleSize = Number(prompt("How tall do you want your triangle to be?"));
 while (isNaN(triangleSize)) {
   triangleSize = Number(prompt("Please input a number."))

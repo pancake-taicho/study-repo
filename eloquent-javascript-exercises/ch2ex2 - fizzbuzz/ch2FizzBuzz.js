@@ -1,3 +1,5 @@
+// MY SOLUTION:
+
 var number = Number(prompt("Input your number."));
 
 while(isNaN(number)){
