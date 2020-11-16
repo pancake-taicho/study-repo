@@ -632,18 +632,137 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // TASK: CREATE NEW ACCUMULATOR
 
-function Accumulator(startingValue) {
-  this.value = startingValue;
-  this.read = function() {
-    this.newValue = +prompt('new value?', '0');
-    return this.value += this.newValue;
-  }
+// function Accumulator(startingValue) {
+//   this.value = startingValue;
+//   this.read = function() {
+//     this.newValue = +prompt('new value?', '0');
+//     return this.value += this.newValue;
+//   }
+// }
+
+// let accumulator = new Accumulator(+prompt('starting value?', '0')); // prompts for initial value
+// alert(accumulator.value);
+
+// accumulator.read(); // adds the user-entered value
+// accumulator.read(); // adds the user-entered value
+
+// alert(accumulator.value); // shows the sum of these values
+
+// let user = {
+//   name: "John",
+//   money: 1000,
+
+//   toString() {
+//     return `{name: "${this.name}"}`;
+//   },
+
+//   valueOf() {
+//     return this.money;
+//   }
+// };
+
+// let user2 = {
+//   name: "Bob",
+//   money: 1500,
+
+//   [Symbol.toPrimitive](hint) {
+//     alert(`hint: ${hint}`);
+//     return hint == "string" ? `{name: "${this.name}"}` : this.money;
+//   }
+// };
+
+// alert(user);
+// alert(+user);
+// alert(user + 500);
+
+// alert(user2);
+// alert(+user2);
+// alert(user2 + 500);
+// alert(user2 + " Hello!");
+
+// CALLING A METHOD WITH DOUBLE-DOT NOTATION: 
+
+// alert( 12345..toString(16));
+
+// TASK: SUM TWO NUMBERS
+
+// let a = +prompt('Enter first number', '');
+// let b = +prompt('Enter second number', '');
+
+// alert( a + b );
+
+// TASK: REPEAT UNTIL THE INPUT IS A NUMBER
+
+// function readNumber() {
+//   let num = +prompt('Enter a number', '');
+//   while (isNaN(num)) {
+//     num = +prompt('Please enter a number', '');
+//   }
+//   if(!isNaN(num)) {
+//     return alert(num);
+//   } else {
+//     return null;
+//   }
+// }
+
+// readNumber();
+
+/* 
+
+TUTORIAL'S SOLUTION:
+
+function readNumber() {
+  let num;
+
+  do {
+    num = prompt("Enter a number, please.", 0);
+  } while ( !isFinite(num) );
+
+  if ( num === null || num === '' ) return null;
+  
+  return +num;
 }
 
-let accumulator = new Accumulator(+prompt('starting value?', '0')); // prompts for initial value
-alert(accumulator.value);
+alert( `Read: ${readNumber()}`);
 
-accumulator.read(); // adds the user-entered value
-accumulator.read(); // adds the user-entered value
+*/
 
-alert(accumulator.value); // shows the sum of these values
+// TASK: A RANDOM NUMBER FROM MIN TO MAX
+
+// function random(min, max) {
+//   let randomNum = Math.random() * (max - min) + min;
+//   return alert(randomNum);
+// }
+
+// random(1, 5);
+
+// TASK: A RANDOM INTEGER FROM MIN TO MAX
+
+// function randomInteger(min, max) {
+//   let num = Math.floor(Math.random() * (max - min + 1) + min);
+//   return alert(num);
+// }
+
+// randomInteger(1, 5);
+
+/*
+
+// TUTORIAL SOLUTION 1:
+
+function randomInteger(min, max) {
+  let rand = min - 0.5 + Math.random() * (max - min + 1);
+  return Math.round(rand);
+}
+
+alert(randomInteger(1, 3));
+
+// TUTORIAL SOLUTION 2:
+
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+alert(randomIntger(1 ,3));
+
+*/
