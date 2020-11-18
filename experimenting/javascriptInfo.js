@@ -766,3 +766,82 @@ function randomInteger(min, max) {
 alert(randomIntger(1 ,3));
 
 */
+
+// TASK: UPPERCASE THE FIRST CHARACTER
+
+// MY SOLUTION:
+
+// function ucFirst(str) {
+//   str = str[0].toUpperCase() + str.slice(1);
+//   return alert(str);
+// }
+
+// TUTORIAL SOLUTION:
+
+// function ucFirst(str) {
+//   if (!str) return str; 
+//   // need to check for an empty string to avoid error from
+//   // calling .toUpperCase() on a string element that doesn't exist ('undefined')
+
+//   return sr[0].toUpperCase() + str.slice(1);
+// }
+
+// let testStr = "john";
+// ucFirst(testStr);
+
+// TASK: CHECK SPAM
+
+// function checkSpam(str) {
+//   let lowerStr = str.toLowerCase();
+//   alert(lowerStr);
+//   return alert(lowerStr.includes('viagra') || lowerStr.includes('xxx'));
+// }
+
+// let testStr = "ViAgRa";
+// let testStr2 = "free xxxxx";
+// let testStr3 = "innocent penguin";
+// checkSpam(testStr);
+// checkSpam(testStr2);
+// checkSpam(testStr3);
+
+// TASK: TRUNCATE THE TEXT
+
+// MY SOLUTION:
+
+// function truncate(str, maxlength) {
+//   if (str.length <= maxlength) {
+//     return str;
+//   } else {
+//     let truncStr = str.slice(0, maxlength - 1) + '\u2026';
+//     return truncStr;
+//   }
+// }
+
+// TUTORIAL SOLUTION:
+
+// function truncate(str, maxlength) {
+//   return (str.length > maxlength) ?
+//     str.slice(0, maxlength - 1) + '…' : str;
+// }
+
+// let testStr = "Hey! You!";
+// let testStr2 = "Supercalifragilisticexpialidocious";
+// truncate(testStr, 20);
+// truncate(testStr2, 20);
+
+// TASK: EXTRACT THE MONEY
+
+// MY SOLUTION:
+
+// function extractCurrencyValue(cost) {
+//   return Number(cost.slice(1));
+// }
+
+// TUTORIAL SOLUTION:
+
+// function extractCurrencyValue(str) {
+//   return +str.slice(1);
+// }
+
+// let testCost = "$120";
+// alert( extractCurrencyValue(testCost) === 120);
