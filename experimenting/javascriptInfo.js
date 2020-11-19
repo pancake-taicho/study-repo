@@ -845,3 +845,103 @@ alert(randomIntger(1 ,3));
 
 // let testCost = "$120";
 // alert( extractCurrencyValue(testCost) === 120);
+
+// TASK: IS ARRAY COPIED?
+
+// let fruits = ['Apple', 'Orange', 'Pair'];
+
+// // Push a new value into the copy
+// let shoppingCart = fruits;
+// shoppingCart.push('Banana');
+
+// // What's in fruits now?
+// alert( fruits.length );
+// // -> 4
+
+// Because arrays are objects, and 'shoppingCart' and 'fruits' are
+// references to the same array, 'fruits' reflects 'shoppingCart'
+
+// TASK: ARRAY OPERATIONS
+
+// Create an array 'styles' with items 'Jazz' and 'Blues'
+// let styles = ['Jazz', 'Blues'];
+// alert(styles);
+
+// // Append 'Rock-n-Roll' to the end
+// styles.push('Rock-n-Roll');
+// alert(styles);
+
+// // Replace the value in the middle with 'Classics'.
+// // Your code for finding the middle value should work with arrays of odd length.
+// styles[Math.floor((styles.length - 1 )/ 2)] = 'Classics';
+// alert(styles);
+
+// // Strip off the first value of the array and show it
+// alert(styles.shift());
+// alert(styles);
+
+// // Prepend 'Rap' and 'Reggae' to the array
+// styles.unshift('Rap', 'Reggae');
+// alert(styles);
+
+// TASK: CREATE AN ARRAY IN CONTEXT
+
+// What is the result? Why?
+// let arr = ['a', 'b'];
+
+// arr.push(function() {
+//   alert( this );
+// });
+
+// arr[2](); // ?
+// -> a,b,function() {...}
+
+// The call 'arr[2]()' is syntactically 'obj[method]()'.
+// 'arr' is in the role of 'obj' and [2] is in the role of 'method'.
+// The call of the function 'arr[2]()' is an object method, and it
+// receives 'this' referencing 'arr' and outputs the array.
+
+// TASK: SUM INPUT NUMBERS
+
+// **FAILED: I COULDN'T FIGURE OUT THE CONDITIONAL WITHOUT LOOKING AT THE SOLUTION**
+
+// DOESN'T WORK:
+// function sumInput() {
+//   let nums = [];
+//   let input = 0;
+//   let sum = 0;
+//   do {
+//     input = prompt('Please enter a number to add');
+//     nums.push(+input);
+//   }
+//   while (isNan(+input));
+//   for (let i = 0; i < nums.length; i++) {
+//     sum += nums[i];
+//   }
+//   return alert(sum);
+// }
+
+// sumInput();
+
+// TUTORIAL SOLUTION:
+
+function sumInput() {
+  let numbers = [];
+
+  while (true) {
+    let value = prompt('A number, please', '0');
+
+    // Should we cancel?
+    if (value === '' || value === null || !isFinite(value)) break;
+
+    numbers.push(+value);
+  }
+
+  let sum = 0;
+  for (let number of numbers) {
+    sum += number;
+  }
+  return sum;
+}
+
+alert( sumInput() );
