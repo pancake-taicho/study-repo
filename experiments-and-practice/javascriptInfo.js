@@ -925,23 +925,84 @@ alert(randomIntger(1 ,3));
 
 // TUTORIAL SOLUTION:
 
-function sumInput() {
-  let numbers = [];
+// function sumInput() {
+//   let numbers = [];
 
-  while (true) {
-    let value = prompt('A number, please', '0');
+//   while (true) {
+//     let value = prompt('A number, please', '0');
 
-    // Should we cancel?
-    if (value === '' || value === null || !isFinite(value)) break;
+//     // Should we cancel?
+//     if (value === '' || value === null || !isFinite(value)) break;
 
-    numbers.push(+value);
+//     numbers.push(+value);
+//   }
+
+//   let sum = 0;
+//   for (let number of numbers) {
+//     sum += number;
+//   }
+//   return sum;
+// }
+
+// alert( sumInput() );
+
+// TASK: A MAXIMAL SUBARRAY
+
+function getMaxSubSum(arr) {
+  let currentSum = 0;
+  let maxSum = 0;
+  console.log(maxSum);
+  for (let i = 0; i < arr.length; i++) {
+    if (currentSum > maxSum) {
+      maxSum = currentSum;
+      console.log(maxSum);
+    }
+    if (currentSum >= 0) {
+      currentSum += arr[i];
+    } else if (currentSum < 0) {
+      currentSum = 0;
+    }
   }
-
-  let sum = 0;
-  for (let number of numbers) {
-    sum += number;
-  }
-  return sum;
+  return maxSum;
 }
 
-alert( sumInput() );
+let testArr = [-1, 2, 3, -9];
+let testArr2 = [2, -1, 2, 3, -9];
+let testArr3 = [-1, 2, 3, -9, 11];
+let testArr4 = [-2, -1, 1, 2];
+let testArr5 = [100, -9, 2, -3, 5];
+let testArr6 = [1, 2, 3];
+
+
+getMaxSubSum(testArr); 
+// 5
+getMaxSubSum(testArr2); 
+// 6
+getMaxSubSum(testArr3); 
+// 11
+getMaxSubSum(testArr4); 
+// 3
+getMaxSubSum(testArr5); 
+// 100
+getMaxSubSum(testArr6); 
+// 6
+
+/*
+
+currentSum (to keep track of current sum) = 0
+maxSum (to keep track of maximum sum and compare current sum to it) = 0
+
+loop through array starting with 1st val
+
+if currentSum is greater than or equal to 0:
+  add current val to currentSum
+  if currentSum is greater than maxSum
+    maxSum get currentSum
+else 
+  currentSum is set to 0
+  maxSum is set to 0
+  continue loop through array
+
+return maxSum
+
+*/
