@@ -1,6 +1,6 @@
 // alert("I'm JavaScript!");
 
-// ----
+// ------------------------------------------------------------
 
 // let name = "John";
 // let admin = name;
@@ -10,20 +10,20 @@
 // let ourPlanetName = "Earth";
 // let currentUserName = "Mike";
 
-// ----
+// ------------------------------------------------------------
 
 // let name = "Ilya";
 // alert(`Hello, ${name}!`); 
 // alert(`Hello, ${"name"}!`);
 // alert(`Hello, ${1}!`);
 
-// ----
+// ------------------------------------------------------------
 
 // let userName = prompt("What is your name, user?");
 // let nameIsCorrect = confirm(`Your name is ${userName}, right?`);
 // alert(`Your name is ${userName}!`);
 
-// ----
+// ------------------------------------------------------------
 
 // let jsName = prompt("What is the official name of JavaScript?", "");
 // if (jsName == "ECMAScript") {
@@ -32,7 +32,7 @@
 //   alert("You don't know? It's ECMAScript.");
 // }
 
-// ----
+// ------------------------------------------------------------
 
 // let num = prompt("Type in a number"); <-- need to reprompt if anything but a number is input
 // if(num > 0) {
@@ -43,11 +43,11 @@
 //   alert(0);
 // }
 
-//----
+// ------------------------------------------------------------
 
 // let result = (a + b < 4) ? 'Below' : 'Over';
 
-// ----
+// ------------------------------------------------------------
 
 // let login = prompt("Enter login");
 
@@ -58,7 +58,7 @@
 
 // alert(message);
 
-// ----
+// ------------------------------------------------------------
 
 /*
 if (age >= 14 && age <= 90); //checks if age is between 14 and 90 inclusively
@@ -99,9 +99,10 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // }
 */
 
-// ----
+// ------------------------------------------------------------
 
 // PRIME NUMBERS:
+
 // let n = 15;
 
 // nextPrime:
@@ -235,6 +236,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 //   function() {alert('You canceled the execution.')}
 // );
 
+// ------------------------------------------------------------
+
 // FUNCTION DECLARATION VS FUNCTION EXPRESSION
 
 // FUNCTION DECLARATION:
@@ -245,6 +248,7 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // }
 
 // FUNCTION EXPRESSION:
+
 // sayHi('John');
 
 // let sayHi = function(name) {
@@ -278,6 +282,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // welcome();
 
+// ------------------------------------------------------------
+
 // ARROW FUNCTIONS:
 
 // let age = prompt('What is your age?', 18);
@@ -288,7 +294,9 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // welcome();
 
-// // ARROW FUNCTION WITH MULTIPLE LINES (USES CURLY BRACES AND A RETURN):
+// ------------------------------------------------------------
+
+// ARROW FUNCTION WITH MULTIPLE LINES (USES CURLY BRACES AND A RETURN):
 
 // let add = (a, b) => { // the curly brace opens a multiline function
 //   let result = a + b;
@@ -376,6 +384,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // console.log(menu);
 
+// ------------------------------------------------------------
+
 // CLONING AN OBJECT:
 
 // let user = {
@@ -392,6 +402,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // console.log(clone);
 // clone.name = "Mike";
 // console.log(clone);
+
+// ------------------------------------------------------------
 
 // OBJECT.ASSIGN:
 
@@ -415,6 +427,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // console.log(clone);
 // // copies all properties of 'user' into empty object and returns it
 
+// ------------------------------------------------------------
+
 // NESTED CLONING:
 
 // let user = {
@@ -437,6 +451,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // For true deep cloning, using a recursive loop (how?) or 
 // _.cloneDeep(obj) function from lodash (there are other libraries that can deep clone)
 
+// ------------------------------------------------------------
+
 // ROW SUM OF ODD NUMBERS:
 
 // function rowSumOddNumbers(n) {
@@ -455,6 +471,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // console.log(rowSumOddNumbers(1));
 // console.log(rowSumOddNumbers(42));
+
+// ------------------------------------------------------------
 
 // KEYWORD 'THIS':
 
@@ -490,6 +508,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // user.sayHi(); // Ilya
 
+// ------------------------------------------------------------
+
 // TASK: USING 'THIS' IN OBJECT LITERAL:
 
 // function makeUser() {
@@ -519,6 +539,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // alert( user.ref().name );
 // // works because user.ref() is a method and 
 // // the value of 'this' is set to the object before the dot
+
+// ------------------------------------------------------------
 
 // TASK: CREATE A CALCULATOR
 
@@ -564,6 +586,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // alert( calculator.sum() );
 // alert( calculator.mul() );
 
+// ------------------------------------------------------------
+
 // TASK: CHAINING
 
 // let ladder = {
@@ -591,6 +615,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // ladder.up().up().down().showStep(); // 1
 // // this approach is widely used across JS libraries
 
+// ------------------------------------------------------------
+
 // TAKS: TWO FUNCTIONS - ONE OBJECT:
 
 // Is it possible to create functions A and B such that
@@ -607,6 +633,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // function B() { return obj; }
 
 // alert( new A() == new B() ); // true
+
+// ------------------------------------------------------------
 
 // TASK: CREATE NEW CALCULATOR
 
@@ -630,6 +658,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // alert( "Sum = " + calculator.sum() );
 // alert( "Mul = " + calculator.mul() );
 
+// ------------------------------------------------------------
+
 // TASK: CREATE NEW ACCUMULATOR
 
 // function Accumulator(startingValue) {
@@ -647,6 +677,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // accumulator.read(); // adds the user-entered value
 
 // alert(accumulator.value); // shows the sum of these values
+
+// ------------------------------------------------------------
 
 // let user = {
 //   name: "John",
@@ -680,6 +712,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // alert(user2 + 500);
 // alert(user2 + " Hello!");
 
+// ------------------------------------------------------------
+
 // CALLING A METHOD WITH DOUBLE-DOT NOTATION: 
 
 // alert( 12345..toString(16));
@@ -690,6 +724,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // let b = +prompt('Enter second number', '');
 
 // alert( a + b );
+
+// ------------------------------------------------------------
 
 // TASK: REPEAT UNTIL THE INPUT IS A NUMBER
 
@@ -727,6 +763,8 @@ alert( `Read: ${readNumber()}`);
 
 */
 
+// ------------------------------------------------------------
+
 // TASK: A RANDOM NUMBER FROM MIN TO MAX
 
 // function random(min, max) {
@@ -735,8 +773,6 @@ alert( `Read: ${readNumber()}`);
 // }
 
 // random(1, 5);
-
-// TASK: A RANDOM INTEGER FROM MIN TO MAX
 
 // function randomInteger(min, max) {
 //   let num = Math.floor(Math.random() * (max - min + 1) + min);
@@ -767,6 +803,8 @@ alert(randomIntger(1 ,3));
 
 */
 
+// ------------------------------------------------------------
+
 // TASK: UPPERCASE THE FIRST CHARACTER
 
 // MY SOLUTION:
@@ -789,6 +827,8 @@ alert(randomIntger(1 ,3));
 // let testStr = "john";
 // ucFirst(testStr);
 
+// ------------------------------------------------------------
+
 // TASK: CHECK SPAM
 
 // function checkSpam(str) {
@@ -803,6 +843,8 @@ alert(randomIntger(1 ,3));
 // checkSpam(testStr);
 // checkSpam(testStr2);
 // checkSpam(testStr3);
+
+// ------------------------------------------------------------
 
 // TASK: TRUNCATE THE TEXT
 
@@ -829,6 +871,8 @@ alert(randomIntger(1 ,3));
 // truncate(testStr, 20);
 // truncate(testStr2, 20);
 
+// ------------------------------------------------------------
+
 // TASK: EXTRACT THE MONEY
 
 // MY SOLUTION:
@@ -846,6 +890,8 @@ alert(randomIntger(1 ,3));
 // let testCost = "$120";
 // alert( extractCurrencyValue(testCost) === 120);
 
+// ------------------------------------------------------------
+
 // TASK: IS ARRAY COPIED?
 
 // let fruits = ['Apple', 'Orange', 'Pair'];
@@ -860,6 +906,8 @@ alert(randomIntger(1 ,3));
 
 // Because arrays are objects, and 'shoppingCart' and 'fruits' are
 // references to the same array, 'fruits' reflects 'shoppingCart'
+
+// ------------------------------------------------------------
 
 // TASK: ARRAY OPERATIONS
 
@@ -884,6 +932,8 @@ alert(randomIntger(1 ,3));
 // styles.unshift('Rap', 'Reggae');
 // alert(styles);
 
+// ------------------------------------------------------------
+
 // TASK: CREATE AN ARRAY IN CONTEXT
 
 // What is the result? Why?
@@ -900,6 +950,8 @@ alert(randomIntger(1 ,3));
 // 'arr' is in the role of 'obj' and [2] is in the role of 'method'.
 // The call of the function 'arr[2]()' is an object method, and it
 // receives 'this' referencing 'arr' and outputs the array.
+
+// ------------------------------------------------------------
 
 // TASK: SUM INPUT NUMBERS
 
@@ -946,46 +998,51 @@ alert(randomIntger(1 ,3));
 
 // alert( sumInput() );
 
+// ------------------------------------------------------------
+
 // TASK: A MAXIMAL SUBARRAY
 
-function getMaxSubSum(arr) {
-  let currentSum = 0;
-  let maxSum = 0;
-  console.log(maxSum);
-  for (let i = 0; i < arr.length; i++) {
-    if (currentSum > maxSum) {
-      maxSum = currentSum;
-      console.log(maxSum);
-    }
-    if (currentSum >= 0) {
-      currentSum += arr[i];
-    } else if (currentSum < 0) {
-      currentSum = 0;
-    }
-  }
-  return maxSum;
-}
+//  MY SOLUTION:
 
-let testArr = [-1, 2, 3, -9];
-let testArr2 = [2, -1, 2, 3, -9];
-let testArr3 = [-1, 2, 3, -9, 11];
-let testArr4 = [-2, -1, 1, 2];
-let testArr5 = [100, -9, 2, -3, 5];
-let testArr6 = [1, 2, 3];
+// function getMaxSubSum(arr) {
+//   let currentSum = 0;
+//   let maxSum = 0;
+//   console.log(maxSum);
+//   for (let i = 0; i < arr.length; i++) {
+//     if (currentSum + arr[i] >= 0) {
+//       currentSum += arr[i];
+//     } else if (currentSum + arr[i] < 0) {
+//       currentSum = 0;
+//     }
+//     console.log(currentSum);
+//     if (currentSum > maxSum) {
+//       maxSum = currentSum;
+//       console.log(maxSum);
+//     }
+//   }
+//   return alert(maxSum);
+// }
+
+// let testArr = [-1, 2, 3, -9];
+// let testArr2 = [2, -1, 2, 3, -9];
+// let testArr3 = [-1, 2, 3, -9, 11];
+// let testArr4 = [-2, -1, 1, 2];
+// let testArr5 = [100, -9, 2, -3, 5];
+// let testArr6 = [1, 2, 3];
 
 
-getMaxSubSum(testArr); 
-// 5
-getMaxSubSum(testArr2); 
-// 6
-getMaxSubSum(testArr3); 
-// 11
-getMaxSubSum(testArr4); 
-// 3
-getMaxSubSum(testArr5); 
-// 100
-getMaxSubSum(testArr6); 
-// 6
+// getMaxSubSum(testArr); 
+// // 5
+// getMaxSubSum(testArr2); 
+// // 6
+// getMaxSubSum(testArr3); 
+// // 11
+// getMaxSubSum(testArr4); 
+// // 3
+// getMaxSubSum(testArr5); 
+// // 100
+// getMaxSubSum(testArr6); 
+// // 6
 
 /*
 
@@ -1006,3 +1063,48 @@ else
 return maxSum
 
 */
+
+// TUTORIAL SOLUTION:
+
+// function getMaxSubArray(arr) {
+//   let maxSum = 0;
+//   let partialSum = 0;
+
+//   for (let item of arr) { // for each item of arr
+//     partialSum += item; // add it to partialSum
+//     maxSum = Math.max(maxSum, partialSum); // remember the maximum
+//     if (partialSum < 0) partialSum = 0; // zero if negative
+//   }
+
+//   return maxSum;
+// }
+
+// ------------------------------------------------------------
+
+// SPLICE:
+
+// deletion:
+
+let arr = ["I", "study", "JavaScript"];
+
+arr.splice(1, 1); // from index 1 remove 1 element
+
+alert(arr); // ["I", "JavaScript"]
+
+// replace and remove:
+
+let arr = ["I", "study", "JavaScript", "right", "now"];
+
+// from index 0 remove 3 elements and replace them
+arr.splice(0, 3, "Let's", "dance"); 
+
+alert(arr); // ["Let's", "dance", "right", "now"]
+
+// returning an array of the removed elements
+
+let arr = ["I", "study", "JavaScript", "right", "now"];
+
+// remove first two elements and assign them to a variable
+let returned = arr.splice(0, 2);
+
+alert(removed); // "I", "study" <--- array of removed elements
