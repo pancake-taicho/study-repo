@@ -1080,10 +1080,12 @@ return maxSum
 // }
 
 // ------------------------------------------------------------
+// ARRAY METHODS
+// ------------------------------------------------------------
 
 // SPLICE:
 
-// deletion:
+// for deletion:
 
 let arr = ["I", "study", "JavaScript"];
 
@@ -1098,7 +1100,7 @@ let arr = ["I", "study", "JavaScript", "right", "now"];
 // from index 0 remove 3 elements and replace them
 arr.splice(0, 3, "Let's", "dance"); 
 
-alert(arr); // ["Let's", "dance", "right", "now"]
+alert(arr); // now ["Let's", "dance", "right", "now"]
 
 // returning an array of the removed elements
 
@@ -1107,4 +1109,181 @@ let arr = ["I", "study", "JavaScript", "right", "now"];
 // remove first two elements and assign them to a variable
 let returned = arr.splice(0, 2);
 
-alert(removed); // "I", "study" <--- array of removed elements
+alert(removed); // "I","study" <--- array of removed elements
+
+// insert elements without any removal:
+
+let arr = ["I", "study", "JavaScript"];
+
+// from index 2
+// delete 0
+// then insert "complex" and "language"
+arr.splice(2, 0, "complex", "language");
+
+alert(arr); // "I","study","complex","language","JavaScript"
+
+// negative indexes are allowed.
+// they specify the position from the END of the array:
+
+let arr = [1, 2, 5];
+
+// from index -1 (one step from the end)
+// delete 0 elements
+// then insert 3 and 4
+arr.splice(-1, 0, 3, 4); // 1,2,3,4,5
+
+// ------------------------------------------------------------
+
+// SLICE:
+
+// slice returns a copy of a subarray from a start index to an
+// end index (not included):
+let arr = ["t", "e", "s", "t"];
+
+alert(arr.slice(1, 3)); // e,s (copy of 1 to 3, not including 3)
+
+// negative indexes are allowed.
+// they specify the start index from the END of the array:
+alert(arr.slice(-2)); // s,t (copy from -2 till then end)
+
+// slice without arguments makes a copy of the original array
+// without changing it
+let arr = [1, 2, 3, 4, 5];
+
+let arrCopy = arr.slice();
+
+alert(arrCopy); // 1,2,3,4,5
+alert(arr); // 1,2,3,4,5
+
+// ------------------------------------------------------------
+
+// CONCAT:
+
+// creates new array that includes values from other arrays
+// and additional items:
+let arr = [1, 2];
+
+// create an array from: arr and [3, 4]
+alert(arr.concat([3, 4])); // 1,2,3,4 (copied whole array of [3 ,4])
+
+// create an array from: arr, [3, 4], and [5, 6]
+alert(arr.concat([3, 4], [5, 6])); // 1,2,3,4,5,6
+
+// create an array from: arr and [3, 4], then add 5 and 6
+alert(arr.concat([3, 4], 5, 6)); // 1,2,3,4,5,6
+
+// normally, only elements from arrays get copied,
+// but other objects, even if they look like arrays, 
+// are added as a whole:
+let arr = [1, 2];
+
+let arrayLike = {
+  0: "something",
+  length: 1,
+};
+
+alert(arr.concat(arrayLike)); // 1,2,[object Object]
+
+// but if an array-like object has a special 'Symbol.isConcatSpreadable'
+// property, then it's treated as an array and its elements are added:
+let arr = [1, 2];
+
+let arrayLike = {
+  0: "something",
+  1: "else",
+  [Symbol.isConcatSpreadable]: true,
+  length: 2,
+};
+
+alert( arr.concat(arrayLike) ); // 1,2,something,else
+
+// ------------------------------------------------------------
+
+// ITERATE: forEach
+
+// arr.forEach allows to run a function on each element of an array:
+arr.forEach(function(item, index, array) {
+  // ...do something with item...
+});
+
+// show each element of an array:
+// for each element call alert
+["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
+
+// a more elaborate code about their positions in the target array:
+["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+  alert(`${item} is at index ${index} in ${array}`);
+});
+
+// the result of function (if it returns any) is thrown away
+// and ignored (garbage collected?)
+
+// ------------------------------------------------------------
+
+// SEARCHING IN ARRAY
+
+// INDEXOF/LASTINDEXOF AND INCLUDES:
+
+// same as str counterparts but works on array items instead of characters.
+
+// arr.indexOf(item, from) - looks for 'item' starting from index 'from',
+// and returns the index where it was found, otherwise it returns -1
+
+// arr.lastIndexOf(item, from) - same but searches from left to right
+
+// arr.includes(item, from) - looks for 'item' starting at index 'from'
+// and returns 'true' if found
+
+let arr = [1, 0, false];
+
+alert( arr.indexOf(0)); // 1
+alert( arr.indexOf(false) ); // 2
+alert( arr.indexOf(null) ); // -1 (doesn't exist in arr)
+alert( arr.includes(1) ); // true
+
+// note that these methods use === for comparison, so if you look for 
+// 'false' they will find exactly 'false' and not '0'
+
+// to check for inclusion, but you don't know the exact index,
+// arr.includes is preferred
+
+// includes correctly handles NaN, unlike indexOf and lastIndexOf:
+const arr = [NaN];
+alert( arr.indexOf(NaN) ); // -1 (should be 0, but === equality doesn't work for NaN)
+alert( arr.includes(NaN) ); // true (correct)
+
+// ------------------------------------------------------------
+
+// FIND AND FINDINDEX:
+
+// arr.find(fn) finds an item with a specific condition:
+let result = arr.find(function(item, index, array) {
+  // if true is return, item is returned and iteration stops
+  // for falsy scenario, returns 'undefined'
+});
+
+// function is called for elements of the array, one after another:
+// 'item' is the element
+// 'index' is the index
+// 'array' is the array
+// if it returns 'true', the search is stopped, 'item' is returned,
+// if nothing is found, 'undefined' is returned
+
+// example: we have an array of users, each with an 'id' and a 'name'.
+// let's find the one with id == 1:
+let users = [
+  {id: 1, name: "John"},
+  {id: 2, name: "Pete"},
+  {id: 3, name: "Mark"}
+];
+
+let user = users.find(item => item.id == 1);
+
+alert(user.name); // John
+
+// the arr.findIndex method is essentially the same, but it returns the index
+// where the element was found instead of the element itself, -1 if not found
+
+// ------------------------------------------------------------
+
+// FILTER:
