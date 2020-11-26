@@ -237,8 +237,8 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 // );
 
 // ------------------------------------------------------------
-
 // FUNCTION DECLARATION VS FUNCTION EXPRESSION
+// ------------------------------------------------------------
 
 // FUNCTION DECLARATION:
 // sayHi('John'); // <--this works because the JS engine builds all global functions before execution
@@ -617,7 +617,7 @@ if (null || -1 && 1) alert('third'); //runs, -1 && 1 evaluates to true
 
 // ------------------------------------------------------------
 
-// TAKS: TWO FUNCTIONS - ONE OBJECT:
+// TASK: TWO FUNCTIONS - ONE OBJECT:
 
 // Is it possible to create functions A and B such that
 // new A() == new B()?
@@ -1085,205 +1085,326 @@ return maxSum
 
 // SPLICE:
 
-// for deletion:
+// // for deletion:
 
-let arr = ["I", "study", "JavaScript"];
+// let arr = ["I", "study", "JavaScript"];
 
-arr.splice(1, 1); // from index 1 remove 1 element
+// arr.splice(1, 1); // from index 1 remove 1 element
 
-alert(arr); // ["I", "JavaScript"]
+// alert(arr); // ["I", "JavaScript"]
 
-// replace and remove:
+// // replace and remove:
 
-let arr = ["I", "study", "JavaScript", "right", "now"];
+// let arr = ["I", "study", "JavaScript", "right", "now"];
 
-// from index 0 remove 3 elements and replace them
-arr.splice(0, 3, "Let's", "dance"); 
+// // from index 0 remove 3 elements and replace them
+// arr.splice(0, 3, "Let's", "dance"); 
 
-alert(arr); // now ["Let's", "dance", "right", "now"]
+// alert(arr); // now ["Let's", "dance", "right", "now"]
 
-// returning an array of the removed elements
+// // returning an array of the removed elements
 
-let arr = ["I", "study", "JavaScript", "right", "now"];
+// let arr = ["I", "study", "JavaScript", "right", "now"];
 
-// remove first two elements and assign them to a variable
-let returned = arr.splice(0, 2);
+// // remove first two elements and assign them to a variable
+// let returned = arr.splice(0, 2);
 
-alert(removed); // "I","study" <--- array of removed elements
+// alert(removed); // "I","study" <--- array of removed elements
 
-// insert elements without any removal:
+// // insert elements without any removal:
 
-let arr = ["I", "study", "JavaScript"];
+// let arr = ["I", "study", "JavaScript"];
 
-// from index 2
-// delete 0
-// then insert "complex" and "language"
-arr.splice(2, 0, "complex", "language");
+// // from index 2
+// // delete 0
+// // then insert "complex" and "language"
+// arr.splice(2, 0, "complex", "language");
 
-alert(arr); // "I","study","complex","language","JavaScript"
+// alert(arr); // "I","study","complex","language","JavaScript"
 
-// negative indexes are allowed.
-// they specify the position from the END of the array:
+// // negative indexes are allowed.
+// // they specify the position from the END of the array:
 
-let arr = [1, 2, 5];
+// let arr = [1, 2, 5];
 
-// from index -1 (one step from the end)
-// delete 0 elements
-// then insert 3 and 4
-arr.splice(-1, 0, 3, 4); // 1,2,3,4,5
+// // from index -1 (one step from the end)
+// // delete 0 elements
+// // then insert 3 and 4
+// arr.splice(-1, 0, 3, 4); // 1,2,3,4,5
 
 // ------------------------------------------------------------
 
 // SLICE:
 
-// slice returns a copy of a subarray from a start index to an
-// end index (not included):
-let arr = ["t", "e", "s", "t"];
+// // slice returns a copy of a subarray from a start index to an
+// // end index (not included):
+// let arr = ["t", "e", "s", "t"];
 
-alert(arr.slice(1, 3)); // e,s (copy of 1 to 3, not including 3)
+// alert(arr.slice(1, 3)); // e,s (copy of 1 to 3, not including 3)
 
-// negative indexes are allowed.
-// they specify the start index from the END of the array:
-alert(arr.slice(-2)); // s,t (copy from -2 till then end)
+// // negative indexes are allowed.
+// // they specify the start index from the END of the array:
+// alert(arr.slice(-2)); // s,t (copy from -2 till then end)
 
-// slice without arguments makes a copy of the original array
-// without changing it
-let arr = [1, 2, 3, 4, 5];
+// // slice without arguments makes a copy of the original array
+// // without changing it
+// let arr = [1, 2, 3, 4, 5];
 
-let arrCopy = arr.slice();
+// let arrCopy = arr.slice();
 
-alert(arrCopy); // 1,2,3,4,5
-alert(arr); // 1,2,3,4,5
+// alert(arrCopy); // 1,2,3,4,5
+// alert(arr); // 1,2,3,4,5
 
 // ------------------------------------------------------------
 
 // CONCAT:
 
-// creates new array that includes values from other arrays
-// and additional items:
-let arr = [1, 2];
+// // creates new array that includes values from other arrays
+// // and additional items:
+// let arr = [1, 2];
 
-// create an array from: arr and [3, 4]
-alert(arr.concat([3, 4])); // 1,2,3,4 (copied whole array of [3 ,4])
+// // create an array from: arr and [3, 4]
+// alert(arr.concat([3, 4])); // 1,2,3,4 (copied whole array of [3 ,4])
 
-// create an array from: arr, [3, 4], and [5, 6]
-alert(arr.concat([3, 4], [5, 6])); // 1,2,3,4,5,6
+// // create an array from: arr, [3, 4], and [5, 6]
+// alert(arr.concat([3, 4], [5, 6])); // 1,2,3,4,5,6
 
-// create an array from: arr and [3, 4], then add 5 and 6
-alert(arr.concat([3, 4], 5, 6)); // 1,2,3,4,5,6
+// // create an array from: arr and [3, 4], then add 5 and 6
+// alert(arr.concat([3, 4], 5, 6)); // 1,2,3,4,5,6
 
-// normally, only elements from arrays get copied,
-// but other objects, even if they look like arrays, 
-// are added as a whole:
-let arr = [1, 2];
+// // normally, only elements from arrays get copied,
+// // but other objects, even if they look like arrays, 
+// // are added as a whole:
+// let arr = [1, 2];
 
-let arrayLike = {
-  0: "something",
-  length: 1,
-};
+// let arrayLike = {
+//   0: "something",
+//   length: 1,
+// };
 
-alert(arr.concat(arrayLike)); // 1,2,[object Object]
+// alert(arr.concat(arrayLike)); // 1,2,[object Object]
 
-// but if an array-like object has a special 'Symbol.isConcatSpreadable'
-// property, then it's treated as an array and its elements are added:
-let arr = [1, 2];
+// // but if an array-like object has a special 'Symbol.isConcatSpreadable'
+// // property, then it's treated as an array and its elements are added:
+// let arr = [1, 2];
 
-let arrayLike = {
-  0: "something",
-  1: "else",
-  [Symbol.isConcatSpreadable]: true,
-  length: 2,
-};
+// let arrayLike = {
+//   0: "something",
+//   1: "else",
+//   [Symbol.isConcatSpreadable]: true,
+//   length: 2,
+// };
 
-alert( arr.concat(arrayLike) ); // 1,2,something,else
-
-// ------------------------------------------------------------
-
-// ITERATE: forEach
-
-// arr.forEach allows to run a function on each element of an array:
-arr.forEach(function(item, index, array) {
-  // ...do something with item...
-});
-
-// show each element of an array:
-// for each element call alert
-["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
-
-// a more elaborate code about their positions in the target array:
-["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
-  alert(`${item} is at index ${index} in ${array}`);
-});
-
-// the result of function (if it returns any) is thrown away
-// and ignored (garbage collected?)
+// alert( arr.concat(arrayLike) ); // 1,2,something,else
 
 // ------------------------------------------------------------
+// ITERATE
+// ------------------------------------------------------------
 
+// FOREACH:
+
+// // arr.forEach allows to run a function on each element of an array:
+// arr.forEach(function(item, index, array) {
+//   // ...do something with item...
+// });
+
+// // show each element of an array:
+// // for each element call alert
+// ["Bilbo", "Gandalf", "Nazgul"].forEach(alert);
+
+// // a more elaborate code about their positions in the target array:
+// ["Bilbo", "Gandalf", "Nazgul"].forEach((item, index, array) => {
+//   alert(`${item} is at index ${index} in ${array}`);
+// });
+
+// // the result of function (if it returns any) is thrown away
+// // and ignored (garbage collected?)
+
+// ------------------------------------------------------------
 // SEARCHING IN ARRAY
+// ------------------------------------------------------------
 
 // INDEXOF/LASTINDEXOF AND INCLUDES:
 
-// same as str counterparts but works on array items instead of characters.
+// // same as str counterparts but works on array items instead of characters.
 
-// arr.indexOf(item, from) - looks for 'item' starting from index 'from',
-// and returns the index where it was found, otherwise it returns -1
+// // arr.indexOf(item, from) - looks for 'item' starting from index 'from',
+// // and returns the index where it was found, otherwise it returns -1
 
-// arr.lastIndexOf(item, from) - same but searches from left to right
+// // arr.lastIndexOf(item, from) - same but searches from left to right
 
-// arr.includes(item, from) - looks for 'item' starting at index 'from'
-// and returns 'true' if found
+// // arr.includes(item, from) - looks for 'item' starting at index 'from'
+// // and returns 'true' if found
 
-let arr = [1, 0, false];
+// let arr = [1, 0, false];
 
-alert( arr.indexOf(0)); // 1
-alert( arr.indexOf(false) ); // 2
-alert( arr.indexOf(null) ); // -1 (doesn't exist in arr)
-alert( arr.includes(1) ); // true
+// alert( arr.indexOf(0)); // 1
+// alert( arr.indexOf(false) ); // 2
+// alert( arr.indexOf(null) ); // -1 (doesn't exist in arr)
+// alert( arr.includes(1) ); // true
 
-// note that these methods use === for comparison, so if you look for 
-// 'false' they will find exactly 'false' and not '0'
+// // note that these methods use === for comparison, so if you look for 
+// // 'false' they will find exactly 'false' and not '0'
 
-// to check for inclusion, but you don't know the exact index,
-// arr.includes is preferred
+// // to check for inclusion, but you don't know the exact index,
+// // arr.includes is preferred
 
-// includes correctly handles NaN, unlike indexOf and lastIndexOf:
-const arr = [NaN];
-alert( arr.indexOf(NaN) ); // -1 (should be 0, but === equality doesn't work for NaN)
-alert( arr.includes(NaN) ); // true (correct)
+// // includes correctly handles NaN, unlike indexOf and lastIndexOf:
+// const arr = [NaN];
+// alert( arr.indexOf(NaN) ); // -1 (should be 0, but === equality doesn't work for NaN)
+// alert( arr.includes(NaN) ); // true (correct)
 
 // ------------------------------------------------------------
 
 // FIND AND FINDINDEX:
 
-// arr.find(fn) finds an item with a specific condition:
-let result = arr.find(function(item, index, array) {
-  // if true is return, item is returned and iteration stops
-  // for falsy scenario, returns 'undefined'
-});
+// // arr.find(fn) finds an item with a specific condition:
+// let result = arr.find(function(item, index, array) {
+//   // if true is return, item is returned and iteration stops
+//   // for falsy scenario, returns 'undefined'
+// });
 
-// function is called for elements of the array, one after another:
-// 'item' is the element
-// 'index' is the index
-// 'array' is the array
-// if it returns 'true', the search is stopped, 'item' is returned,
-// if nothing is found, 'undefined' is returned
+// // function is called for elements of the array, one after another:
+// // 'item' is the element
+// // 'index' is the index
+// // 'array' is the array
+// // if it returns 'true', the search is stopped, 'item' is returned,
+// // if nothing is found, 'undefined' is returned
 
-// example: we have an array of users, each with an 'id' and a 'name'.
-// let's find the one with id == 1:
-let users = [
-  {id: 1, name: "John"},
-  {id: 2, name: "Pete"},
-  {id: 3, name: "Mark"}
-];
+// // example: we have an array of users, each with an 'id' and a 'name'.
+// // let's find the one with id == 1:
+// let users = [
+//   {id: 1, name: "John"},
+//   {id: 2, name: "Pete"},
+//   {id: 3, name: "Mark"}
+// ];
 
-let user = users.find(item => item.id == 1);
+// let user = users.find(item => item.id == 1);
 
-alert(user.name); // John
+// alert(user.name); // John
 
-// the arr.findIndex method is essentially the same, but it returns the index
-// where the element was found instead of the element itself, -1 if not found
+// // the arr.findIndex method is essentially the same, but it returns the index
+// // where the element was found instead of the element itself, -1 if not found
 
 // ------------------------------------------------------------
 
-// FILTER:
+// FILTER: 
+
+// // the 'find' method looks for a single (the first) element that makes the 
+// // function return 'true'.
+// // if we need to find many elements, we can use arr.filter(fn)
+// // the syntax is similar to 'find', but 'filter' returns an array of 
+// // matching elements
+
+// let results = arr.filter(function(item, index, array) {
+//   // if true, the item is pushed to results and the iteration continues
+//   // returns an empty array if nothing is found
+// });
+
+// let users = [
+//   {id: 1, name: "John"},
+//   {id: 2, name: "Pete"},
+//   {id: 3, name: "Mary"}
+// ];
+
+// // returns an array of the first two users
+// let someUsers = users.filter(item => item.id < 3);
+
+// alert(someUsers.length); // 2
+
+// ------------------------------------------------------------
+// TRANSFORM AN ARRAY
+// ------------------------------------------------------------
+
+// MAP:
+
+// // arr.map calls the function for each element of the array and returns
+// // an array of the results
+// let result = arr.map(function(item, index, array){
+//   // returns the new value instead of item
+// });
+
+// let lengths = ["Bilbo", "Gandalf", "Nazgul"].map(item => item.length);
+
+// alert(lengths); // 5,7,6
+
+// ------------------------------------------------------------
+
+// SORT(FN):
+
+// // arr.sort sorts the array IN PLACE, changing its element order.
+// // it also returns the sorted array, but the returned value is usually
+// // ignored since arr itself is modified
+
+// let arr = [1, 2, 15];
+
+// // the method reorders the content of arr
+// arr.sort();
+
+// // by default, arr.sort sorts the items as strings, so "15" < "2"
+// alert( arr ); // 1,15,2
+
+// // to use our own sorting order, we need to supply a function
+// // as the argument of arr.sort.
+
+// // the function should compare two arbitrary values and return:
+// function compare(a, b) {
+//   if (a > b) return 1; // if the first value is greater than the second
+//   if (a == b ) return 0; // if both values are equal
+//   if (a < b) return -1; // if the second value is greater than the first
+// }
+
+// // for example, to sort as numbers:
+// function compareNumeric(a, b) {
+//   if (a > b) return 1;
+//   if (a == b ) return 0;
+//   if (a < b) return -1;
+// }
+// let arr = [1, 2, 15];
+
+// arr.sort(compareNumeric);
+
+// alert(arr); // 1, 2, 15
+
+// // arr.sort impelements a generic sorting algorithm, usually 'quicksort' or
+// // 'Timsort'
+
+// // you can see which elements are being compared by alerting them:
+// [1, -2, 15, 2, 0, 8].sort(function(a, b) {
+//   alert( a + "<>" + b);
+//   return a - b;
+// });
+
+// // the algorithm may compare an element with multiple others, but it tries
+// // to make as few comparisons as possible
+
+// // a comparison function may return any number.
+// // it is only required to return a positive number to indicate 'greater'
+// // and a negative number to say 'less'.
+// // this allows shorter functions:
+// let arr = [1, 2, 15];
+
+// arr.sort( function(a, b) { return a - b; });
+
+// alert(arr); // 1, 15, 2
+
+// // arrow functions for neater code. this is the same as above:
+// arr.sort( (a, b) => a - b );
+
+// // use 'localeCompare' for strings.
+// // string comparison algorithm compares letters by their codes by default.
+// // for many alphabets, it's better to use the str.localCompare method 
+// // to sort letters correctly, such as Ö
+
+// // sorting countries in German:
+// let countries = ['Österreich', 'Andorra', 'Vietnam'];
+
+// // incorrect sorting
+// alert( countries.sort( (a, b) => a > b ? 1 : -1) ); // Andorra, Vietnam, Österreich
+
+// // correct sorting
+// alert( countries.sort( (a, b) => a.localeCompare(b) ) ); //Andorra, Österreich, Vietnam
+
+// ------------------------------------------------------------
+
+// REVERSE:
