@@ -1408,3 +1408,193 @@ return maxSum
 // ------------------------------------------------------------
 
 // REVERSE:
+
+// let arr = [1, 2, 3, 4, 5];
+
+// arr.reverse();
+
+// alert( arr ); // 5,4,3,2,1
+
+// // 'reverse' also returns array 'arr' after the reversal
+
+// ------------------------------------------------------------
+
+// SPLIT AND JOIN:
+
+// // the 'split()' method method divides a string into an ordered list of substrings,
+// // puts those substrings into an array, and returns the array.
+// // the division is done by searching for a pattern, where the pattern is 
+// // provided as the first parameter in the method's call.
+
+// let names = "Bilbo, Gandalf, Nazgul";
+
+// let arr = names.split(', ');
+
+// for ( let name of arr) {
+//   alert( `A message for ${name}.` ); // A message for Bilbo. (and other names)
+// }
+
+// // the 'split' method has a second optional numeric argument for indicating
+// // the array length. if it is provided then the extra elements are ignored.
+// // rarely used in practice, though.
+
+// let arr = "Bilbo, Gandalf, Nazgul, Saruman".split(", ", 2);
+
+// alert( arr ); // Bilbo, Gandalf
+
+// // split into letters:
+// // the call to split(s) with an empty 's' ( split('') ) would split the
+// // string into an array of letters
+
+// let str = 'test';
+
+// let arr = str.split(''); // t,e,s,t
+
+// // join:
+// // the 'join()' method does the reverse of 'split()'. it creates and returns
+// // a new string by concatenating all of the elements in an array 
+// // (or an array-like object), separated by commas or a specified seperator
+// // string. if the array has one item, then that item will be return without
+// // using the seperator.
+
+// let arr = ["Bilbo", "Gandalf", "Nazgul"];
+
+// let str = arr.join(); 
+// alert( str ); // BilboGandalfNazgul
+
+// str = arr.join(';'); // 'glue' the elements together with ;
+// alert( str ); // Bilbo;Gandalf;Nazgul
+
+// ------------------------------------------------------------
+
+// REDUCE/REDUCERIGHT:
+
+// // when we need to iterate over an array we can use 'forEach', 'for',
+// // or 'for...of...'.
+
+// // when we need to iterate and return data for each element, we can
+// // use 'map'.
+
+// // the methods arr.reduce() and arr.reduceRight() also belong to that 
+// // breed, but are a little more intricate. they are used to calculate
+// // a single value based on the array.
+
+// // syntax:
+// let value = arr.reduce(function(accumulator, item, index, array) {
+//   //...
+// }, [initial]);
+
+// // the function is applied to all array elements one after another and
+// // 'carries on' its result to the next call.
+
+// // arguments:
+// // 'accumulator' is the result of the previous function call, equals
+// // the 'initial' value the first time (if an 'initial' value is provided).
+// // 'item' is the current array item.
+// // 'index' is its position.
+// // 'array' is the array.
+
+// // as the function is applied, the result of the previous function call
+// // is passed to the next function call as the first argument.
+// // the first argument is the combined result of all previous executions,
+// // and at the end it becomes the result of 'reduce'.
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.reduce((sum, current) => sum + current, 0);
+
+// alert( result ); // 15
+
+// // typically 'reduce()' takes only two args (the function and an initial value),
+// // which is usually enough
+
+// // if we call reduce in the same way, but without the initial value of 0, 
+// // then the first element of the array will be used, which is 1, and iteration
+// // would start from the second elemetn; the result of the 'reduce()' call would 
+// // still come out to 15
+
+// // BUT be careful of calling 'reduce()' without an initial value;
+// // if you do that with an empty array, you'll get an error:
+
+// let arr = [];
+
+// arr.reduce((sum, current) => sum + current);
+// // Error: Reduce of empty array with no initial value
+// // if an initial value was provided, 'reduce()' would return it for the 
+// // empty array
+
+// // so it's advised to always specify an inital value
+
+// // 'arr.reduceRight()' does the same thing as 'arr.reduce()' except it
+// // goes from right to left
+
+// ------------------------------------------------------------
+
+// ARRAY.ISARRAY
+
+// // in JavaScript, arrays are not a separate type; they are actually objects.
+// // so 'typeof' doesn't help to distinguish an array from an object:
+
+// alert( typeof {} ); // object
+// alert( typeof [] ); // object
+
+// // but since arrays are used so often, there's a method called 
+// // 'Array.isArray()' that can distinguish between an array and an object.
+// // it returns 'true' if the value is an array, and 'false' otherwise.
+
+// alert( Array.isArray({}) ); // false
+// alert( Array.isArray([]) ); // true
+
+// ------------------------------------------------------------
+
+// MOST METHODS SUPPORT 'THISARG':
+
+// // almost all array methods that call functions - like 'find', 'filter',
+// // and 'map', with a notable exception of 'sort', accept an optional
+// // parameter called 'thisArg'.
+
+// // it's rarely used, it is best to cover it for completeness.
+
+// // syntax:
+// arr.find(func, thisArg);
+// arr.filter(func, thisArg);
+// arr.map(func, thisArg);
+// // ...
+// // 'thisArg' is the optional last argument
+
+// // the value of the 'thisArg' parameter becomes 'this' for 'func'
+
+// // for example, here we'll use the 'canJoin' method of the 'army'
+// // object as a filter, and 'thisArg' passes the context:
+
+// let army = {
+//   minAge = 18,
+//   maxAge = 27,
+//   canJoin(user) {
+//     return user.age >= this.minAge && user.age <= this.maxAge;
+//   }
+// };
+
+// let users = [
+//   {age: 16},
+//   {age: 19},
+//   {age: 23},
+//   {age: 30}
+// ];
+
+// // find users for whom army.canJoin returns true
+// let soldiers = users.filter(army.canJoin, army);
+
+// alert( soldiers.length ); // 2
+// alert( soldiers[0] ); // 19
+// alert( soldiers[1] ); // 23
+
+// // if we called users.filter with just army.canJoin as its sole
+// // parameter, then army.canJoin would be called as a standalone 
+// // function, with 'this = undefined', leading to an error.
+
+// // a call to 'users.filter(army.canJoin, army)' can be replaced with
+// // 'users.filter(user => army.canJoin(user) )', which does the same thing.
+// // the latter is used more often since it's easier to understand for most.
+
+// ------------------------------------------------------------
