@@ -1598,3 +1598,110 @@ return maxSum
 // // the latter is used more often since it's easier to understand for most.
 
 // ------------------------------------------------------------
+
+// SUMMARY:
+
+// cheat sheet of array methods:
+
+// -to ADD/REMOVE elements
+// --> push(...items) - adds items to the end
+// --> pop() - extracts an item from the end
+// --> shift() - extracts an item from the beginning
+// --> unshift(...items) - adds an item to the beginning
+// --> splice(pos, deleteCount, ...items) - at index 'pos' deletes 'deleteCount'
+//        elements and inserts 'items'
+// --> slice(start, end) - creates a new array, copies elements from index 'start'
+//        till 'end' (not inclusive) into it
+// --> concat(...items) - returns a new array: copies all elements of the current
+//        array and adds 'items' to it. If any of 'items' are in an array, then 
+//        its elements are taken
+
+// to SEARCH among elements
+// --> indexOf/lastIndexOf(item, pos) - look for 'item' starting from index 'pos',
+//        return the index or -1 if not found
+// --> includes(value) - return 'true' if the array has the value, otherwise 'false'
+// --> find/filter(func) - filter elements through the function, return first/all
+//        values that make it return 'true'
+// --> findIndex works like 'find' except it returns the index instead of the value
+
+// to ITERATE over elements
+// --> forEach(func) - calls 'func' for every element, doesn't return anything
+
+// to TRANSFORM the array
+// --> map(func) - creates a new array from results of calling 'func' for every
+//        element
+// --> sort(func) - sorts the array in place, then returns it
+// --> reverse() - reverses the array in place, then returns it
+// --> split/join - convert a string to an array and back
+// --> reduce/reduceRight(func, initial) - calculate a single value over the array
+//        by callin 'func' for each element and passing an intermediate result
+//        between calls
+
+// additionally
+// --> Array.isArray(arr) checks 'arr' for being an array
+
+// 'sort', 'reverse', and 'splice' modify the array itself
+
+// these methods cover 99% of use cases, but there are a few others:
+
+// -->ARR.SOME(FN)/ARR.EVERY(FN):
+
+// arr.some(fn)/arr.every(fn) check the array.
+// the function 'fn' is called on each element of the array similar to 'map'.
+// if any/all results are true, returns 'true', otherwise 'false'.
+
+// these methods behave sort of like || and && operators: if 'fn' returns a truthy
+// value, 'arr.some()' immediately returns 'true' and stops iterating over the rest
+// of the items; if 'fn' returns a falsy value, 'arr.every(fn)' immediately returns
+// 'false' and stops iterating over the rest of the items as well.
+
+// we can use 'arr.every()' to compare arrays:
+
+// function arraysEqual(arr1, arr2) {
+//   return arr1.length === arr2.length && arr1.every((value, index) => value === arr2[index]);
+// }
+
+// alert( arraysEqual([1, 2], [1, 2]) ); // true
+
+// --> ARR.FILL(VALUE, START, END):
+
+// arr.fill(value, start, end) - fills the array with repeating 'value' from index
+//    'start' to 'end'
+
+// --> ARR.COPYWITHIN(TARGET, START, END):
+
+// arr.copyWithin(target, start, index) copies its elements from position 'start' till
+// position 'end' into ITSELF, at position 'target' (overwrites existing elements)
+
+// --> ARR.FLAT(DEPTH)/ARR.FLATMAP(FN):
+
+// arr.flat(depth)/arr.flatMap(fn) create a new flat array from a multidimensional array
+
+// ------------------------------------------------------------
+
+// TASK: TRANSLATE 'border-left-width' TO 'borderLeftWidth'
+
+// write the function 'camelize(str)' that changes dash-seperated words like
+// 'my-short-string' into camel-cased 'myShortString'.
+// that is: remove all dashes, each word after a dash becomes uppercased
+
+// HINT: use 'split' to split the string into an array, transform it, and join it back
+
+function camelize(str) {
+  let strArray = str.split('');
+
+  strArray.map(function(element) {
+    if (element == '-') {
+      let dashIndex = strArray.indexOf(element);
+      let letterAfterDash = strArray[dashIndex + 1];
+      strArray.splice(dashIndex, 2, letterAfterDash.toUpperCase());
+    }
+  });
+
+  let newStr = strArray.join('');
+
+  return newStr;
+}
+
+alert(camelize('camel-case-has-humps'));
+
