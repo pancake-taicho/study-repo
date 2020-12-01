@@ -1687,21 +1687,116 @@ return maxSum
 
 // HINT: use 'split' to split the string into an array, transform it, and join it back
 
-function camelize(str) {
-  let strArray = str.split('');
+// function camelize(str) {
+//   let strArray = str.split('');
 
-  strArray.map(function(element) {
-    if (element == '-') {
-      let dashIndex = strArray.indexOf(element);
-      let letterAfterDash = strArray[dashIndex + 1];
-      strArray.splice(dashIndex, 2, letterAfterDash.toUpperCase());
+//   strArray.map(function(element) {
+//     if (element == '-') {
+//       let dashIndex = strArray.indexOf(element);
+//       let letterAfterDash = strArray[dashIndex + 1];
+//       strArray.splice(dashIndex, 2, letterAfterDash.toUpperCase());
+//     }
+//   });
+
+//   let newStr = strArray.join('');
+
+//   return newStr;
+// }
+
+// alert(camelize('camel-case-has-humps'));
+
+// TUTORIAL SOLUTION:
+
+// function camelize(str) {
+//   return str
+//     .split('-') // splits 'my-long-word' into array ['my', 'long', 'word']
+//     .map(
+//       // capitalizes first letters of all array items except the first one
+//       // converts ['my', 'long', 'word'] into ['my', 'Long', 'Word']
+//       (word, index) => index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+//     )
+//     .join(''); // joins ['my', 'Long', 'Word'] into myLongWord
+// }
+
+// alert( camelize('my-long-word') );
+
+// ------------------------------------------------------------
+
+// TASK: FILTER RANGE
+
+// write a function 'filterRange(arr, a, b)' that gets an array 'arr', looks for 
+// elements with values higher than or equal to 'a' but lower than or equlat to'b', 
+// and returns the result as an array. the function should not modify the array. 
+// it should return the new array.
+
+// function filterRange(arr, a, b) {
+//   return arr.filter((item) => item > a && item < b);
+// }
+
+// let arr = [5, 3, 8, 1];
+
+// let filtered = filterRange(arr, 1, 6);
+
+// alert( filtered ); // matching values
+
+// alert( arr ); // not modified
+
+// TUTORIAL SOLUTION:
+
+// function filterRange(arr, a, b) {
+//   // added brackets around the expression for better readability
+//   return arr.filter(item => (a <= item && item <= b));
+// }
+
+// let arr = [5, 3, 8, 1];
+
+// let filtered = filterRange(arr, 1, 4);
+
+// alert( filtered ); // matching values
+
+// alert( arr ); // not modified
+
+// ------------------------------------------------------------
+
+// TASK: FILTER RANGE 'IN PLACE'
+
+// write a function 'filterRangeInPlace(arr, a, b)' that takes an array 'arr'
+// and removes from it all values except those that are between 'a' and 'b'.
+// the test is a <= arr[i] <= b.
+
+// function filterRangeInPlace(arr, a, b) {
+//   for (let i in arr) {
+//     if (!(a <= arr[i] && arr[i] <= b)) {
+//       arr.splice(i, 1);
+//     }
+//   }
+// }
+
+// let arr = [5, 3, 8, 1];
+
+// filterRangeInPlace(arr, 1, 4);
+
+// alert( arr );
+
+// TUTORIAL SOLUTION:
+
+function filterRangeInPlace(arr, a, b) {
+  
+  for (let i = 0; i < arr.length; i++) {
+    console.log(i);
+    let val = arr[i];
+
+    // remove if outside of the interval
+    if (val < a || val > b) {
+      arr.splice(i, 1);
+      i--; // if i was removed in the current iteration, step i back to align with the array's new post-removal length
     }
-  });
+  }
 
-  let newStr = strArray.join('');
-
-  return newStr;
 }
 
-alert(camelize('camel-case-has-humps'));
+let arr = [5, 3, 8, 1];
 
+filterRangeInPlace(arr, 1, 4); // removed the numbers except 1 through 4
+
+alert( arr ); // 3,1
