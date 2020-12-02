@@ -1730,12 +1730,12 @@ return maxSum
 // it should return the new array.
 
 // function filterRange(arr, a, b) {
-//   return arr.filter((item) => item > a && item < b);
+//   return arr.filter((item) => item >= a && item <= b);
 // }
 
 // let arr = [5, 3, 8, 1];
 
-// let filtered = filterRange(arr, 1, 6);
+// let filtered = filterRange(arr, 1, 4);
 
 // alert( filtered ); // matching values
 
@@ -1780,23 +1780,120 @@ return maxSum
 
 // TUTORIAL SOLUTION:
 
-function filterRangeInPlace(arr, a, b) {
+// function filterRangeInPlace(arr, a, b) {
   
-  for (let i = 0; i < arr.length; i++) {
-    console.log(i);
-    let val = arr[i];
+//   for (let i = 0; i < arr.length; i++) {
+//     let val = arr[i];
 
-    // remove if outside of the interval
-    if (val < a || val > b) {
-      arr.splice(i, 1);
-      i--; // if i was removed in the current iteration, step i back to align with the array's new post-removal length
+//     // remove if outside of the interval
+//     if (val < a || val > b) {
+//       arr.splice(i, 1);
+//       i--; // if i was removed in the current iteration, step i back to align with the array's new post-removal length
+//     }
+//   }
+
+// }
+
+// let arr = [5, 3, 8, 1];
+
+// filterRangeInPlace(arr, 1, 4); // removed the numbers except 1 through 4
+
+// alert( arr ); // 3,1
+
+// ------------------------------------------------------------
+
+// TASK: SORT IN DECREASING ORDER
+
+// let arr = [5, 2, 1, -10, 8];
+
+// arr.sort((a, b) => b - a);
+
+// alert( arr );
+
+// ------------------------------------------------------------
+
+// TASK: COPY AND SORT ARRAY
+
+// we have an array of strings 'arr'. we'd like to have a sorted copy of it,
+// but keep 'arr' unimodified. 
+// create a function 'copySorted(arr)' that returns such a copy.
+
+// function copySorted(arr) {
+//   arr = arr.slice();
+//   let sortedArr = arr.sort((a, b) => a.localeCompare(b));
+//   return sortedArr;
+// }
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+
+// let sorted = copySorted(arr);
+
+// alert( sorted );
+// alert( arr );
+
+// TUTORIAL SOLUTION: 
+
+// function copySorted(arr) {
+//   return arr.slice().sort();
+// }
+
+// let arr = ["HTML", "JavaScript", "CSS"];
+
+// let sorted = copySorted(arr);
+
+// alert( sorted );
+// alert( arr );
+
+// ------------------------------------------------------------
+
+// TASK: CREATE AN EXTENDABLE CALCULATOR
+
+// create a constructor function 'Calculator' that creates 'extendable'
+// calculator objects.
+
+// the task consists of two parts:
+
+// 1.
+// first, implement the method 'calculate(str)' that takes a string like '1 + 2'
+// in the format 'NUMBER operator NUMBER' (space-delimited) and returns the result.
+// should understand plus '+' and minus '-'.
+
+// usage example:
+// let calc = new Calculator;
+// alert( calc.calculate("3 + 7") ); // 10
+
+// 2.
+// then add the method addMethod(name, func) that teaches the calculator a new
+// operation. it takes the operator 'name' and the two-argument function
+// 'func(a, b)' that implements it.
+
+// for instance, let's add the multiplication '*', division '/', and power '**':
+// let powerCalc = newCalc;
+// powerCalc.addMethod("*", (a, b) => a * b);
+// powerCalc.addMethod("/", (a, b) => a / b);
+// powerCalc.addMethod("**", (a, b) => a ** b);
+
+// let result = powerCalc.calculate("2 ** 3");
+// alert( result ); // 8
+
+// no parentheses or complex expressions in this task
+// the numbers and the operators are delimited with exactly one space
+// there may be error-handling if you'd like to add it
+
+function Calculator(str) {
+  this.calculate = function(str) {
+    str.split().join('');
+    let a = +str[0];
+    let b = +str[4];
+    if (str[2] == "+") {
+      return a + b;
+    } else if (str[2] == "-") {
+      return a - b;
     }
   }
-
+  this.addMethod(name, func)
 }
 
-let arr = [5, 3, 8, 1];
+let calc = new Calculator;
 
-filterRangeInPlace(arr, 1, 4); // removed the numbers except 1 through 4
-
-alert( arr ); // 3,1
+alert( calc.calculate("8 + 2") );
