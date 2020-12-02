@@ -1891,7 +1891,11 @@ function Calculator(str) {
       return a - b;
     }
   }
-  this.addMethod(name, func)
+  this.addMethod = function(name, func) {
+    if (name == "*") {
+      
+    }
+  }
 }
 
 let calc = new Calculator;
