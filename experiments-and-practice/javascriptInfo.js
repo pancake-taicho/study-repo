@@ -1880,24 +1880,96 @@ return maxSum
 // the numbers and the operators are delimited with exactly one space
 // there may be error-handling if you'd like to add it
 
-function Calculator(str) {
+// COULDN'T SOLVE PART 2 OF THE PROBLEM, DIDN'T UNDERSTAND HOW TO IMPLEMENT
+// WHAT WAS ASKED (I WAS ABLE TO GET PART 1 WORKING, THOUGH):
+
+// function Calculator() { // PART 1
+//   this.calculate = function(str) {
+//     str.split().join('');
+//     let a = +str[0];
+//     let b = +str[4];
+//     if (str[2] == "+") {
+//       return a + b;
+//     } else if (str[2] == "-") {
+//       return a - b;
+//     }
+//   }
+//   this.addMethod = function(name, func) { // PART 2 ???
+//     if 
+//   }
+// }
+
+// let calc = new Calculator;
+
+// alert( calc.calculate("8 + 2") );
+
+// TUTORIAL SOLUTION: 
+
+function Calculator() {
+
+  this.methods = {
+    "-": (a, b) => a - b,
+    "+": (a, b) => a + b,
+  };
+
   this.calculate = function(str) {
-    str.split().join('');
-    let a = +str[0];
-    let b = +str[4];
-    if (str[2] == "+") {
-      return a + b;
-    } else if (str[2] == "-") {
-      return a - b;
+
+    let split = str.split(' '),
+      a = +split[0],
+      op = split[1],
+      b = +split[2];
+
+    if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+      return NaN;
     }
-  }
+
+    return this.methods[op](a, b);
+  };
+
   this.addMethod = function(name, func) {
-    if (name == "*") {
-      
-    }
-  }
+    this.methods[name] = func;
+  };
 }
 
-let calc = new Calculator;
+/* 
+i was able to solve part 1 of the problem, the part that takes a string and breaks it 
+down into a simple math equation that can be evaluated and returned. 
 
-alert( calc.calculate("8 + 2") );
+part 2 of the task prompt was confusing to me. the tutorial solution made use of a 
+'methods' method which was an object that stored the operators and their respective 
+formulas. the 'addMethod' method simply wrote its arguments ('name' and 'func') into the 
+'methods' object. perhaps the name 'addMethod' should have tipped me off that there might 
+need to be a third method in my solution called 'methods' that would be an object that i 
+could simply write new entries into via 'addMethod'. 
+
+in my mind, though, while struggling with the problem, i don't think i would've been able to 
+make that connection: it's kinda of like watching 'the sixth sense' for the first time and 
+then being expected to call the ending just by picking up on all of the uses of the color 
+red throughout the movie...like, that probably ain't happening with me. and whether i'm able 
+to solve a tutorial problem or not, when i finally reveal the solution to myself, to either 
+compare my solution or see what i wasn't grasping, it feels like watching a movie with a 
+twist ending: you might be kind of impressed, but you'll probably just feel kind of dumb 
+or worse, kind of tricked ('gotcha!') <-- what's up with feeling like that? that's an ego 
+thing. and that's the worst because when learning something new it's important to be humble 
+and be open to receive all the possible knowledge that can increase you. feeling like you 
+got took isn't something to be ashamed of. however, don't let that feeling take hold; humbly 
+recognize what you weren't able to recognize before and absorb that into you, get those 
+experience points. accept that you're on a journey, you have a long way to go, many have 
+come before you, and no, you're probably not as smart as you would like to think you are, 
+but that's okay. ('gotcha': feeling an emotional response related to ego? emotional 
+responses probably hinder humility and capacity to absorb new material taught in 'gotcha' 
+fashion -> 'gotcha' teaching)
+
+i was also confused when the prompt said to add a method called 'addMethod(name, func)' - at 
+this point i'm thinking that the parameters i need to pass into 'addMethod' are 'name' and 
+'func' - but then in the next sentence says that 'addMethod' takes the operator 'name' 
+(okay, makes sense) and the two-argument function 'func(a, b)'. this confused me because I 
+wasn't sure if i needed to pass 'func' or 'func(a, b)' into 'addMethod'.
+
+as i read the prompt, i decided in my mind that i would need to write *only* two methods: 
+a 'calculate' method and an 'addMethod' method; i didn't consider the possibility of 
+a third 'methods' method. this is my fault. i feel uncreative and mentally stifled, unable 
+to 'think outside the box' of the task prompt.
+
+is working a real-world dev job like solving m. night shyamalan problems all the time? probably?
+*/
