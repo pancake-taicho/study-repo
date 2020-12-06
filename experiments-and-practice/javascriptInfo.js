@@ -1905,31 +1905,31 @@ return maxSum
 
 // TUTORIAL SOLUTION: 
 
-function Calculator() {
+// function Calculator() {
 
-  this.methods = {
-    "-": (a, b) => a - b,
-    "+": (a, b) => a + b,
-  };
+//   this.methods = {
+//     "-": (a, b) => a - b,
+//     "+": (a, b) => a + b,
+//   };
 
-  this.calculate = function(str) {
+//   this.calculate = function(str) {
 
-    let split = str.split(' '),
-      a = +split[0],
-      op = split[1],
-      b = +split[2];
+//     let split = str.split(' '),
+//       a = +split[0],
+//       op = split[1],
+//       b = +split[2];
 
-    if (!this.methods[op] || isNaN(a) || isNaN(b)) {
-      return NaN;
-    }
+//     if (!this.methods[op] || isNaN(a) || isNaN(b)) {
+//       return NaN;
+//     }
 
-    return this.methods[op](a, b);
-  };
+//     return this.methods[op](a, b);
+//   };
 
-  this.addMethod = function(name, func) {
-    this.methods[name] = func;
-  };
-}
+//   this.addMethod = function(name, func) {
+//     this.methods[name] = func;
+//   };
+// }
 
 /* 
 i was able to solve part 1 of the problem, the part that takes a string and breaks it 
@@ -1973,3 +1973,145 @@ to 'think outside the box' of the task prompt.
 
 is working a real-world dev job like solving m. night shyamalan problems all the time? probably?
 */
+
+// ------------------------------------------------------------
+
+// TASK: MAP TO NAMES
+
+// you have an array of 'user' objects, each with a 'user.name'. write the code that 
+// converts it into an array of names.
+
+// example:
+// let john = [name: "John", age: 25];
+// let pete = [name: "Pete", age: 30];
+// let mary = [name: "Mary", age: 28];
+
+// let users = [ john, pete, mary ];
+
+// let names = /* ...your code... */
+
+// alert( names ); // John, Pete, Mary
+
+// let john = {name: "John", age: 25};
+// let pete = {name: "Pete", age: 30};
+// let mary = {name: "Mary", age: 28};
+
+// let users = [ john, pete, mary ];
+
+// let names = users.map(item => item["name"]);
+
+// alert( names );
+
+// TUTORIAL SOLUTION:
+
+// ...same as mine except:
+// let names = users.map(item => item.name); // access 'name' via dot notation
+
+// ------------------------------------------------------------
+
+// TASK: MAP TO OBJECTS
+
+// you have an array of 'user' objects. each one has a 'name', 'surname' and an 'id'.
+// write the code to create another array from it, of objects with 'id' and 'fullName',
+// where 'fullName' is generated from 'name' and 'surname'.
+
+// example:
+
+// let john = {name: "John", surname: "Smith", id: 1};
+// let pete = {name: "Pete", surname: "Hunt", id: 2};
+// let mary = {name: "Mary", surname: "Key", id: 3};
+
+// let users = [ john, pete, mary ];
+
+// let usersMapped = /* ...your code... */
+
+/*
+usersMapped = [
+  { fullName: "John Smith", id: 1 },
+  { fullName: "Pete Hunt", id: 2 },
+  { fullName: "Mary Key", id: 3}
+]
+*/
+
+// alert( usersMapped[0].id ); // 1
+// alert( usersMapped[0].fullName ); // John Smith
+
+// so actually, you need to map one array of objects to another. try using => here.
+// there's a small catch, though.
+
+// let john = {name: "John", surname: "Smith", id: 1};
+// let pete = {name: "Pete", surname: "Hunt", id: 2};
+// let mary = {name: "Mary", surname: "Key", id: 3};
+
+// let users = [ john, pete, mary ];
+
+// let usersMapped = users.map(obj => {
+//   let mappedObj = {};
+//   mappedObj.fullName = obj.name + " " + obj.surname;
+//   mappedObj.id = obj.id;
+//   return mappedObj;
+// });
+
+// alert(usersMapped);
+// alert( usersMapped[0].id ); // 1
+// alert( usersMapped[0].fullName ); // John Smith
+
+// TUTORIAL SOLUTION:
+
+// let john = {name: "John", surname: "Smith", id: 1};
+// let pete = {name: "Pete", surname: "Hunt", id: 2};
+// let mary = {name: "Mary", surname: "Key", id: 3};
+
+// let users = [ john, pete, mary ];
+
+// let usersMapped = users.map(user => ({
+//   fullName: `${user.name} ${user.surname}`,
+//   id: user.id
+// }));
+
+// alert(usersMapped);
+// alert( usersMapped[0].id ); // 1
+// alert( usersMapped[0].fullName ); // John Smith
+
+// please note that in the arrow function, we need to use additional brackets.
+// we can't write this:
+
+// let usersMapped = users.map(user => {
+//   fullName: `${user.name} ${user.surname}`,
+//   id: user.id
+// });
+
+// remember, there are TWO kinds of arrow functions: one with a function body 
+// (value => expression), and one with a function body (value => { }).
+
+// here, JS would treat { as the start of a function body and not the start of an
+// object. the workaround here is to wrap the brackets in a set of parentheses: ({...}).
+
+// let usersMapped = users.map(user => ({
+//   fullName: `${user.name} ${user.surname}`,
+//   id: user.id
+// }));
+
+// now it's fine.
+
+// ------------------------------------------------------------
+
+// TASK: SORT USERS BY AGE
+
+// write a function 'sortByAge(users)' that gets an array of objects with the 'age'
+// property and sorts them by 'age'.
+
+// example:
+
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 28 };
+
+// let arr = [ john, pete, mary ];
+
+// sortByAge(arr);
+
+// // now: [john, mary, pete]
+// alert(arr[0].name); // John
+// alert(arr[1].name); // Mary
+// alert(arr[2].name); // Pete
