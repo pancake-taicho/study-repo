@@ -2143,9 +2143,88 @@ usersMapped = [
 // of the array. multiple runs of 'shuffle' may lead to different orders of elements.
 // all element orders should have an equal probability.
 
-let arr = [1, 2, 3];
+// let arr = [1, 2, 3];
 
-function shuffle(arr) {
-  let shuffledArr = [];
-  
-}
+// function shuffle(arr) {
+//   let shuffledArr = [];
+//   for (let i = arr.length; i > 0; i--) {
+//     let min = 0;
+//     let max = arr.length;
+//     let randomIndex = Math.floor(min + Math.random() * (max - min));
+//     shuffledArr.push(arr[randomIndex]);
+//     arr.splice(randomIndex, 1);   
+//   }
+//   arr = shuffledArr;
+//   return arr;
+// }
+
+// alert(shuffle(arr));
+
+// TUTORIAL SOLUTION: FISHER-YATES SHUFFLE
+
+// the idea of the Fisher-Yates shuffle is to walk the array in reverse order and 
+// swap each element with a random one before it.
+
+// let array = [1, 2, 3];
+
+// function shuffle(array) {
+//   for (let i = array.length - 1; i > 0; i--) {
+//     let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+//     // couldn't i just be 'array.length' and in j, Math.random * i? (no '+ 1' and '- 1')
+
+//     // swap elements array[i] and array[j]
+//     // we use 'destructuring assignment' to achieve that
+//     // you'll find more details about that syntax in later chapters
+//     // same can be written as:
+//     // let t = array[i]; array[i] = array[j]; array[j] = t;
+//     [array[i], array[j]] = [array[j], array[i]];
+//   }
+//   return array;
+// }
+
+// alert(shuffle(array));
+
+// ------------------------------------------------------------
+
+// TASK: GET AVERAGE AGE
+
+// write the function 'getAverageAge(users)' that gets an array of objects with
+// property 'age' and returns the average age.
+
+// the formula for the average is (age1 + age2 + ... + ageN) / N
+
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 29 };
+
+// let users = [ john, pete, mary ];
+
+// function getAverageAge(users) {
+//   let totalOfAges = 0;
+//   let totalUsers = users.length;
+//   for (let user of users) {
+//     totalOfAges += user.age;    
+//   }
+//   let averageAge = totalOfAges/totalUsers;
+//   return averageAge;
+// }
+
+// alert(getAverageAge(users)); // 28
+
+// TUTORIAL SOLUTION:
+
+// when we see this problem, we want to think of the 'reduce' method, since it is
+// used to iterate over an array, apply a function to each element, and return a 
+// single value (in this case, we want the average age of all users).
+
+// function getAverageAge(users) {
+//   return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+// }
+
+// let john = { name: "John", age: 25 };
+// let pete = { name: "Pete", age: 30 };
+// let mary = { name: "Mary", age: 29 };
+
+// let users = [ john, pete, mary ];
+
+// alert(getAverageAge(users));
