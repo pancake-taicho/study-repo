@@ -2228,3 +2228,131 @@ usersMapped = [
 // let users = [ john, pete, mary ];
 
 // alert(getAverageAge(users));
+
+// ------------------------------------------------------------
+
+// TASK: FILTER UNIQUE ARRAY MEMBERS
+
+// let 'arr' be an array. create a function 'unique(arr)' that should return an
+// array with unique items of 'arr'.
+
+// example:
+
+// function unique(arr) {
+//   /* ...your code... */
+// }
+
+// let strings = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+
+// alert(unique(strings)); // Hare, Krishna, :-O
+
+// let strings = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+
+// function unique(arr) {
+//   let uniqueItems = [];
+//   for (let item of arr) {
+//     if (uniqueItems.indexOf(item) == -1) {
+//       uniqueItems.push(item);
+//     }
+//   }
+//   return uniqueItems;
+// }
+
+// alert(unique(strings));
+
+// TUTORIAL SOLUTION:
+
+// same as mine, except used the 'includes()' method on the unique items array
+
+// ------------------------------------------------------------
+
+// TASK: CREATE KEYED OBJECT FROM ARRAY
+
+// let's say we received an array of users in the format of '{id: ..., name: ..., age: ...}'.
+// create a function 'groupById(arr)' that creates an object from it, with 'id' as the key,
+// and array items as values.
+
+// example:
+
+// let users = [
+//   {id: 'john', name: "John Smith", age: 20},
+//   {id: 'ann', name: "Ann Smith", age: 24},
+//   {id: 'pete', name: "Pete Peterson", age: 31},
+// ];
+
+// let usersById = groupById(users);
+
+/*
+// after the call we should have:
+
+usersById = {
+  john: {id: 'john', name: "John Smith", age: 20},
+  ann: {id: 'ann', name: "Ann Smith", age: 24},
+  pete: {id: 'pete', name: "Pete Peterson", age: 31},
+}
+*/
+
+// this kind of a function is really handy when working with server data.
+// in this task, we assume the 'id' is unique. there may be no two array items with 
+// the same id.
+
+// please use the 'reduce()' method in your solution.
+
+// let users = [
+//   {id: 'john', name: "John Smith", age: 20},
+//   {id: 'ann', name: "Ann Smith", age: 24},
+//   {id: 'pete', name: "Pete Peterson", age: 31},
+// ];
+
+// let usersById = groupById(users);
+
+// function groupById(arr) {
+//   let usersById = {};
+  
+//   for (let item of arr) {
+//     usersById[item.id] = item;
+//   }
+
+//   // how am I expected to use 'reduce()' in  the solution??
+//   // arr.reduce((item) => usersById[item.id] = item);
+//   return usersById;
+// }
+
+// console.log(usersById);
+// alert(usersById);
+
+// use 'reduce()' like this?:
+// usersById = arr.reduce(function(acc, item) {
+//   acc = {};
+//   acc[item.id] = item;
+//   return acc;
+// } // only returned the final item 'pete', not all three.
+
+// i failed to understand how i could have used 'reduce()', or why.
+
+// TUTORIAL SOLUTION:
+
+let users = [
+  {id: 'john', name: "John Smith", age: 20},
+  {id: 'ann', name: "Ann Smith", age: 24},
+  {id: 'pete', name: "Pete Peterson", age: 31},
+];
+
+let usersById = groupById(users);
+
+// throws a TypeError in Brave browser...doesn't work?
+
+function groupById(array) {
+  return array.reduce((obj, value) => {
+    obj[value.id] = value;
+  }, {});
+}
+// the final arg in reduce, 'initial', can be {} and not just a number, i guess?
+
+console.log(usersById);
+alert(usersById);
+
