@@ -2336,22 +2336,24 @@ usersById = {
 
 // TUTORIAL SOLUTION:
 
-let users = [
-  {id: 'john', name: "John Smith", age: 20},
-  {id: 'ann', name: "Ann Smith", age: 24},
-  {id: 'pete', name: "Pete Peterson", age: 31},
-];
+// let users = [
+//   {id: 'john', name: "John Smith", age: 20},
+//   {id: 'ann', name: "Ann Smith", age: 24},
+//   {id: 'pete', name: "Pete Peterson", age: 31},
+// ];
 
-let usersById = groupById(users);
+// let usersById = groupById(users);
 
-// throws a TypeError in Brave browser...doesn't work?
+// // throws a TypeError in Brave browser...doesn't work?
 
-function groupById(array) {
-  return array.reduce((obj, value) => {
-    obj[value.id] = value;
-  }, {});
-}
-// the final arg in reduce, 'initial', can be {} and not just a number, i guess?
+// function groupById(array) {
+//   return array.reduce((obj, value) => {
+//     obj[value.id] = value;
+//   }, {});
+// }
+// // the final arg in reduce, 'initial', can be {} and not just a number, i guess?
 
-console.log(usersById);
-alert(usersById);
+// console.log(usersById);
+// alert(usersById);
+
+// ------------------------------------------------------------
