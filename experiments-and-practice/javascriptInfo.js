@@ -2357,3 +2357,41 @@ usersById = {
 // alert(usersById);
 
 // ------------------------------------------------------------
+// ITERABLES
+// ------------------------------------------------------------
+// SYMBOL.ITERATOR
+
+// let range = {
+//   from: 1,
+//   to: 5
+// };
+
+// we want the for...of to work:
+// for(let num of range) ... num=1,2,3,4,5
+
+// an 'iterable' is an object that can be used in 'for...of'
+// 'Symbol.iterator' is a built-in method that makes objects work in a 'for...of' loop.
+
+// 1. when 'for...of' starts, it calls the 'Symbol.iterator' method once (or throws an
+// error if not found). the method must return an iterator - an object that contains the
+// method 'next'.
+// 2. onward, 'for...of' only works with that returned object.
+// 3. when 'for...of' wants the next value, it calls 'next()' on that object
+// 4. the result of 'next' must have the form '{done: Boolean, value: any}, where 
+// 'done: true' means that the iteration is finished, otherwise 'value' is the next value.
+
+// ------------------------------------------------------------
+// ARRAY.FROM
+
+// 'Array.from' is a universal method that takes an iterable or an array-like value and
+// makes a "real" array from it, making it possible to call array methods on it.
+
+// example:
+// let arrayLike = {
+//   1: "Hello",
+//   2: "World",
+//   length: 2
+// };
+
+// let arr = Array.from(arrayLike);
+// alert(arr.pop()); // World (the method works)
