@@ -2395,3 +2395,46 @@ usersById = {
 
 // let arr = Array.from(arrayLike);
 // alert(arr.pop()); // World (the method works)
+
+// ------------------------------------------------------------
+// ...stopped typing everything from the tutorials...
+// ...just going to do the tasks...
+// ------------------------------------------------------------
+// TASK: FILTER UNIQUE ARRAY NUMBERS
+
+// let 'arr' be an array. write a function 'unique(array)' that should return an 
+// array with the unique items from 'arr'.
+// P.S.: values can be of any type.
+// P.S.S.: use 'Set' to store unique values.
+
+// let arr = [1,2,1,2,"see","saw","see","saw"];
+
+// function unique(array) {
+//   let set = new Set(array);
+//   return Array.from(set);
+// }
+
+// alert(unique(arr));
+
+// TUTORIAL SOLUTION:
+
+let arr = [1,2,1,2,"see","saw","see","saw"];
+
+function unique(arr) {
+  return Array.from(new Set(arr))
+}
+
+// ------------------------------------------------------------
+
+// TASK: FILTER ANAGRAMS
+
+// anagrams are words that have the same number of the same letters but in a different
+// order. write a function 'aclean(arr)' that returns an array clean from anagrams.
+
+// example:
+
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+// alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"
+
+// only one word should remain from each anagram group.
+
