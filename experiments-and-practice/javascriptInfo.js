@@ -2418,11 +2418,11 @@ usersById = {
 
 // TUTORIAL SOLUTION:
 
-let arr = [1,2,1,2,"see","saw","see","saw"];
+// let arr = [1,2,1,2,"see","saw","see","saw"];
 
-function unique(arr) {
-  return Array.from(new Set(arr))
-}
+// function unique(arr) {
+//   return Array.from(new Set(arr))
+// }
 
 // ------------------------------------------------------------
 
@@ -2438,3 +2438,19 @@ function unique(arr) {
 
 // only one word should remain from each anagram group.
 
+let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+arr[3].toLowerCase();
+console.log(arr[3])
+;
+function aclean(arr) {
+  let cleanedArr = [];
+  arr.forEach(function(item) {
+    let newItem = item.toLowerCase().split('');
+    cleanedArr.push(newItem);
+    console.log(cleanedArr);
+  });
+  let set = new Set(cleanedArr);
+  console.log(set);
+}
+
+aclean(arr);
