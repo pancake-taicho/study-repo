@@ -2438,19 +2438,119 @@ usersById = {
 
 // only one word should remain from each anagram group.
 
-let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
-arr[3].toLowerCase();
-console.log(arr[3])
-;
-function aclean(arr) {
-  let cleanedArr = [];
-  arr.forEach(function(item) {
-    let newItem = item.toLowerCase().split('');
-    cleanedArr.push(newItem);
-    console.log(cleanedArr);
-  });
-  let set = new Set(cleanedArr);
-  console.log(set);
-}
+// MY INCOMPLETE 'SOLUTION': i couldn't solve this one. i tried for three days,
+// but i couldn't come up with the solution or get all of the right ideas needed
+// to solve the problem in the same place to make the connections in my mind. 
+// i finally looked at the solution and understood it (see after my work).
+// the key step i was missing was SORTING the letters of each word.
+// i feel like seeing that would've lead to me coming up with a solution.
 
-aclean(arr);
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+// function aclean(arr) {
+//   let lowerCaseArr = [];
+
+//   arr.forEach(function(item) {
+//     let newItem = item.toLowerCase().split('');
+//     lowerCaseArr.push(newItem);
+//   });
+
+//   console.log(lowerCaseArr);
+//   let set = new Set(lowerCaseArr);
+//   console.log(set[0]);
+// }
+
+// aclean(arr);
+
+// TUTORIAL SOLUTION: 
+
+// to find all anagrams, let's split every word to letters and sort them.
+// when letter-sorted, all anagrams are the same.
+
+// we'll use letter-sorted variants as map keys to store one value per key:
+
+// function aclean(arr) {
+//   let map = new Map();
+
+//   for (let word of arr) {
+//     // split the word into letters, split them, sort them, and join them back
+//     let sorted = word.toLowerCase().split('').sort().join(''); // (*)
+
+//     // use a key-value pair to associate sorted letter groups with their
+//     // original word with 'map.set(key, value)'
+//     map.set(sorted, word);
+//   }
+
+//   return Array.from(map.values());
+// }
+
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+// alert(aclean(arr));
+
+// letter-sorting is done by chain of calls at line (*)
+// for convenience, let's split this chain into multiple lines:
+
+// let sorted = word; // PAN
+//   .toLowerCase() // pan
+//   .split('') // p,a,n
+//   .sort() // a,n,p
+//   .join(''); // anp
+
+// two different words 'PAN' and 'nap' receive the same letter-sorted form 'anp'
+
+// the next line puts the words into a map, SETting them as the value of their 
+// letter-sorted form, which is the key ( 'anp': 'PAN', etc... ):
+
+// map.set(sorted, word);
+
+// as we're setting our map, if we come across a word that has the same letter-
+// sorted form as a previous word, then the new word will overwrite the 
+// previous word with the same key in the map, so we'll always have at maximum
+// one word per letter-sorted form
+
+// an alternative solution would be to use an Object instead of a Map. 
+// this would work since we're working with strings:
+
+// function aclean(arr) {
+//   let obj = {};
+
+//   for (let i = 0; i < arr.length; i++) {
+//     let sorted = arr[i].toLowerCase().split('').sort().join('');
+//     obj[sorted] = arr[i];
+//   }
+
+//   // i need to be aware of Object methods...
+//   return Object.values(obj);
+// }
+
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+// alert(aclean(arr));
+
+// ALTERNATE SOLUTION USING A SET:
+
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+
+// function aclean(arr) {
+//   var tempArr = [];
+
+//   for (let ele of arr) {
+//     tempArr.push(ele.split('').sort().join('').toLowerCase());
+//   }
+
+//   console.log(tempArr); 
+//   // ["anp", "aceehrst", "aceehrst", "anp", "aer", "aer", "aceehrst"]
+
+//   var unique = Array.from(new Set(tempArr));
+//   console.log(unique); // ["anp", "aceehrst", "aer"]
+
+//   var finalArr = [];
+
+//   for (let e of unique) {
+//     finalArr.push(arr[tempArr.IndexOf(e)]);
+//   }
+
+//   console.log(finalArr); // ["nap", "teachers", "ear"]
+//   return finalArr;
+// }
