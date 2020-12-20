@@ -2554,3 +2554,36 @@ usersById = {
 //   console.log(finalArr); // ["nap", "teachers", "ear"]
 //   return finalArr;
 // }
+
+// ------------------------------------------------------------
+
+// TASK: ITERABLE OBJECTS
+
+// we'd like to get an array of 'map.keys()' in a variable and then apply
+// array-specific methods to it, e.g. '.push'.
+
+// but that doesn't work:
+
+// let map = new Map();
+
+// map.set("name", "John");
+
+// let keys = map.keys();
+
+// // Error: keys.push is not a function 
+// keys.push("more");
+
+// why? how can we fix the code to make 'keys.push' work?
+
+// that's becuase 'map.keys()' returns an interable, but not an array.
+// we can covert it into an array using 'Array.from'
+
+// let map = new Map();
+
+// map.set("name", "John");
+
+// let keys = Array.from(map.keys());
+
+// keys.push("more");
+
+// alert(keys); // name, more
