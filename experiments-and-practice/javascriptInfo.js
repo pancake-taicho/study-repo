@@ -2587,3 +2587,90 @@ usersById = {
 // keys.push("more");
 
 // alert(keys); // name, more
+
+// ------------------------------------------------------------
+
+// TASK: SUM THE PROPERTIES
+
+// there is a 'salaries' object with an arbitrary number of salaries.
+// write the function 'sumSalaries(salaries)' that returns the sum of all 
+// salaries using 'Object.values' and the 'for...of' loop.
+// if 'salaries' is empty, then the result must be 0. 
+
+// // example:
+// let salaries = {
+//   "John": 100,
+//   "Pete": 300,
+//   "Mary": 250
+// };
+
+// alert( sumSalaries(salaries) ); // 650
+
+// let sumSalaries = function(obj) {
+//   if (!obj) {
+//     return 0; 
+//   } else {
+//     let total = 0;
+//     let accumulator = 0;
+//     for (let value of Object.values(obj)) { 
+//       total = accumulator += value; 
+//     }
+//     return total;
+//   }
+// }
+
+// let salaries = {
+//   "John": 100,
+//   "Pete": 300,
+//   "Mary": 250
+// }
+
+// alert(sumSalaries(salaries));
+
+// TUTORIAL SOLUTION:
+
+// i didn't need the 'total' variable:
+// function sumSalaries(salaries) {
+
+//   let sum = 0;
+//   for (let salary of Object.values(salaries)) {
+//     sum += salary;
+//   }
+//   return sum;
+// }
+
+// or, optionally, we could also get the sum using 'Object.values(obj)' 
+// with 'reduce'.
+
+// 'reduce' loops over the array of salaries,
+// adding them up
+// // and returns the result:
+
+// function sumSalaries(salaries) {
+//   return Object.values(salaries).reduce((a,b) => a + b, 0);
+// }
+
+// alert( sumSalaries(salaries) );
+
+// ------------------------------------------------------------
+
+// TASK: COUNT PROPERTIES
+
+// write a function 'count(obj)' that returns the number of properties 
+// in an object:
+
+// let user = {
+//   name: 'John',
+//   age: 30
+// };
+
+// alert( count(user) ); // 2
+
+// try to make the code as short as possible
+// P.S. ignore symbolic properties; only count regular ones
+
+// function count(user) {
+//   return Object.keys(user).length;
+// }
+
+// ------------------------------------------------------------
