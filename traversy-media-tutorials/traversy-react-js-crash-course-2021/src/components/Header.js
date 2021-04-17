@@ -1,11 +1,14 @@
 // with the ES7 React extension you can import PropTypes with: impt
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 const Header = ({ title }) => {
   return (
     <div>
-      <header>
+      <header className='header'>
         <h1>{title}</h1>
+        <Button color='green' text='Add' />
+        <Button />
       </header>
       
     </div>

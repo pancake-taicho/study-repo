@@ -1,10 +1,11 @@
 import Header from './components/Header';
+// import Button from './components/Button';
 
 const App = () => {
   return (
     
     <div className="container">
-      <Header title='Hello'/>
+      <Header />
     </div>
   )
 }
